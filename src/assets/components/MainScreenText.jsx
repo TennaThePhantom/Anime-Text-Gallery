@@ -1,3 +1,4 @@
+import '../CSS/MainScreenText.css';
 function MainScreenText({text}) {
 	return (
         // This component displays text on the main screen.

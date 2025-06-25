@@ -1,0 +1,7 @@
+@reference "tailwindcss";
+
+
+.main-screen-text{
+    @apply text-6xl font-normal tracking-normal m-[2px] cursor-pointer p-2 text-black
+}
+
