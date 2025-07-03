@@ -8,7 +8,7 @@ import "../CSS/Volume.css";
 
 function Volume() {
 	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
-	const [volume, setVolume] = useState(0);
+	const [volume, setVolume] = useState(100);
 	const [isMuted, setIsMuted] = useState(false);
 	const [showVolumeSlider, setShowVolumeSlider] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
@@ -75,35 +75,48 @@ function Volume() {
 		}
 	};
 
-	// handles the volume mute toggle
-	const toggleVolumeMuted = (event) => {
-		if (!isMuted) {
-			setIsMuted(true);
-		} else {
-			setIsMuted(false);
-			setVolume(volume === 0 ? 50 : volume); // sets the volume to 50 if it was muted
-		}
+	const toggleVolumeSlider = (event) => {
 		// Toggle slider visibility only if clicking the icon (not the slider)
 		if (
 			!sliderTimeoutRef.current
 				.querySelector(".volume-slider-container")
 				?.contains(event.target)
 		) {
-			setShowVolumeSlider(!showVolumeSlider);
+			setShowVolumeSlider(true);
+		}
+	};
+
+	// handles the volume mute toggle
+	const toggleVolumeMuted = () => {
+		if (!isMuted) {
+			setIsMuted(true);
+		} else {
+			setIsMuted(false);
+			setVolume(volume === 0 ? 50 : volume); // sets the volume to 50 if it was muted
 		}
 	};
 	// toggles the volume icon and sets the volume to 0 if muted
 	const displayVolumeIcon = () => {
 		if (isMuted || volume === 0) {
-			return <ImVolumeMute2 className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
+			return (
+				<ImVolumeMute2 className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
+			);
 		} else if (volume > 0 && volume <= 5) {
-			return <ImVolumeMute className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
+			return (
+				<ImVolumeMute className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
+			);
 		} else if (volume > 5 && volume <= 30) {
-			return <ImVolumeLow className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
+			return (
+				<ImVolumeLow className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
+			);
 		} else if (volume > 30 && volume <= 70) {
-			return <ImVolumeMedium className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
+			return (
+				<ImVolumeMedium className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
+			);
 		} else {
-			return <ImVolumeHigh className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
+			return (
+				<ImVolumeHigh className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
+			);
 		}
 	};
 	return (
@@ -111,6 +124,10 @@ function Volume() {
 			<button
 				className={`volume-container ${isDarkMode ? "dark" : ""}`}
 				onClick={toggleVolumeMuted}
+				onMouseEnter={() => {
+					toggleVolumeSlider();
+					setIsHovered(true);
+				}}
 				aria-label={isMuted ? "Unmute Volume" : "Mute Volume"}
 			>
 				{displayVolumeIcon()}
