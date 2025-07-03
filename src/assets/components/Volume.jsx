@@ -7,12 +7,28 @@ import { useState, useEffect, useRef } from "react";
 import "../CSS/Volume.css";
 
 function Volume() {
+	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
 	const [volume, setVolume] = useState(0);
 	const [isMuted, setIsMuted] = useState(false);
 	const [showVolumeSlider, setShowVolumeSlider] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 	const sliderTimeoutRef = useRef(null);
 	const timeoutRef = useRef(null);
+
+	useEffect(() => {
+		const checkUserDarkMode = () => {
+			// checks the html document class for dark class
+			setIsDarkMode(document.documentElement.classList.contains("dark"));
+		};
+		// checks if the user has dark mode enabled in their system on initial load once
+		checkUserDarkMode();
+
+		// watches for changes in the document's class attribute to detect dark mode changes
+		const darkModeObserver = new MutationObserver(checkUserDarkMode);
+		darkModeObserver.observe(document.documentElement, { attributes: true });
+
+		return () => darkModeObserver.disconnect(); // cleanup observer on component(to make sure there's no memory leak)
+	}, []);
 
 	// handles the user clicking effect to close the volume slider
 	useEffect(() => {
@@ -79,21 +95,21 @@ function Volume() {
 	// toggles the volume icon and sets the volume to 0 if muted
 	const displayVolumeIcon = () => {
 		if (isMuted || volume === 0) {
-			return <ImVolumeMute2 className="volume-icon" />;
+			return <ImVolumeMute2 className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
 		} else if (volume > 0 && volume <= 5) {
-			return <ImVolumeMute className="volume-icon" />;
+			return <ImVolumeMute className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
 		} else if (volume > 5 && volume <= 30) {
-			return <ImVolumeLow className="volume-icon" />;
+			return <ImVolumeLow className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
 		} else if (volume > 30 && volume <= 70) {
-			return <ImVolumeMedium className="volume-icon" />;
+			return <ImVolumeMedium className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
 		} else {
-			return <ImVolumeHigh className="volume-icon" />;
+			return <ImVolumeHigh className={`volume-icon ${isDarkMode ? "dark" : ""}`} />;
 		}
 	};
 	return (
 		<div ref={sliderTimeoutRef}>
 			<button
-				className="volume-container"
+				className={`volume-container ${isDarkMode ? "dark" : ""}`}
 				onClick={toggleVolumeMuted}
 				aria-label={isMuted ? "Unmute Volume" : "Mute Volume"}
 			>
