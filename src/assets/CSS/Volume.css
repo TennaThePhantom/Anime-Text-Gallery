@@ -1,22 +1,20 @@
 @reference "tailwindcss";
 
-
-.volume-container{
-    @apply fixed top-1 right-14 p-2 rounded-full dark:bg-gray-800 cursor-pointer
+.volume-container {
+	@apply fixed top-1 right-14 p-2 rounded-full dark:bg-gray-800 cursor-pointer;
 }
-.volume-icon{
-    @apply text-3xl dark:text-gray-100 transition-colors duration-300 ease-in-out
-}  
-
-.volume-slider-container{
-    @apply absolute right-3.5 top-14
+.volume-icon {
+	@apply text-3xl dark:text-gray-100 transition-colors duration-300 ease-in-out;
 }
 
-.volume-slider{
-    @apply w-32 h-8 transform rotate-90 origin-center appearance-none bg-black rounded-full outline-none cursor-pointer
+.volume-slider-container {
+	@apply absolute right-20 top-14 max-w-0 max-h-0;
 }
 
-.slider{
-    @apply h-32 flex items-center justify-center 
+.volume-slider {
+	@apply w-fit h-6 transform rotate-90 origin-center appearance-none rounded-full opacity-70 outline-none cursor-pointer hover:opacity-100;
 }
- 
+
+.slider {
+	@apply h-32 flex items-center justify-center;
+}
