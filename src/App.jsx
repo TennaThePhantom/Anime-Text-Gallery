@@ -13,7 +13,7 @@ function App() {
 			<div className="text-container">
 				{/* currently display the text for the anime gallery*/}
 				{MainScreenTextData.map((text, index) => (
-					<MainScreenText key={index} text={text} />
+					<MainScreenText key={index} text={text} index={index} />
 				))}
 			</div>
 		</div>

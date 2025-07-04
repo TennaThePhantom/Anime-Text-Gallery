@@ -1,7 +1,40 @@
 @reference "tailwindcss";
 
-
-.main-screen-text{
-    @apply text-6xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600
+.main-screen-text {
+	@apply text-6xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600;
 }
 
+.dragon-ball-text-animated:hover {
+	background: radial-gradient(
+		circle at 100%,
+		#fed7aa,
+		#fdba74 50%,
+		#ffedd5 75%,
+		#fb923c 75%
+	);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animatedTextGradient 1.5s linear infinite;
+}
+
+.bleach-text-animated:hover {
+	background: radial-gradient(
+		circle at 100%,
+		#2d3748,
+		/* Jet Black */ #ffffff 25%,
+		/* Pure White */ #e53e3e 50%,
+		/* Blood Red */ #3182ce 75%,
+		/* Royal Blue */ #1a202c 75% /* Darker Jet Black */
+	);
+	background-size: 200% auto;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animatedTextGradient 2.5s linear infinite;
+}
+
+@keyframes animatedTextGradient {
+	to {
+		background-position: 200% center;
+	}
+}
