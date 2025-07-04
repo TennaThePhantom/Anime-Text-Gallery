@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+
 .text-container{
   @apply flex flex-col items-center justify-center text-center h-screen w-full;
 }
