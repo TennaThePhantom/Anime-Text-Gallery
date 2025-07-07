@@ -2,7 +2,10 @@ import '../CSS/MainScreenText.css';
 function MainScreenText({text, index}) {
     const textAnimationsClasses = [
         "dragon-ball-text-animated",
-        "bleach-text-animated"
+        "bleach-text-animated",
+        "black-clover-animated-text",
+        "fate-series-animated-text"
+
     ]
 
     const textAnimation = textAnimationsClasses[index % textAnimationsClasses.length]
