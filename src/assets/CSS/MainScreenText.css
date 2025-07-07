@@ -1,5 +1,15 @@
 @reference "tailwindcss";
 
+/* Generation of Miracles Colors */
+:root {
+	--kuroko: #7db9de;
+	--aomine: #1e3f5a;
+	--midorima: #3b8d51;
+	--murasakibara: #884898;
+	--akashi: #d9333f;
+	--kise: #f6c324;
+}
+
 .main-screen-text {
 	@apply text-6xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600;
 }
@@ -87,5 +97,235 @@
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+.kuroko-basketball-animated-text:hover {
+	background: linear-gradient(
+		90deg,
+		var(--kuroko),
+		var(--aomine),
+		var(--midorima),
+		var(--murasakibara),
+		var(--akashi),
+		var(--kise)
+	);
+	background-size: 600% 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	animation: kuroko-basketball-animation 8s infinite;
+}
+
+.kuroko-basketball-animated-text:hover .color-char:nth-child(1) {
+	animation: color1 8s infinite 0s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(2) {
+	animation: color2 8s infinite 0.2s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(3) {
+	animation: color3 8s infinite 0.4s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(4) {
+	animation: color4 8s infinite 0.6s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(5) {
+	animation: color5 8s infinite 0.8s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(6) {
+	animation: color6 8s infinite 1s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(8) {
+	animation: color8 8s infinite 1.4s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(10) {
+	animation: color10 8s infinite 1.8s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(11) {
+	animation: color11 8s infinite 2s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(12) {
+	animation: color12 8s infinite 2.2s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(13) {
+	animation: color13 8s infinite 2.4s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(14) {
+	animation: color14 8s infinite 2.6s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(15) {
+	animation: color15 8s infinite 2.8s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(16) {
+	animation: color16 8s infinite 3s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(17) {
+	animation: color17 8s infinite 3.2s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(18) {
+	animation: color18 8s infinite 3.4s;
+}
+.kuroko-basketball-animated-text:hover .color-char:nth-child(19) {
+	animation: color19 8s infinite 3.6s;
+}
+@keyframes kuroko-basketball-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+@keyframes color1 {
+	0%,
+	100% {
+		color: var(--kuroko);
+	}
+	50% {
+		color: var(--akashi);
+	}
+}
+@keyframes color2 {
+	0%,
+	100% {
+		color: var(--aomine);
+	}
+	50% {
+		color: var(--kise);
+	}
+}
+@keyframes color3 {
+	0%,
+	100% {
+		color: var(--midorima);
+	}
+	50% {
+		color: var(--murasakibara);
+	}
+}
+@keyframes color4 {
+	0%,
+	100% {
+		color: var(--murasakibara);
+	}
+	50% {
+		color: var(--midorima);
+	}
+}
+@keyframes color5 {
+	0%,
+	100% {
+		color: var(--akashi);
+	}
+	50% {
+		color: var(--kuroko);
+	}
+}
+@keyframes color6 {
+	0%,
+	100% {
+		color: var(--kise);
+	}
+	50% {
+		color: var(--aomine);
+	}
+}
+@keyframes color8 {
+	0%,
+	100% {
+		color: var(--kuroko);
+	}
+	50% {
+		color: var(--midorima);
+	}
+}
+@keyframes color10 {
+	0%,
+	100% {
+		color: var(--aomine);
+	}
+	50% {
+		color: var(--murasakibara);
+	}
+}
+@keyframes color11 {
+	0%,
+	100% {
+		color: var(--midorima);
+	}
+	50% {
+		color: var(--kise);
+	}
+}
+@keyframes color12 {
+	0%,
+	100% {
+		color: var(--murasakibara);
+	}
+	50% {
+		color: var(--akashi);
+	}
+}
+@keyframes color13 {
+	0%,
+	100% {
+		color: var(--akashi);
+	}
+	50% {
+		color: var(--kuroko);
+	}
+}
+@keyframes color14 {
+	0%,
+	100% {
+		color: var(--kise);
+	}
+	50% {
+		color: var(--aomine);
+	}
+}
+@keyframes color15 {
+	0%,
+	100% {
+		color: var(--kuroko);
+	}
+	50% {
+		color: var(--midorima);
+	}
+}
+@keyframes color16 {
+	0%,
+	100% {
+		color: var(--aomine);
+	}
+	50% {
+		color: var(--murasakibara);
+	}
+}
+@keyframes color17 {
+	0%,
+	100% {
+		color: var(--midorima);
+	}
+	50% {
+		color: var(--kise);
+	}
+}
+@keyframes color18 {
+	0%,
+	100% {
+		color: var(--murasakibara);
+	}
+	50% {
+		color: var(--akashi);
+	}
+}
+@keyframes color19 {
+	0%,
+	100% {
+		color: var(--akashi);
+	}
+	50% {
+		color: var(--kuroko);
 	}
 }
