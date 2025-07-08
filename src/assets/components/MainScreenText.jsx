@@ -7,6 +7,7 @@ function MainScreenText({ text, index }) {
 		"black-clover-animated-text",
 		"fate-series-animated-text",
 		"kuroko-basketball-animated-text",
+		"sword-art-online-animated",
 	];
 
 	useEffect(() => {
@@ -38,7 +39,7 @@ function MainScreenText({ text, index }) {
 	return (
 		// This component displays text on the main screen.
 		<div className={`main-screen-text ${textAnimation}`}>
-			<p>{text.toUpperCase()}</p>
+			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>{text.toUpperCase()}</p>
 		</div>
 	);
 }

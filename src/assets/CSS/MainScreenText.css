@@ -329,3 +329,91 @@
 		color: var(--kuroko);
 	}
 }
+
+.sword-art-online-animated p {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+.sword-art-online-animated:hover p::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #00b4db;
+	-webkit-text-stroke: 0vw #0909f0;
+	border-right: 3px solid #00b4db;
+	overflow: hidden;
+	filter: drop-shadow(0 0 5px #00b4db);
+	animation: animate 5s linear infinite;
+	white-space: nowrap;
+}
+
+@keyframes animate {
+	0%,
+	10% {
+		width: 0;
+	}
+	70%,
+	90% {
+		width: 100.7%; /* 100.7% to fully go over E anything higher make the animation shift to the left at the end*/
+	}
+	100% {
+		width: 0;
+	}
+}
+/*
+solo leveling animation theme
+
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+body {
+	background-color: #010;
+}
+
+.title {
+	font-family: "Cairo";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+	line-height:2
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dzMyNjQ5YWcyZGo5eWtja2g4dXNyNmI5cjM4Y2k2NDZtd2o0eDF4cCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3bc8pP1rVdfgN1uoMV/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	margin: 10px 0;
+}
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+*/
