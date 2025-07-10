@@ -8,6 +8,7 @@ function MainScreenText({ text, index }) {
 		"fate-series-animated-text",
 		"kuroko-basketball-animated-text",
 		"sword-art-online-animated",
+		"solo-leveling-animated"
 	];
 
 	useEffect(() => {
