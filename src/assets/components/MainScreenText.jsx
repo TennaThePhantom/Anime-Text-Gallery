@@ -1,6 +1,9 @@
 import "../CSS/MainScreenText.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 function MainScreenText({ text, index }) {
+	const [isHoveredOnText, setIsHoveredOnText] = useState(false);
+	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
+
 	const textAnimationsClasses = [
 		"dragon-ball-text-animated",
 		"bleach-text-animated",
@@ -8,9 +11,10 @@ function MainScreenText({ text, index }) {
 		"fate-series-animated-text",
 		"kuroko-basketball-animated-text",
 		"sword-art-online-animated",
-		"solo-leveling-animated"
+		"solo-leveling-animated",
 	];
 
+	// kuroko basketball text animation
 	useEffect(() => {
 		const kurokoAnimatedText = document.querySelector(
 			".kuroko-basketball-animated-text"
@@ -25,9 +29,10 @@ function MainScreenText({ text, index }) {
 				spanText.textContent = char;
 
 				if (charIndex === 6 || charIndex === 8) {
+					// the ' and space
 					spanText.style.color = "text-zinc-300";
 				} else {
-				spanText.classList.add('color-char');
+					spanText.classList.add("color-char");
 				}
 
 				kurokoAnimatedText.appendChild(spanText);
@@ -35,12 +40,35 @@ function MainScreenText({ text, index }) {
 		}
 	}, []);
 
+	const handleHoverOnText = () => {
+		if (hoverTimeOut) clearTimeout(hoverTimeOut);
+
+		const addAnimationText = setTimeout(() => {
+			setIsHoveredOnText(true);
+		}, 3000);
+
+		setIsHoverTimeOut(addAnimationText);
+	};
+
+	const handleHoverLeave = () => {
+		if (hoverTimeOut) {
+			clearTimeout(hoverTimeOut);
+		}
+		setIsHoveredOnText(false);
+	};
+
 	const textAnimation =
 		textAnimationsClasses[index % textAnimationsClasses.length];
 	return (
 		// This component displays text on the main screen.
-		<div className={`main-screen-text ${textAnimation}`}>
-			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>{text.toUpperCase()}</p>
+		<div
+			className={`main-screen-text ${isHoveredOnText ? textAnimation : ""}`}
+			onMouseEnter={handleHoverOnText}
+			onMouseLeave={handleHoverLeave}
+		>
+			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>
+				{text.toUpperCase()}
+			</p>
 		</div>
 	);
 }
