@@ -28,14 +28,15 @@
 	animation: animatedTextGradient 1.5s linear infinite;
 }
 
+/*bleach text animation*/
 .bleach-text-animated:hover {
 	background: radial-gradient(
 		circle at 100%,
 		#2d3748,
-		/* Jet Black */ #ffffff 25%,
-		/* Pure White */ #e53e3e 50%,
-		/* Blood Red */ #3182ce 75%,
-		/* Royal Blue */ #1a202c 75% /* Darker Jet Black */
+		#ffffff 25%,
+		#e53e3e 50%,
+		#3182ce 75%,
+		#1a202c 75%
 	);
 	background-size: 200% auto;
 	background-clip: text;
@@ -48,15 +49,18 @@
 		background-position: 200% center;
 	}
 }
+
+/* black clover text animation*/
+
 .black-clover-animated-text:hover {
 	background: radial-gradient(
 		circle at 100%,
 		#22c55e,
-		/* Clover green */ #02772d 20%,
-		/* Deep clover green */ #b91c1c 40%,
-		/* Demon red */ #7d0000 60%,
-		/* Cursed blood */ #000000 80%,
-		/* Anti-magic black */ #000000 80% /* Clover's last trace */
+		#02772d 20%,
+		#b91c1c 40%,
+		#7d0000 60%,
+		#000000 80%,
+		#000000 80%
 	);
 	background-size: 300% auto; /* Wider gradient for slower transition */
 	background-clip: text;
@@ -71,6 +75,9 @@
 	}
 }
 
+/*
+fate series text animation
+*/
 .fate-series-animated-text:hover {
 	color: rgba(255, 255, 255, 0.1); /* Base transparency */
 
@@ -78,10 +85,10 @@
 	background-image: linear-gradient(
 		90deg,
 		#d4af37 10%,
-		/* Gold (Heroism) */ #4169e1 30%,
-		/* Blue (Divinity) */ #ff0000 50%,
-		/* Red (Conflict) */ #800080 70%,
-		/* Purple (Mystery) */ #ffa500 90% /* Orange (Hope) */
+		#4169e1 30%,
+		#ff0000 50%,
+		#800080 70%,
+		#ffa500 90%
 	);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -100,6 +107,7 @@
 	}
 }
 
+/* kuroko basketball text animation */
 .kuroko-basketball-animated-text:hover {
 	background: linear-gradient(
 		90deg,
@@ -330,6 +338,7 @@
 	}
 }
 
+/*sword art online text animations*/
 .sword-art-online-animated p {
 	position: relative;
 	padding: 0;
@@ -349,11 +358,11 @@
 	border-right: 3px solid #00b4db;
 	overflow: hidden;
 	filter: drop-shadow(0 0 5px #00b4db);
-	animation: animate 5s linear infinite;
+	animation: swordArtOnlineAnimate 5s linear infinite;
 	white-space: nowrap;
 }
 
-@keyframes animate {
+@keyframes swordArtOnlineAnimate {
 	0%,
 	10% {
 		width: 0;
@@ -366,10 +375,10 @@
 		width: 0;
 	}
 }
+
 /*
 solo leveling animation theme
 */
-
 .solo-leveling-animated:hover {
 	background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dzMyNjQ5YWcyZGo5eWtja2g4dXNyNmI5cjM4Y2k2NDZtd2o0eDF4cCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3bc8pP1rVdfgN1uoMV/giphy.gif);
 	background-size: cover;
