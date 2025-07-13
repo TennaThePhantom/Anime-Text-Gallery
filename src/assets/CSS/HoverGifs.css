@@ -1,0 +1,27 @@
+/*
+temporary css switched it to tailwind css later
+*/
+
+.hover-gif {
+	position: fixed;
+	width: 200px;
+	height: 145px;
+	pointer-events: none;
+	z-index: 5;
+	transform-origin: center;
+	filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+	border-radius: 8px;
+}
+
+
+.gif-top {
+	transform-origin: bottom center;
+}
+
+.gif-left {
+	transform-origin: right center;
+}
+
+.gif-right {
+	transform-origin: top center;
+}

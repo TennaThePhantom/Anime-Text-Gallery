@@ -1,6 +1,6 @@
-import dragonBallGif1 from "../public/DragonBall/broly.gif";
-import dragonBallGif2 from "../public/DragonBall/gogeta.gif";
-import dragonBallGif3 from "../public/DragonBall/goku.gif";
+import dragonBallGif1 from "../Images/DragonBall/broly.gif";
+import dragonBallGif2 from "../Images/DragonBall/gogeta.gif";
+import dragonBallGif3 from "../Images/DragonBall/goku.gif";
 
 export const mainScreenTextGif = {
 	"Dragon Ball": {
@@ -9,26 +9,26 @@ export const mainScreenTextGif = {
 				src: dragonBallGif1,
 				className: "Gif-top",
 				basePosition: {
-					top: -230,
+					top: -200,
 					left: -100, // relative to text center
 					followStrength: 15,
 				},
 			},
 			{
 				src: dragonBallGif2,
-				className: "Gif-top",
+				className: "Gif-left",
 				basePosition: {
-					top: -50,
-					left: -260,
+					top: -90,
+					left: -400,
 					followStrength: 15,
 				},
 			},
 			{
 				src: dragonBallGif3,
-				className: "Gif-top",
+				className: "Gif-right",
 				basePosition: {
-					top: 40, // positive means below text bottom
-					left: 30, // positive means right of text right
+					top: -20, // positive means below text bottom
+					left: 220, // positive means right of text right
 					followStrength: 15,
 				},
 			},
