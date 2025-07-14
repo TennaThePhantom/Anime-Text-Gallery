@@ -1,15 +1,23 @@
-
-
-
 import "../CSS/MainScreenText.css";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/hoverGifs.jsx";
 
 function MainScreenText({ text, index }) {
 	const [isHovered, setIsHovered] = useState(false);
-	const [showTextAnimation, setShowTextAnimation] = useState(false)
+	const [showTextAnimation, setShowTextAnimation] = useState(false);
 	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
+	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+	const textRef = useRef(null);
 
+	const handleGifMouseMove = (e) => {
+		if (textRef.current) {
+			const rect = textRef.current.getBoundingClientRect();
+			// Calculate mouse position relative to text center (0,0 at center)
+			const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // Range -1 to 1
+			const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2; // Range -1 to 1
+			setMousePosition({ x, y });
+		}
+	};
 	const textAnimationsClasses = [
 		"dragon-ball-text-animated",
 		"bleach-text-animated",
@@ -47,7 +55,7 @@ function MainScreenText({ text, index }) {
 	}, []);
 
 	const handleHoverOnText = () => {
-		setIsHovered(true) // Activates the GIFS Immediately
+		setIsHovered(true); // Activates the GIFS Immediately
 
 		// only for the css text animation (3-second delay might remove or reduce it)
 		if (hoverTimeOut) clearTimeout(hoverTimeOut);
@@ -59,8 +67,8 @@ function MainScreenText({ text, index }) {
 	};
 
 	const handleHoverLeave = () => {
-		setIsHovered(false) // gifs goes away immediately
-		setShowTextAnimation(false)
+		setIsHovered(false); // gifs goes away immediately
+		setShowTextAnimation(false);
 		if (hoverTimeOut) {
 			clearTimeout(hoverTimeOut);
 		}
@@ -71,14 +79,16 @@ function MainScreenText({ text, index }) {
 	return (
 		// This component displays text on the main screen.
 		<div
+			ref={textRef}
 			className={`main-screen-text ${showTextAnimation ? textAnimation : ""}`}
 			onMouseEnter={handleHoverOnText}
 			onMouseLeave={handleHoverLeave}
+			onMouseMove={handleGifMouseMove}
 		>
 			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>
 				{text.toUpperCase()}
 			</p>
-			<HoverGifs text={text} index={index} isActive={isHovered}/>
+			<HoverGifs text={text} index={index} isActive={isHovered} textContainerRef={textRef} mousePosition={mousePosition}/>
 		</div>
 	);
 }

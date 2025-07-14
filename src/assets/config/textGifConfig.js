@@ -7,28 +7,28 @@ export const mainScreenTextGif = {
 		gifs: [
 			{
 				src: dragonBallGif1,
-				className: "Gif-top",
+				className: "gif-top",
 				basePosition: {
-					top: -200,
+					top: -140,
 					left: -100, // relative to text center
 					followStrength: 15,
 				},
 			},
 			{
 				src: dragonBallGif2,
-				className: "Gif-left",
+				className: "gif-left",
 				basePosition: {
-					top: -90,
+					top: -10,
 					left: -400,
 					followStrength: 15,
 				},
 			},
 			{
 				src: dragonBallGif3,
-				className: "Gif-right",
+				className: "gif-right",
 				basePosition: {
-					top: -20, // positive means below text bottom
-					left: 220, // positive means right of text right
+					top: -1, // positive means below text bottom
+					left: 30, // positive means right of text right
 					followStrength: 15,
 				},
 			},
