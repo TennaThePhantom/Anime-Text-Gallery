@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { mainScreenTextGif } from "../config/textGifConfig";
-import { createPortal } from "react-dom";
 import "../CSS/HoverGifs.css";
 
 function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
