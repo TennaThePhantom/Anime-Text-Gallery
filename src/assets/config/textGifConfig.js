@@ -27,8 +27,8 @@ export const mainScreenTextGif = {
 				src: dragonBallGif1,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -140, // positive means below text bottom
+					left: -100, // positive means right of text negative means left of text
 					followStrength: 15,
 				},
 			},
@@ -37,7 +37,7 @@ export const mainScreenTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -420,
 					followStrength: 15,
 				},
 			},
@@ -45,8 +45,8 @@ export const mainScreenTextGif = {
 				src: dragonBallGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 30, 
 					followStrength: 15,
 				},
 			},
@@ -59,8 +59,8 @@ export const mainScreenTextGif = {
 				src: bleachGift1,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -150,
+					left: -100, 
 					followStrength: 15,
 				},
 			},
@@ -69,7 +69,7 @@ export const mainScreenTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -340,
 					followStrength: 15,
 				},
 			},
@@ -77,8 +77,8 @@ export const mainScreenTextGif = {
 				src: bleachGift3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 30,
 					followStrength: 15,
 				},
 			},
@@ -91,8 +91,8 @@ export const mainScreenTextGif = {
 				src: blackCloverGif1,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -150,
+					left: -100, 
 					followStrength: 15,
 				},
 			},
@@ -101,7 +101,7 @@ export const mainScreenTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -430,
 					followStrength: 15,
 				},
 			},
@@ -109,8 +109,8 @@ export const mainScreenTextGif = {
 				src: blackCloverGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 20,
 					followStrength: 15,
 				},
 			},
@@ -123,8 +123,8 @@ export const mainScreenTextGif = {
 				src: fateGif1,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -150,
+					left: -90, 
 					followStrength: 15,
 				},
 			},
@@ -141,8 +141,8 @@ export const mainScreenTextGif = {
 				src: fateGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 10,
 					followStrength: 15,
 				},
 			},
@@ -151,11 +151,11 @@ export const mainScreenTextGif = {
 	"Kuruko's Basketball": {
 		gifs: [
 			{
-				src: KurukoGif1,
+				src: KurukoGif3,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -155,
+					left: -100, 
 					followStrength: 15,
 				},
 			},
@@ -164,16 +164,16 @@ export const mainScreenTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -550,
 					followStrength: 15,
 				},
 			},
 			{
-				src: KurukoGif3,
+				src: KurukoGif1,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 10,
 					followStrength: 15,
 				},
 			},
@@ -182,20 +182,20 @@ export const mainScreenTextGif = {
 	"Sword Art Online": {
 		gifs: [
 			{
-				src: swordArtOnlineGif1,
+				src: swordArtOnlineGif2,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
-					left: -100, // relative to text center
+					top: -160,
+					left: -100, 
 					followStrength: 15,
 				},
 			},
 			{
-				src: swordArtOnlineGif2,
+				src: swordArtOnlineGif1,
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -500,
 					followStrength: 15,
 				},
 			},
@@ -203,8 +203,8 @@ export const mainScreenTextGif = {
 				src: swordArtOnlineGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 30,
 					followStrength: 15,
 				},
 			},
@@ -217,7 +217,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -140,
-					left: -100, // relative to text center
+					left: -100, 
 					followStrength: 15,
 				},
 			},
@@ -226,7 +226,7 @@ export const mainScreenTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -10,
-					left: -400,
+					left: -430,
 					followStrength: 15,
 				},
 			},
@@ -234,8 +234,8 @@ export const mainScreenTextGif = {
 				src: soloLevelingGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1, // positive means below text bottom
-					left: 0, // positive means right of text right
+					top: -1,
+					left: 0,
 					followStrength: 15,
 				},
 			},
