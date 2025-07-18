@@ -1,23 +1,16 @@
 import "../CSS/MainScreenText.css";
 import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/hoverGifs.jsx";
+import useMousePosition from "../Hooks/useMousePosition.jsx";
 
 function MainScreenText({ text, index }) {
 	const [isHovered, setIsHovered] = useState(false);
 	const [showTextAnimation, setShowTextAnimation] = useState(false);
 	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
-	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	const textRef = useRef(null);
 
-	const handleGifMouseMove = (e) => {
-		if (textRef.current) {
-			const rect = textRef.current.getBoundingClientRect();
-			// Calculate mouse position relative to text center (0,0 at center)
-			const x = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // Range -1 to 1
-			const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2; // Range -1 to 1
-			setMousePosition({ x, y });
-		}
-	};
+	const { mousePosition, handleGifMouseMove } = useMousePosition(textRef);
+
 	const textAnimationsClasses = [
 		"dragon-ball-text-animated",
 		"bleach-text-animated",
@@ -88,7 +81,13 @@ function MainScreenText({ text, index }) {
 			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>
 				{text.toUpperCase()}
 			</p>
-			<HoverGifs text={text} index={index} isActive={isHovered} textContainerRef={textRef} mousePosition={mousePosition}/>
+			<HoverGifs
+				text={text}
+				index={index}
+				isActive={isHovered}
+				textContainerRef={textRef}
+				mousePosition={mousePosition}
+			/>
 		</div>
 	);
 }
