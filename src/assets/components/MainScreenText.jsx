@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/hoverGifs.jsx";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
 
-function MainScreenText({ text, index }) {
+function MainScreenText({ text, index, onClick, isActive }) {
 	const [isHovered, setIsHovered] = useState(false);
 	const [showTextAnimation, setShowTextAnimation] = useState(false);
 	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
@@ -67,6 +67,13 @@ function MainScreenText({ text, index }) {
 		}
 	};
 
+	const handleClick = (e) => {
+		e.stopPropagation()
+		if(onClick){
+			onClick();
+		}
+	}
+
 	const textAnimation =
 		textAnimationsClasses[index % textAnimationsClasses.length];
 	return (
@@ -77,6 +84,7 @@ function MainScreenText({ text, index }) {
 			onMouseEnter={handleHoverOnText}
 			onMouseLeave={handleHoverLeave}
 			onMouseMove={handleGifMouseMove}
+			onClick={handleClick}
 		>
 			<p data-text={index === 5 ? "SWORD ART ONLINE " : undefined}>
 				{text.toUpperCase()}
