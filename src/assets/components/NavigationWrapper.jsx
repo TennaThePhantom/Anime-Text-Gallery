@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import MainScreenText from "./MainScreenText";
 import { SoloLevelingTextData, MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function NavigationWrapper() {
 	const [navigationStack, setNavigationStack] = useState([]);
@@ -52,7 +54,9 @@ function NavigationWrapper() {
 			return (
 				<div className={fadeState}>
 					{SoloLevelingTextData.map((name) => (
-						<p className="sub-text" key={name}>{name}</p>
+						<p className="sub-text" key={name}>
+							{name}
+						</p>
 					))}
 				</div>
 			);
@@ -63,12 +67,10 @@ function NavigationWrapper() {
 		<div className="navigation-manger">
 			{navigationStack.length > 0 && (
 				<div className="backButton" onClick={goBack}>
-					←
+					<FontAwesomeIcon icon={faArrowLeft} />{" "}
 				</div>
 			)}
-			<div className={`content-container ${fadeState}`}>
-				{renderText()}
-			</div>
+			<div className={`content-container ${fadeState}`}>{renderText()}</div>
 		</div>
 	);
 }
