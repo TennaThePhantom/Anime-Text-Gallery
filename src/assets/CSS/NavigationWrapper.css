@@ -3,22 +3,27 @@
 .sub-text{
     @apply text-5xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600;
 }
+.backButton{
+	@apply fixed left-1 top-1 p-1.5 rounded-full bg-white z-50 cursor-pointer;
+}
+.left-arrow-icon {
+	@apply text-3xl text-black transition-colors duration-300 ease-in-out;
+}
 
+.dark .backButton {
+	@apply dark:bg-gray-800;
+}
 
+.dark .left-arrow-icon {
+	@apply dark:text-gray-100;
+}
 .navigation-manager {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 
-.back-button {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	cursor: pointer;
-	font-size: 24px;
-	z-index: 10;
-}
+
 
 .content-container {
 	width: 100%;

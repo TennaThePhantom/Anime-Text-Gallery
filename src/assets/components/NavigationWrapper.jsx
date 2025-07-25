@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MainScreenText from "./MainScreenText";
 import { SoloLevelingTextData, MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
@@ -6,9 +6,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function NavigationWrapper() {
+	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
 	const [navigationStack, setNavigationStack] = useState([]);
 	const [fadeState, setFadeState] = useState("");
 	const [selectedIndex, setSelectedIndex] = useState(null);
+
+	// dark mode effect
+	useEffect(() => {
+		const checkUserDarkMode = () => {
+			setIsDarkMode(document.documentElement.classList.contains("dark"));
+		};
+		checkUserDarkMode();
+
+		const darkModeObserver = new MutationObserver(checkUserDarkMode);
+		darkModeObserver.observe(document.documentElement, { attributes: true });
+
+		return () => darkModeObserver.disconnect();
+	}, []);
 
 	const navigate = (newIndex) => {
 		setFadeState("fade-out");
@@ -66,8 +80,14 @@ function NavigationWrapper() {
 	return (
 		<div className="navigation-manger">
 			{navigationStack.length > 0 && (
-				<div className="backButton" onClick={goBack}>
-					<FontAwesomeIcon icon={faArrowLeft} />{" "}
+				<div
+					className={`backButton ${isDarkMode ? "dark" : ""} `}
+					onClick={goBack}
+				>
+					<FontAwesomeIcon
+						className={`left-arrow-icon ${isDarkMode ? "dark" : ""}`}
+						icon={faArrowLeft}
+					/>{" "}
 				</div>
 			)}
 			<div className={`content-container ${fadeState}`}>{renderText()}</div>
