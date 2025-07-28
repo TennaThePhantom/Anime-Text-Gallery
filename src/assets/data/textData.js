@@ -9,7 +9,8 @@ export const MainScreenTextData = [
 ];
 
 export const SoloLevelingTextData = [
-	"Sung Jin-woo"
+	"Sung Jin-woo",
+	"Cha Hae-in",
 ]
 
 export const KurukoBasketballTextData = {

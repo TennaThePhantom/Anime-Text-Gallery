@@ -1,15 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MainScreenText from "./MainScreenText";
 import { SoloLevelingTextData, MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import useMousePosition from "../Hooks/useMousePosition.jsx";
+import HoverGifs from "./hoverGifs.jsx";
 
 function NavigationWrapper() {
 	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
 	const [navigationStack, setNavigationStack] = useState([]);
 	const [fadeState, setFadeState] = useState("");
 	const [selectedIndex, setSelectedIndex] = useState(null);
+	const [isHovered, setIsHovered] = useState(false);
+	const textRef = useRef(null);
+
+	const { mousePosition, handleGifMouseMove } = useMousePosition(textRef);
+
+	const HandleGifHoverOnText = (index) => {
+		setIsHovered(index); // Activates the GIFS Immediately
+	};
+
+	const handleGifHoverLeaveOnText = () => {
+		setIsHovered(null); // Deactivates the GIFS Immediately
+	};
 
 	// dark mode effect
 	useEffect(() => {
@@ -66,11 +80,29 @@ function NavigationWrapper() {
 
 		if (currentText.type === "main" && currentText.text === "Solo Leveling") {
 			return (
-				<div className={fadeState}>
-					{SoloLevelingTextData.map((name) => (
-						<p className="sub-text" key={name}>
-							{name}
-						</p>
+				<div
+					className={fadeState}
+					ref={textRef}
+					onMouseLeave={handleGifHoverLeaveOnText}
+				>
+					{SoloLevelingTextData.map((text, index) => (
+						<div
+							className="sub-text-container"
+							key={text}
+							onMouseEnter={() => HandleGifHoverOnText(index)}
+							onMouseMove={handleGifMouseMove}
+						>
+							<p className="sub-text" key={text}>
+								{text}
+							</p>
+							<HoverGifs
+								text={text}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
+						</div>
 					))}
 				</div>
 			);

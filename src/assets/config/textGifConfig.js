@@ -242,3 +242,39 @@ export const mainScreenTextGif = {
 		],
 	},
 };
+
+
+export const soloLevelingTextGif = {
+	"Sung Jin-woo": {
+		gifs: [
+			{
+				src: soloLevelingGif1,
+				className: "gif-top",
+				basePosition: {
+					top: -140,
+					left: -100, 
+					followStrength: 15,
+				},
+			},
+			{
+				src: soloLevelingGif2,
+				className: "gif-left",
+				basePosition: {
+					top: -10,
+					left: -430,
+					followStrength: 15,
+				},
+			},
+			{
+				src: soloLevelingGif3,
+				className: "gif-right",
+				basePosition: {
+					top: -1,
+					left: 0,
+					followStrength: 15,
+				},
+			},
+		],
+	},
+
+}
