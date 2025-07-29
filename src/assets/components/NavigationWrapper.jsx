@@ -86,15 +86,13 @@ function NavigationWrapper() {
 					onMouseLeave={handleGifHoverLeaveOnText}
 				>
 					{SoloLevelingTextData.map((text, index) => (
-						<div
-							className="sub-text-container"
+						<p
+							className="sub-text"
 							key={text}
 							onMouseEnter={() => HandleGifHoverOnText(index)}
 							onMouseMove={handleGifMouseMove}
 						>
-							<p className="sub-text" key={text}>
-								{text}
-							</p>
+							{text}
 							<HoverGifs
 								text={text}
 								index={index}
@@ -102,7 +100,7 @@ function NavigationWrapper() {
 								textContainerRef={textRef}
 								mousePosition={mousePosition}
 							/>
-						</div>
+						</p>
 					))}
 				</div>
 			);
