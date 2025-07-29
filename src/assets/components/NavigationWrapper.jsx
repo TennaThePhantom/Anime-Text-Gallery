@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import MainScreenText from "./MainScreenText";
-import { SoloLevelingTextData, MainScreenTextData } from "../data/textData";
+import {
+	SoloLevelingTextData,
+	MainScreenTextData,
+	KurukoBasketballTextData,
+} from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -100,6 +104,86 @@ function NavigationWrapper() {
 								textContainerRef={textRef}
 								mousePosition={mousePosition}
 							/>
+						</p>
+					))}
+				</div>
+			);
+		}
+		if (
+			currentText.type === "main" &&
+			currentText.text === "Kuruko's Basketball"
+		) {
+			return (
+				<div className={fadeState}>
+					{Object.keys(KurukoBasketballTextData).map((category) => (
+						<p
+							key={category}
+							className="sub-text"
+							onClick={() => navigate({ type: "category", category, level: 1 })}
+						>
+							{category}
+						</p>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "category") {
+			const categoryData = KurukoBasketballTextData[currentText.category];
+
+			if (!categoryData) {
+				return <div className={fadeState}>No data found</div>;
+			}
+
+			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
+				return (
+					<div className={fadeState}>
+						{Object.keys(categoryData).map((subCategory) => (
+							<p
+								className="sub-text"
+								key={subCategory}
+								onClick={() =>
+									navigate({
+										type: "subcategory",
+										category: currentText.category,
+										subCategory,
+										level: 2,
+									})
+								}
+							>
+								{subCategory}
+							</p>
+						))}
+					</div>
+				);
+			} else {
+				return (
+					<div className={fadeState}>
+						{categoryData.map((text) => (
+							<p key={text} className="sub-text">
+								{text}
+							</p>
+						))}
+					</div>
+				);
+			}
+		}
+
+		if (currentText.type === "subcategory") {
+			const subCategoryData =
+				KurukoBasketballTextData[currentText.category]?.[
+					currentText.subCategory
+				];
+
+			if (!subCategoryData) {
+				return <div className={fadeState}>No subcategory data found</div>;
+			}
+
+			return (
+				<div className={fadeState}>
+					{subCategoryData.map((text) => (
+						<p key={text} className="sub-text">
+							{text}
 						</p>
 					))}
 				</div>
