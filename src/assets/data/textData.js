@@ -8,37 +8,34 @@ export const MainScreenTextData = [
 	"Solo Leveling",
 ];
 
-export const SoloLevelingTextData = [
-	"Sung Jin-woo",
-]
+export const SoloLevelingTextData = ["Sung Jin-woo"];
 
 export const KurukoBasketballTextData = {
-	"Seirin High": [
-		"Aido Riko",
-		"Hyuga Junpei",
-		"Izuki Shuun",
-		"Koganei Shinji",
-		"Mitobe	Rinnosuke",
-		"Furihata Kouki",
-	],
+	"Seirin High": {
+		"Coach": ["Aido Riko"],
+		"First Year": ["Furihata Kouki", "Fukuda Hiroshi", "Kawahara Kouichi"],
+		"Second Year": [
+			"Mitobe Rinnosuke",
+			"Hyuga Junpei",
+			"Tsuchida Satoshi",
+			"Koganei Shinji",
+			"Izuki Shuun",
+		],
+	},
 	"Generation of Miracles": [
 		"Kuroko Tetsuya",
 		"Aomine Daiki",
 		"Akashi Seijuuro",
 		"Midorima Shintarou",
 		"Murasakibara Atsushi",
-		"Kise Ryouta"
+		"Kise Ryouta",
 	],
 	"Uncrowned Kings": [
 		"Teppei Kiyoshi",
 		"Makoto Hanamiya",
 		"Reo Mibuchi",
 		"Kotaro Hayama",
-		"Eikichi Nebuya"
+		"Eikichi Nebuya",
 	],
-	"Americans": [
-		"Taiga Kagami",
-		"Tatsuya Himuro",
-		"Alexandra Garcia",
-	]
-}
+	"Americans": ["Taiga Kagami", "Tatsuya Himuro", "Alexandra Garcia"],
+};
