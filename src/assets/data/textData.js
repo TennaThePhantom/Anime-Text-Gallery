@@ -8,7 +8,7 @@ export const MainScreenTextData = [
 	"Solo Leveling",
 ];
 
-export const SoloLevelingTextData = ["Sung Jin-woo"];
+export const SoloLevelingTextData = ["Sung Jin-Woo"];
 
 export const KurukoBasketballTextData = {
 	"Seirin High": {

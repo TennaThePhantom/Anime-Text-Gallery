@@ -19,6 +19,10 @@ import swordArtOnlineGif3 from "../Images/Sword-Art-Online/swordArtOnline3.gif";
 import soloLevelingGif1 from "../Images/Solo-Leveling/solo1.gif";
 import soloLevelingGif2 from "../Images/Solo-Leveling/solo2.gif";
 import soloLevelingGif3 from "../Images/Solo-Leveling/solo3.gif";
+import sungJinWooGif1 from "../Images/Solo-Leveling/sung-jin-woo1.webp"
+import sungJinWooGif2 from "../Images/Solo-Leveling/sung-jin-woo2.gif"
+import sungJinWooGif3 from "../Images/Solo-Leveling/sung-jin-woo-3.gif"
+
 
 export const mainScreenTextGif = {
 	"Dragon Ball": {
@@ -245,13 +249,13 @@ export const mainScreenTextGif = {
 
 
 export const soloLevelingTextGif = {
-	"Sung Jin-woo": {
+	"Sung Jin-Woo": {
 		gifs: [
 			{
-				src: soloLevelingGif1,
+				src: sungJinWooGif1,
 				className: "gif-top",
 				basePosition: {
-					top: -140,
+					top: -160,
 					left: -100, 
 					followStrength: 15,
 				},
@@ -260,8 +264,8 @@ export const soloLevelingTextGif = {
 				src: soloLevelingGif2,
 				className: "gif-left",
 				basePosition: {
-					top: -10,
-					left: -430,
+					top: -50,
+					left: -390,
 					followStrength: 15,
 				},
 			},
@@ -269,11 +273,32 @@ export const soloLevelingTextGif = {
 				src: soloLevelingGif3,
 				className: "gif-right",
 				basePosition: {
-					top: -1,
-					left: 0,
+					top: -50,
+					left: 30,
 					followStrength: 15,
 				},
 			},
+
+			{
+				src: sungJinWooGif2,
+				className: "gif-right",
+				basePosition: {
+					top: 50,
+					left: -1,
+					followStrength: 15,
+				},
+			},
+
+			{
+				src: sungJinWooGif3,
+				className: "gif-left",
+				basePosition: {
+					top: 50,
+					left: -270,
+					followStrength: 15,
+				},
+			},
+			
 		],
 	},
 
