@@ -303,3 +303,38 @@ export const soloLevelingTextGif = {
 	},
 
 }
+
+
+export const kurukoBasketballTextGif = {
+	"Seirin High": {
+		gifs: [
+			{
+				src: KurukoGif3,
+				className: "gif-top",
+				basePosition: {
+					top: -155,
+					left: -100, 
+					followStrength: 15,
+				},
+			},
+			{
+				src: KurukoGif2,
+				className: "gif-left",
+				basePosition: {
+					top: -10,
+					left: -550,
+					followStrength: 15,
+				},
+			},
+			{
+				src: KurukoGif1,
+				className: "gif-right",
+				basePosition: {
+					top: -1,
+					left: 10,
+					followStrength: 15,
+				},
+			},
+		],
+	}
+}

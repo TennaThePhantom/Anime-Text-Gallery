@@ -9,7 +9,7 @@ import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
-import HoverGifs from "./hoverGifs.jsx";
+import HoverGifs from "./HoverGifs.jsx";
 
 function NavigationWrapper() {
 	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
@@ -114,14 +114,27 @@ function NavigationWrapper() {
 			currentText.text === "Kuruko's Basketball"
 		) {
 			return (
-				<div className={fadeState}>
-					{Object.keys(KurukoBasketballTextData).map((category) => (
+				<div
+					className={fadeState}
+					ref={textRef}
+					onMouseLeave={handleGifHoverLeaveOnText}
+				>
+					{Object.keys(KurukoBasketballTextData).map((category, index) => (
 						<p
 							key={category}
 							className="sub-text"
+							onMouseEnter={() => HandleGifHoverOnText(index)}
+							onMouseMove={handleGifMouseMove}
 							onClick={() => navigate({ type: "category", category, level: 1 })}
 						>
 							{category}
+							<HoverGifs
+								text={category}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
 						</p>
 					))}
 				</div>

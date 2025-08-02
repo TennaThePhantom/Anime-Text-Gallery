@@ -1,10 +1,20 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { mainScreenTextGif, soloLevelingTextGif } from "../config/textGifConfig";
+import {
+	mainScreenTextGif,
+	soloLevelingTextGif,
+	kurukoBasketballTextGif,
+} from "../config/textGifConfig";
 import "../CSS/HoverGifs.css";
 
 function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
-	const gifConfig = mainScreenTextGif[text] || mainScreenTextGif[index] || soloLevelingTextGif[text] || soloLevelingTextGif[index];
+	const gifConfig =
+		mainScreenTextGif[text] ||
+		mainScreenTextGif[index] ||
+		soloLevelingTextGif[text] ||
+		soloLevelingTextGif[index] ||
+		kurukoBasketballTextGif[text] ||
+		kurukoBasketballTextGif[index];
 
 	const getGiftPosition = (basePos) => {
 		if (!textContainerRef.current) return null;

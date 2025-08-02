@@ -1,6 +1,6 @@
 import "../CSS/MainScreenText.css";
 import React, { useEffect, useState, useRef } from "react";
-import HoverGifs from "../components/hoverGifs.jsx";
+import HoverGifs from "../components/HoverGifs.jsx";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
 
 function MainScreenText({ text, index, onClick, isActive }) {
