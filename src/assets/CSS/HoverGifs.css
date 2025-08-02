@@ -25,3 +25,8 @@ temporary css switched it to tailwind css later
 .gif-right {
 	transform-origin: top center;
 }
+
+.gif-right-smaller-text{
+	transform-origin: top center;
+	transform: translateX(-50%);
+}

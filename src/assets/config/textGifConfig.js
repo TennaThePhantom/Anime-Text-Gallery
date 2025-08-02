@@ -19,10 +19,18 @@ import swordArtOnlineGif3 from "../Images/Sword-Art-Online/swordArtOnline3.gif";
 import soloLevelingGif1 from "../Images/Solo-Leveling/solo1.gif";
 import soloLevelingGif2 from "../Images/Solo-Leveling/solo2.gif";
 import soloLevelingGif3 from "../Images/Solo-Leveling/solo3.gif";
-import sungJinWooGif1 from "../Images/Solo-Leveling/sung-jin-woo1.webp"
-import sungJinWooGif2 from "../Images/Solo-Leveling/sung-jin-woo2.gif"
-import sungJinWooGif3 from "../Images/Solo-Leveling/sung-jin-woo-3.gif"
-
+import sungJinWooGif1 from "../Images/Solo-Leveling/sung-jin-woo1.webp";
+import sungJinWooGif2 from "../Images/Solo-Leveling/sung-jin-woo2.gif";
+import sungJinWooGif3 from "../Images/Solo-Leveling/sung-jin-woo-3.gif";
+import jumpeiGif1 from "../Images/Kuruko's-Basketball/junpei1.gif";
+import mitobeGif1 from "../Images/Kuruko's-Basketball/mitobe1.gif";
+import rikoGif1 from "../Images/Kuruko's-Basketball/riko1.webp";
+import gomGif1 from "../Images/Kuruko's-Basketball/GOM1.webp";
+import gomGif2 from "../Images/Kuruko's-Basketball/GOM2.gif";
+import gomGif3 from "../Images/Kuruko's-Basketball/GOM3.webp";
+import teppeiGif1 from "../Images/Kuruko's-Basketball/teppei1.gif";
+import kotarouGif1 from "../Images/Kuruko's-Basketball/Kotarou.gif";
+import makotoGif1 from "../Images/Kuruko's-Basketball/Makoto1.gif";
 
 export const mainScreenTextGif = {
 	"Dragon Ball": {
@@ -50,21 +58,21 @@ export const mainScreenTextGif = {
 				className: "gif-right",
 				basePosition: {
 					top: -1,
-					left: 30, 
+					left: 30,
 					followStrength: 15,
 				},
 			},
 		],
 	},
 
-	"Bleach": {
+	Bleach: {
 		gifs: [
 			{
 				src: bleachGift1,
 				className: "gif-top",
 				basePosition: {
 					top: -150,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -96,7 +104,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -150,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -128,7 +136,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -150,
-					left: -90, 
+					left: -90,
 					followStrength: 15,
 				},
 			},
@@ -159,7 +167,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -155,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -190,7 +198,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -160,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -221,7 +229,7 @@ export const mainScreenTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -140,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -247,7 +255,6 @@ export const mainScreenTextGif = {
 	},
 };
 
-
 export const soloLevelingTextGif = {
 	"Sung Jin-Woo": {
 		gifs: [
@@ -256,7 +263,7 @@ export const soloLevelingTextGif = {
 				className: "gif-top",
 				basePosition: {
 					top: -160,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
@@ -298,43 +305,133 @@ export const soloLevelingTextGif = {
 					followStrength: 15,
 				},
 			},
-			
 		],
 	},
-
-}
-
+};
 
 export const kurukoBasketballTextGif = {
 	"Seirin High": {
 		gifs: [
 			{
-				src: KurukoGif3,
+				src: jumpeiGif1,
 				className: "gif-top",
 				basePosition: {
 					top: -155,
-					left: -100, 
+					left: -100,
 					followStrength: 15,
 				},
 			},
 			{
-				src: KurukoGif2,
+				src: mitobeGif1,
 				className: "gif-left",
 				basePosition: {
-					top: -10,
-					left: -550,
+					top: -1,
+					left: -360,
 					followStrength: 15,
 				},
 			},
 			{
-				src: KurukoGif1,
-				className: "gif-right",
+				src: rikoGif1,
+				className: "gif-right-smaller-text",
 				basePosition: {
 					top: -1,
-					left: 10,
+					left: 0.1,
 					followStrength: 15,
 				},
 			},
 		],
-	}
-}
+	},
+	"Generation of Miracles": {
+		gifs: [
+			{
+				src: gomGif1,
+				className: "gif-top",
+				basePosition: {
+					top: -155,
+					left: -100,
+					followStrength: 15,
+				},
+			},
+			{
+				src: gomGif2,
+				className: "gif-left",
+				basePosition: {
+					top: -1,
+					left: -360,
+					followStrength: 15,
+				},
+			},
+			{
+				src: gomGif3,
+				className: "gif-right-smaller-text",
+				basePosition: {
+					top: -1,
+					left: 0.1,
+					followStrength: 15,
+				},
+			},
+		],
+	},
+	"Uncrowned Kings": {
+		gifs: [
+			{
+				src: teppeiGif1,
+				className: "gif-top",
+				basePosition: {
+					top: -155,
+					left: -100,
+					followStrength: 15,
+				},
+			},
+			{
+				src: kotarouGif1,
+				className: "gif-left",
+				basePosition: {
+					top: -1,
+					left: -360,
+					followStrength: 15,
+				},
+			},
+			{
+				src: makotoGif1,
+				className: "gif-right-smaller-text",
+				basePosition: {
+					top: -1,
+					left: 0.1,
+					followStrength: 15,
+				},
+			},
+		],
+	},
+	"Americans": { //  temporary place holder gifs for now
+		gifs: [
+			{
+				src: teppeiGif1,
+				className: "gif-top",
+				basePosition: {
+					top: -155,
+					left: -100,
+					followStrength: 15,
+				},
+			},
+			{
+				src: kotarouGif1,
+				className: "gif-left",
+				basePosition: {
+					top: -1,
+					left: -360,
+					followStrength: 15,
+				},
+			},
+			{
+				src: makotoGif1,
+				className: "gif-right-smaller-text",
+				basePosition: {
+					top: -1,
+					left: 0.1,
+					followStrength: 15,
+				},
+			},
+		],
+	},
+};

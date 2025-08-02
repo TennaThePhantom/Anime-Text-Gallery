@@ -35,7 +35,7 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 				: textRect.left + textRect.width / 2 + left + mouseX * followStrength;
 
 		return {
-			position: "flex",
+			position: "absolute",
 			top: absoluteTop,
 			left: absoluteLeft,
 			zIndex: 10, // place holder for now

@@ -115,7 +115,7 @@ function NavigationWrapper() {
 		) {
 			return (
 				<div
-					className={fadeState}
+					className={`${fadeState} sub-text-container`}
 					ref={textRef}
 					onMouseLeave={handleGifHoverLeaveOnText}
 				>
