@@ -114,28 +114,31 @@ function NavigationWrapper() {
 			currentText.text === "Kuruko's Basketball"
 		) {
 			return (
-				<div
-					className={`${fadeState} sub-text-container`}
-					ref={textRef}
-					onMouseLeave={handleGifHoverLeaveOnText}
-				>
+				<div className={`${fadeState} sub-text-container`}>
 					{Object.keys(KurukoBasketballTextData).map((category, index) => (
-						<p
+						<div
+							ref={textRef}
+							onMouseLeave={handleGifHoverLeaveOnText}
 							key={category}
-							className="sub-text"
-							onMouseEnter={() => HandleGifHoverOnText(index)}
-							onMouseMove={handleGifMouseMove}
-							onClick={() => navigate({ type: "category", category, level: 1 })}
 						>
-							{category}
-							<HoverGifs
-								text={category}
-								index={index}
-								isActive={isHovered === index}
-								textContainerRef={textRef}
-								mousePosition={mousePosition}
-							/>
-						</p>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+								onClick={() =>
+									navigate({ type: "category", category, level: 1 })
+								}
+							>
+								{category}
+								<HoverGifs
+									text={category}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
+						</div>
 					))}
 				</div>
 			);
