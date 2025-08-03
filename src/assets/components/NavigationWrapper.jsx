@@ -217,7 +217,7 @@ function NavigationWrapper() {
 					/>{" "}
 				</div>
 			)}
-			<div className={`${fadeState}`}>{renderText()}</div>
+			<div className={`content-container ${fadeState}`}>{renderText()}</div>
 		</div>
 	);
 }
