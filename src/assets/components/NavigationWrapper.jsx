@@ -153,32 +153,56 @@ function NavigationWrapper() {
 
 			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
 				return (
-					<div className={fadeState}>
-						{Object.keys(categoryData).map((subCategory) => (
-							<p
-								className="sub-text"
+					<div className={`${fadeState}  sub-text-container`}>
+						{Object.keys(categoryData).map((subCategory, index) => (
+							<div
+								ref={textRef}
+								onMouseLeave={handleGifHoverLeaveOnText}
 								key={subCategory}
-								onClick={() =>
-									navigate({
-										type: "subcategory",
-										category: currentText.category,
-										subCategory,
-										level: 2,
-									})
-								}
 							>
-								{subCategory}
-							</p>
+								<p
+									className="sub-text"
+									key={subCategory}
+									onClick={() =>
+										navigate({
+											type: "subcategory",
+											category: currentText.category,
+											subCategory,
+											level: 2,
+										})
+									}
+								>
+									{subCategory}
+									<HoverGifs
+										text={subCategory}
+										index={index}
+										isActive={isHovered === index}
+										textContainerRef={textRef}
+										mousePosition={mousePosition}
+									/>
+								</p>
+							</div>
 						))}
 					</div>
 				);
 			} else {
 				return (
-					<div className={fadeState}>
-						{categoryData.map((text) => (
-							<p key={text} className="sub-text">
-								{text}
-							</p>
+					<div className={`${fadeState} sub-text-container`}>
+						{categoryData.map((text, index) => (
+							<div
+								ref={textRef}
+								onMouseLeave={handleGifHoverLeaveOnText}
+								key={text}
+							>
+								<p className="sub-text">{text}</p>
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</div>
 						))}
 					</div>
 				);
@@ -197,10 +221,23 @@ function NavigationWrapper() {
 
 			return (
 				<div className={fadeState}>
-					{subCategoryData.map((text) => (
-						<p key={text} className="sub-text">
-							{text}
-						</p>
+					{subCategoryData.map((text, index) => (
+						<div
+							ref={textRef}
+							onMouseLeave={handleGifHoverLeaveOnText}
+							key={text}
+						>
+							<p className="sub-text">
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
+						</div>
 					))}
 				</div>
 			);
