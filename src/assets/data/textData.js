@@ -12,7 +12,7 @@ export const SoloLevelingTextData = ["Sung Jin-Woo"];
 
 export const KurukoBasketballTextData = {
 	"Seirin High": {
-		Coach: ["Aido Riko"],
+		"Coach": ["Aido Riko"],
 		"First Year": ["Furihata Kouki", "Fukuda Hiroshi", "Kawahara Kouichi"],
 		"Second Year": [
 			"Mitobe Rinnosuke",
@@ -37,19 +37,67 @@ export const KurukoBasketballTextData = {
 		"Kotaro Hayama",
 		"Eikichi Nebuya",
 	],
-	Americans: ["Taiga Kagami", "Tatsuya Himuro", "Alexandra Garcia"],
+	"Americans": ["Taiga Kagami", "Tatsuya Himuro", "Alexandra Garcia"],
 };
 
 export const BleachTextData = {
 	"Gotei 13": {
-		"Old Gotei 13": {},
-		"Current Gotei 13": {},
+		"Old Gotei 13": {
+			"Gotei 1-6": [
+				"Shigekuni Yamamoto-Genryusai",
+				"Soi Fon",
+				"Gin Ichimaru",
+				"Retsu Unohana",
+				"Sousuke Aizen",
+				"Byakuya Kuchiki",
+			],
+			"Gotei 7-13": [
+				"Sajin Komamura",
+				"Shunsui Kyoraku",
+				"Kaname Tousen",
+				"Toushirou Hitsugaya",
+				"Kenpachi Zaraki",
+				"Mayuri Kurotsuchi",
+				"Juushiro Ukitake",
+			],
+		},
+		"Current Gotei 13": {
+			"Gotei 1-6": [
+				"Shunsui Kyoraku",
+				"Soi Fon",
+				"Roujuuro Otoribashi",
+				"Retsu Unohana",
+				"Shinji Hirako",
+				"Byakuya Kuchiki",
+			],
+			"Gotei 7-13": [
+				"Sajin Komamura",
+				"Lisa Yadoumaru",
+				"Kensei Muguruma",
+				"Toushirou Hitsugaya",
+				"Kenpachi Zaraki",
+				"Mayuri Kurotsuchi",
+				"Juushiro Ukitake",
+			],
+		},
 	},
-	Espapdes: {
-		Leaders: ["Sosuke Aizen", "gin Ichimaru", "Kaname Tosen"],
-		Members: {
-			"Espades 1-5": [],
-			"Espades 6-10": [],
+	"Espades": {
+		"Leaders": ["Sosuke Aizen", "gin Ichimaru", "Kaname Tosen"],
+		"Members": {
+			"Espades 1-5": [
+				"Coyote Starrk",
+				"Baraggan Louisenbairn",
+				"Tier Harribel",
+				"Ulquiorra Cifer",
+				"Nnoitra Gilga",
+			],
+			"Espades 6-10": [
+				"Grimmjow Jaegerjaquez",
+				"Zommari Rureaux",
+				"Szayelaporro Granz",
+				"Aaroniero Arruruerie",
+				"Yammy Llargo",
+			],
 		},
 	},
 	"The Visored": [
@@ -77,12 +125,20 @@ export const BleachTextData = {
 
 export const blackCloverTextData = {
 	"Black Bulls": {
-		Leaders: [],
-		Members: {
-			"1st class magic knights": [],
-			"3rd class magic knights": [],
-			"5th class magic knights": [],
-			"Other Members": [],
+		"Leaders": ["Yami Sukehiro", "Nachet Faust"],
+		"Members": {
+			"1st class magic knights": [
+				"Asta",
+				"Charmy",
+				"Gauche",
+				"Zora",
+				"Finral",
+				"Gordon",
+			],
+			"3rd class magic knights": ["Noelle Silva", "Vanessa", "Grey"],
+			"5th class magic knights": ["Magna", "Luck", "Henry"],
+			"Secre": "Demon",
+			"Liebe": "Demon",
 		},
 	},
 	"Squad Captains": {
@@ -100,57 +156,155 @@ export const blackCloverTextData = {
 			"Rill Boismortier",
 		],
 		"Sub-Previous Squad Captains": [
-			"Yuno Grinberryall",
+			"Yuno",
 			"Mereonleona Vermillion",
 			"Gueldre Poizot",
 		],
 	},
-	"Dark Triad": [],
-	"Eye of the Midnight Sun": [],
-	"Asta Companions": [],
+	"Dark Triad": ["Dante Zogratis", "Vanica Zogratis", "Zenon Zogratis"],
+	"Eye of the Midnight Sun": ["Patoil", "Rhya", "Vetto", "Fana"],
+	"Asta Comrades": [
+		"Yuno",
+		"Mimsosa Vermillion",
+		"Klaus Lunettes",
+		"Leopold Vermillion",
+	],
 	"Wizard Kings": {
 		"Julius Novachrono": "Current Wizard King",
-		"Previous Wizard Kings": [],
+		"Previous Wizard Kings": [
+			"Lemiel Silvamillion Clover",
+			"Princia Funnybunny",
+			"Jester Garandros",
+			"Edward Avalaché",
+			"Conrad Leto",
+		],
 	},
 };
 
 export const fateSeriesTextData = {
 	"Fate/Zero": {
-		Masters: [],
-		Servants: [],
-		"Other Characters": [],
+		"Masters": [
+			"Kiritsugu Emiya",
+			"Irisviel von Einzbern",
+			"Tokiomi Tohsaka",
+			"Kirei Kotomine",
+			"Waver Velvet",
+			"Kayneth Archibald",
+			"Kariya Matou",
+		],
+		"Servants": [
+			"Saber",
+			"Archer",
+			"Lancer",
+			"Rider",
+			"Caster",
+			"Assassin",
+			"Berserker",
+		],
 	},
 	"Fate/Stay Night: Unlimited Blade Works": {
-		Masters: [],
-		Servants: [],
-		"Other Characters": [],
+		"Masters": [
+			"Emiya Shirou",
+			"Rin Tohsaka",
+			"Shinji Matou",
+			"Illyasviel von Einzbern",
+			"Soichiro Kuzuki",
+			"Kirei Kotomine",
+		],
+		"Servants": ["Saber", "Archer", "Lancer", "Rider", "Caster", "Berserker"],
 	},
 	"Fate/Stay Night: Heaven's Feel": {
-		Masters: [],
-		Servants: [],
-		"Other Characters": [],
+		"Masters": [
+			"Emiya Shirou",
+			"Sakura Matou",
+			"Rin Tohsaka",
+			"Kirei Kotomine",
+			"Illyasviel Von Einzbern",
+			"Zouken Matou",
+			"Atrum Galliasta",
+		],
+		"Servants": [
+			"Saber",
+			"Archer",
+			"Lancer",
+			"Rider",
+			"Caster",
+			"Assassin",
+			"Berserker",
+		],
 	},
-	"Fate/Grand Order Absolute Demonic Front: Babylonia": {
-		Masters: [],
-		Servants: [],
-		"Other Characters": [],
-	},
+	"Fate/Grand Order Absolute Demonic Front: Babylonia": [
+		"Ritsuka Fijimaru",
+		"Mash Kyrielight",
+		"Ishtar",
+		"Merlin",
+		"Medusa",
+		"Gilgamesh",
+		"Quetzalcoatl",
+		"Jaguar Warrior",
+	],
 };
 
 export const SwordArtOnlineTextData = {
 	"Kirigaya Kazuto": "Main Protagonist",
 	"Yuuki Asuna": "Kirigaya Partner",
-	"Kirigaya Friends": []
-}
+	"Kirigaya Friends": [
+		"Yuuki",
+		"Silica",
+		"Lisbeth",
+		"Agil",
+		"Klein",
+		"Sinon",
+		"Alice",
+		"Eugeo",
+	],
+};
 
 export const DragonBallTextData = {
-	"Z Fighters": [],
-	"Villains": [],
-	"Movie Villains": [],
-	"Fusions": [],
-	"Saiyans": [],
-	"Secondary Characters": [],
-
-
-
-}
+	"Z Fighters": [
+		"Goku",
+		"Vegeta",
+		"Piccolo",
+		"Gohan",
+		"Krillin",
+		"Tien Shinhan",
+		"Yamcha",
+		"Trunks",
+	],
+	"Villains": [
+		"Frieza",
+		"Cell",
+		"Majin Buu",
+		"Goku Black",
+		"Doctor Gero",
+		"Nappa",
+	],
+	"Movie Villains": [
+		"Turles",
+		"Cooler",
+		"Janemba",
+		"Android 13",
+		"Bojack",
+		"Broly(Z)",
+	],
+	"Fusions": ["Gogeta", "Vegito", "Kefla"],
+	"Saiyans": [
+		"Goten",
+		"Kid Trucks",
+		"Broly(Super)",
+		"Bardock",
+		"Raditz",
+		"Kale",
+		"Caulifla",
+		"Cabba",
+	],
+	"Secondary Characters": [
+		"King Kai",
+		"Master Roshi",
+		"Bulma",
+		"Chi-Chi",
+		"Berrus&Whis",
+		"Android 18",
+		"Android 17",
+	],
+};
