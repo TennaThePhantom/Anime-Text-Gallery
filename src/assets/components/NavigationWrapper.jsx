@@ -6,6 +6,7 @@ import {
 	KurukoBasketballTextData,
 	DragonBallTextData,
 	SwordArtOnlineTextData,
+	fateSeriesTextData,
 } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -315,6 +316,84 @@ function NavigationWrapper() {
 				<div className={`${fadeState} sub-text-container`}>
 					{categoryData.map((text, index) => (
 						<div key={text}>
+							<p className="sub-text">{text}</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "main" && currentText.text === "Fate Series") {
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{Object.keys(fateSeriesTextData).map((category, index) => (
+						<div key={index}>
+							<p
+								className="sub-text"
+								onClick={() =>
+									navigate({ type: "FateCategory", category, level: 1 })
+								}
+							>
+								{category}
+							</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "FateCategory") {
+			const categoryData = fateSeriesTextData[currentText.category];
+
+			if (!categoryData) {
+				return <div className={fadeState}>No data found</div>;
+			}
+
+			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{Object.keys(categoryData).map((subCategory, index) => (
+							<div key={index}>
+								<p
+									className="sub-text"
+									onClick={() =>
+										navigate({
+											type: "FateSubCategory",
+											category: currentText.category,
+											subCategory,
+											level: 2,
+										})
+									}
+								>
+									{subCategory}
+								</p>
+							</div>
+						))}
+					</div>
+				);
+			} else {
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{categoryData.map((text, index) => (
+							<div key={index}>
+								<p className="sub-text">{text}</p>
+							</div>
+						))}
+					</div>
+				);
+			}
+		}
+		if (currentText.type === "FateSubCategory") {
+			const subCategoryData =
+				fateSeriesTextData[currentText.category]?.[currentText.subCategory];
+
+			if (!subCategoryData) {
+				return <div className={fadeState}>No subcategory data found</div>;
+			}
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{subCategoryData.map((text, index) => (
+						<div key={index}>
 							<p className="sub-text">{text}</p>
 						</div>
 					))}
