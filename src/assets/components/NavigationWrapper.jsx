@@ -4,6 +4,7 @@ import {
 	SoloLevelingTextData,
 	MainScreenTextData,
 	KurukoBasketballTextData,
+	DragonBallTextData,
 } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -237,6 +238,41 @@ function NavigationWrapper() {
 									mousePosition={mousePosition}
 								/>
 							</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "main" && currentText.text === "Dragon Ball") {
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{Object.keys(DragonBallTextData).map((category, index) => (
+						<div key={category}>
+							<p
+								className="sub-text"
+								onClick={() =>
+									navigate({ type: "dragonBallCategory", category, level: 1 })
+								}
+							>
+								{category}
+							</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+		if (currentText.type === "dragonBallCategory") {
+			const categoryData = DragonBallTextData[currentText.category];
+
+			if (!categoryData) {
+				return <div className={fadeState}>No data found</div>;
+			}
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{categoryData.map((text, index) => (
+						<div key={text}>
+							<p className="sub-text">{text}</p>
 						</div>
 					))}
 				</div>
