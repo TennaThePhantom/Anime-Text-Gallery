@@ -5,6 +5,7 @@ import {
 	MainScreenTextData,
 	KurukoBasketballTextData,
 	DragonBallTextData,
+	SwordArtOnlineTextData,
 } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -268,6 +269,48 @@ function NavigationWrapper() {
 			if (!categoryData) {
 				return <div className={fadeState}>No data found</div>;
 			}
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{categoryData.map((text, index) => (
+						<div key={text}>
+							<p className="sub-text">{text}</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (
+			currentText.type === "main" &&
+			currentText.text === "Sword Art Online"
+		) {
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{Object.keys(SwordArtOnlineTextData).map((category, index) => (
+						<div key={index}>
+							<p
+								className="sub-text"
+								onClick={() => {
+									if (category === "Kirigaya Friends") {
+										navigate({ type: "saoFriends", category, level: 1 });
+									}
+								}}
+							>
+								{category}
+							</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "saoFriends") {
+			const categoryData = SwordArtOnlineTextData[currentText.category];
+
+			if (!categoryData) {
+				return <div className={fadeState}>No data found</div>;
+			}
+
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{categoryData.map((text, index) => (
