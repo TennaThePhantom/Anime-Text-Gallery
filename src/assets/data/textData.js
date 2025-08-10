@@ -110,7 +110,7 @@ export const BleachTextData = {
 		"Hachigen Ushōda",
 		"Lisa Yadōmaru",
 	],
-	"The Royal Guard": [],
+	"The Royal Guard": ["Ichibe Hyosube", "Tenjiro Kirinji", "Kirio Hikifune", "Oetsu Nimaiya", "Senjumaru Shutara"],
 	"Main Characters": [
 		"Ichigo Kurosaki",
 		"Rukia Kuchiki",
