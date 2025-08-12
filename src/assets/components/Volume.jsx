@@ -76,6 +76,10 @@ function Volume() {
 	};
 
 	const toggleVolumeSlider = (event) => {
+		if (!event) {
+			setShowVolumeSlider(true);
+			return;
+		}
 		// Toggle slider visibility only if clicking the icon (not the slider)
 		if (
 			!sliderTimeoutRef.current
