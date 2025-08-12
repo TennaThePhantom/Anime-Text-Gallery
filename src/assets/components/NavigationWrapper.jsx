@@ -8,6 +8,7 @@ import {
 	SwordArtOnlineTextData,
 	fateSeriesTextData,
 	BleachTextData,
+	blackCloverTextData,
 } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -524,9 +525,165 @@ function NavigationWrapper() {
 				<div className={`${fadeState} sub-text-container`}>
 					{thirdCategoryData.map((text, index) => (
 						<div key={index}>
-							<p className="sub-text">
-								{text}
+							<p className="sub-text">{text}</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "main" && currentText.text === "Black Clover") {
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{Object.keys(blackCloverTextData).map((category) => (
+						<div key={category}>
+							<p
+								className="sub-text"
+								onClick={() =>
+									navigate({ type: "blackCloverCategory", category, level: 1 })
+								}
+							>
+								{category}
 							</p>
+						</div>
+					))}
+				</div>
+			);
+		}
+
+		if (currentText.type === "blackCloverCategory") {
+			const categoryData = blackCloverTextData[currentText.category];
+
+			if (!categoryData) {
+				return <div className={fadeState}>No data found</div>;
+			}
+
+			if (Array.isArray(categoryData)) {
+				// Handle simple arrays (Dark Triad, Eye of the Midnight Sun, Asta Comrades)
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{categoryData.map((text) => (
+							<div key={text}>
+								<p className="sub-text">{text}</p>
+							</div>
+						))}
+					</div>
+				);
+			} else {
+				// Handle nested objects (Black Bulls, Squad Captains, Wizard Kings)
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{Object.keys(categoryData).map((key) => {
+							// Handle non-clickable items (Secre, Liebe, Julius)
+							if (
+								currentText.category === "Wizard Kings" &&
+								key === "Julius Novachrono"
+							) {
+								return (
+									<div key={key}>
+										<p className="sub-text">{key}</p>
+									</div>
+								);
+							}
+
+							// Default clickable behavior for other items
+							return (
+								<div key={key}>
+									<p
+										className="sub-text"
+										onClick={() => {
+											const value = categoryData[key];
+											if (Array.isArray(value) || typeof value === "object") {
+												navigate({
+													type: "blackCloverSubCategory",
+													category: currentText.category,
+													subCategory: key,
+													level: 2,
+												});
+											}
+										}}
+									>
+										{key}
+									</p>
+								</div>
+							);
+						})}
+					</div>
+				);
+			}
+		}
+
+		if (currentText.type === "blackCloverSubCategory") {
+			const subCategoryData =
+				blackCloverTextData[currentText.category]?.[currentText.subCategory];
+
+			if (!subCategoryData) {
+				return <div className={fadeState}>No subcategory data found</div>;
+			}
+
+			if (Array.isArray(subCategoryData)) {
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{subCategoryData.map((text) => (
+							<div key={text}>
+								<p className="sub-text">{text}</p>
+							</div>
+						))}
+					</div>
+				);
+			} else {
+				return (
+					<div className={`${fadeState} sub-text-container`}>
+						{Object.keys(subCategoryData).map((group) => {
+							if (
+								currentText.subCategory === "Members" &&
+								["Secre", "Liebe"].includes(group)
+							) {
+								return (
+									<div key={group}>
+										<p className="sub-text">{group}</p>
+									</div>
+								);
+							}
+							return (
+								<div key={group}>
+									<p
+										className="sub-text"
+										onClick={() =>
+											navigate({
+												type: "blackCloverGroup",
+												category: currentText.category,
+												subCategory: currentText.subCategory,
+												group,
+												level: 3,
+											})
+										}
+									>
+										{group}
+									</p>
+								</div>
+							);
+						})}
+					</div>
+				);
+			}
+		}
+
+		if (currentText.type === "blackCloverGroup") {
+			const groupData =
+				blackCloverTextData[currentText.category]?.[currentText.subCategory]?.[
+					currentText.group
+				];
+
+			if (!groupData) {
+				return <div className={fadeState}>No group data found</div>;
+			}
+
+			return (
+				<div className={`${fadeState} sub-text-container`}>
+					{groupData.map((text) => (
+						<div key={text}>
+							<p className="sub-text">{text}</p>
 						</div>
 					))}
 				</div>
