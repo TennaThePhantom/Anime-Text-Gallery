@@ -1,18 +1,9 @@
-/*
-temporary css switched it to tailwind css later
-*/
+
+@reference "tailwindcss";
 
 .hover-gif {
-	position: fixed;
-	width: 200px;
-	height: 145px;
-	pointer-events: none;
-	z-index: 5;
-	transform-origin: center;
-	filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
-	border-radius: 8px;
+	@apply absolute w-[200px] h-[145px] pointer-events-none z-[5] origin-center drop-shadow-[0_5px_15px_rgba(0,0,0,0.3)] rounded-lg;
 }
-
 
 .gif-top {
 	transform-origin: bottom center;
@@ -26,7 +17,7 @@ temporary css switched it to tailwind css later
 	transform-origin: top center;
 }
 
-.gif-right-smaller-text{
+.gif-right-smaller-text {
 	transform-origin: top center;
 	transform: translateX(-50%);
 }

@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
-.sub-text{
-    @apply text-5xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600 w-fit;
+.sub-text {
+	@apply text-5xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600 w-fit;
 }
-.sub-text-container{
-	@apply flex flex-col items-center
+.sub-text-container {
+	@apply flex flex-col items-center;
 }
-.backButton{
+.backButton {
 	@apply fixed left-1 top-1 p-1.5 rounded-full bg-white z-50 cursor-pointer;
 }
 .left-arrow-icon {
@@ -21,20 +21,11 @@
 	@apply dark:text-gray-100;
 }
 .navigation-manager {
-	position: relative;
-	width: 100%;
-	height: 100%;
+	@apply relative w-full h-full;
 }
 
-
-
 .content-container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@apply w-full h-full flex flex-col items-center justify-center;
 }
 
 .fade-out {
