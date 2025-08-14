@@ -114,7 +114,6 @@ export const BleachTextData = {
 	"Main Characters": [
 		"Ichigo Kurosaki",
 		"Rukia Kuchiki",
-		"Renji Abarai",
 		"Orihime Inoue",
 		"Uryu Ishida",
 		"Yasutora Sado",
