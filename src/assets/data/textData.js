@@ -181,37 +181,6 @@ export const blackCloverTextData = {
 };
 
 export const fateSeriesTextData = {
-	"Fate/Zero": {
-		"Masters": [
-			"Kiritsugu Emiya",
-			"Irisviel von Einzbern",
-			"Tokiomi Tohsaka",
-			"Kirei Kotomine",
-			"Waver Velvet",
-			"Kayneth Archibald",
-			"Kariya Matou",
-		],
-		"Servants": [
-			"Saber",
-			"Archer",
-			"Lancer",
-			"Rider",
-			"Caster",
-			"Assassin",
-			"Berserker",
-		],
-	},
-	"Fate/Stay Night: Unlimited Blade Works": {
-		"Masters": [
-			"Emiya Shirou",
-			"Rin Tohsaka",
-			"Shinji Matou",
-			"Illyasviel von Einzbern",
-			"Soichiro Kuzuki",
-			"Kirei Kotomine",
-		],
-		"Servants": ["Saber", "Archer", "Lancer", "Rider", "Caster", "Berserker"],
-	},
 	"Fate/Stay Night: Heaven's Feel": {
 		"Masters": [
 			"Emiya Shirou",
@@ -219,8 +188,6 @@ export const fateSeriesTextData = {
 			"Rin Tohsaka",
 			"Kirei Kotomine",
 			"Illyasviel Von Einzbern",
-			"Zouken Matou",
-			"Atrum Galliasta",
 		],
 		"Servants": [
 			"Saber",
@@ -240,7 +207,6 @@ export const fateSeriesTextData = {
 		"Medusa",
 		"Gilgamesh",
 		"Quetzalcoatl",
-		"Jaguar Warrior",
 	],
 };
 
