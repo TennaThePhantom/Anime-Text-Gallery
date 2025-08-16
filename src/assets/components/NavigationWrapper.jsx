@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import MainScreenText from "./MainScreenText";
+import KurokoBasketBallText from "./KurokoBasketballText.jsx";
 import {
 	SoloLevelingTextData,
 	MainScreenTextData,
@@ -119,132 +120,30 @@ function NavigationWrapper() {
 			currentText.text === "Kuruko's Basketball"
 		) {
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(KurukoBasketballTextData).map((category, index) => (
-						<div
-							ref={textRef}
-							onMouseLeave={handleGifHoverLeaveOnText}
-							key={category}
-						>
-							<p
-								className="sub-text"
-								onMouseEnter={() => HandleGifHoverOnText(index)}
-								onMouseMove={handleGifMouseMove}
-								onClick={() =>
-									navigate({ type: "category", category, level: 1 })
-								}
-							>
-								{category}
-								<HoverGifs
-									text={category}
-									index={index}
-									isActive={isHovered === index}
-									textContainerRef={textRef}
-									mousePosition={mousePosition}
-								/>
-							</p>
-						</div>
-					))}
-				</div>
+				<KurokoBasketBallText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
+			);
+		}
+		if (currentText.type === "kurokoCategory") {
+			return (
+				<KurokoBasketBallText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
-		if (currentText.type === "category") {
-			const categoryData = KurukoBasketballTextData[currentText.category];
-
-			if (!categoryData) {
-				return <div className={fadeState}>No data found</div>;
-			}
-
-			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
-				return (
-					<div className={`${fadeState}  sub-text-container`}>
-						{Object.keys(categoryData).map((subCategory, index) => (
-							<div
-								ref={textRef}
-								onMouseLeave={handleGifHoverLeaveOnText}
-								key={subCategory}
-							>
-								<p
-									className="sub-text"
-									key={subCategory}
-									onClick={() =>
-										navigate({
-											type: "subcategory",
-											category: currentText.category,
-											subCategory,
-											level: 2,
-										})
-									}
-								>
-									{subCategory}
-									<HoverGifs
-										text={subCategory}
-										index={index}
-										isActive={isHovered === index}
-										textContainerRef={textRef}
-										mousePosition={mousePosition}
-									/>
-								</p>
-							</div>
-						))}
-					</div>
-				);
-			} else {
-				return (
-					<div className={`${fadeState} sub-text-container`}>
-						{categoryData.map((text, index) => (
-							<div
-								ref={textRef}
-								onMouseLeave={handleGifHoverLeaveOnText}
-								key={text}
-							>
-								<p className="sub-text">{text}</p>
-								<HoverGifs
-									text={text}
-									index={index}
-									isActive={isHovered === index}
-									textContainerRef={textRef}
-									mousePosition={mousePosition}
-								/>
-							</div>
-						))}
-					</div>
-				);
-			}
-		}
-
-		if (currentText.type === "subcategory") {
-			const subCategoryData =
-				KurukoBasketballTextData[currentText.category]?.[
-					currentText.subCategory
-				];
-
-			if (!subCategoryData) {
-				return <div className={fadeState}>No subcategory data found</div>;
-			}
-
+		if (currentText.type === "kurokoSubCategory") {
 			return (
-				<div className={fadeState}>
-					{subCategoryData.map((text, index) => (
-						<div
-							ref={textRef}
-							onMouseLeave={handleGifHoverLeaveOnText}
-							key={text}
-						>
-							<p className="sub-text">
-								{text}
-								<HoverGifs
-									text={text}
-									index={index}
-									isActive={isHovered === index}
-									textContainerRef={textRef}
-									mousePosition={mousePosition}
-								/>
-							</p>
-						</div>
-					))}
-				</div>
+				<KurokoBasketBallText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
