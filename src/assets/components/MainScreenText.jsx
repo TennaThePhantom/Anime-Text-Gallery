@@ -2,8 +2,11 @@ import "../CSS/MainScreenText.css";
 import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/HoverGifs.jsx";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
+import { useAudio } from "../Hooks/useAudio";
 
 function MainScreenText({ text, index, onClick, isActive }) {
+	const { playAudioByIndex } = useAudio();
+
 	const [isHovered, setIsHovered] = useState(false);
 	const [showTextAnimation, setShowTextAnimation] = useState(false);
 	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
@@ -68,11 +71,13 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	};
 
 	const handleClick = (e) => {
-		e.stopPropagation()
-		if(onClick){
+		e.stopPropagation();
+		playAudioByIndex(index);
+
+		if (onClick) {
 			onClick();
 		}
-	}
+	};
 
 	const textAnimation =
 		textAnimationsClasses[index % textAnimationsClasses.length];

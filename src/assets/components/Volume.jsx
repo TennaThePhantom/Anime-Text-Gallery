@@ -4,12 +4,13 @@ import { ImVolumeLow } from "react-icons/im";
 import { ImVolumeMute } from "react-icons/im"; // volume is basically at 1-3 not muted
 import { ImVolumeMute2 } from "react-icons/im";
 import { useState, useEffect, useRef } from "react";
+import { useAudio } from "../Hooks/useAudio";
+
 import "../CSS/Volume.css";
 
 function Volume() {
 	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
-	const [volume, setVolume] = useState(100);
-	const [isMuted, setIsMuted] = useState(false);
+	const { volume, setVolume, isMuted, setIsMuted } = useAudio();
 	const [showVolumeSlider, setShowVolumeSlider] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 	const sliderTimeoutRef = useRef(null);
