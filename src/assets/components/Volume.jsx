@@ -7,14 +7,15 @@ import { useState, useEffect, useRef } from "react";
 import { useAudio } from "../Hooks/useAudio";
 
 import "../CSS/Volume.css";
-
 function Volume() {
-	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
-	const { volume, setVolume, isMuted, setIsMuted } = useAudio();
+	const [isDarkMode, setIsDarkMode] = useState(false);
+	const { volume, setVolume, isMuted, setIsMuted , playSoloLevelingMusic} =
+		useAudio();
 	const [showVolumeSlider, setShowVolumeSlider] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
 	const sliderTimeoutRef = useRef(null);
 	const timeoutRef = useRef(null);
+	const prevVolumeRef = useRef(volume);
 
 	useEffect(() => {
 		const checkUserDarkMode = () => {
@@ -67,7 +68,7 @@ function Volume() {
 	const handleVolumeChange = (event) => {
 		// updates the volume state and checks if the volume is muted
 		const newVolume = parseInt(event.target.value);
-		setVolume(newVolume);
+		setVolume(newVolume / 100);
 		setIsMuted(newVolume === 0);
 
 		// reset the timeout when the user changes the volume in the slider
@@ -94,27 +95,29 @@ function Volume() {
 	// handles the volume mute toggle
 	const toggleVolumeMuted = () => {
 		if (!isMuted) {
+			prevVolumeRef.current = volume; // Store current volume before muting
 			setIsMuted(true);
 		} else {
 			setIsMuted(false);
-			setVolume(volume === 0 ? 50 : volume); // sets the volume to 50 if it was muted
+			setVolume(prevVolumeRef.current); // Restore pre-mute volume
 		}
 	};
 	// toggles the volume icon and sets the volume to 0 if muted
 	const displayVolumeIcon = () => {
-		if (isMuted || volume === 0) {
+		const volumePercent = volume * 100;
+		if (isMuted || volumePercent === 0) {
 			return (
 				<ImVolumeMute2 className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
 			);
-		} else if (volume > 0 && volume <= 5) {
+		} else if (volumePercent > 0 && volumePercent <= 5) {
 			return (
 				<ImVolumeMute className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
 			);
-		} else if (volume > 5 && volume <= 30) {
+		} else if (volumePercent > 5 && volumePercent <= 30) {
 			return (
 				<ImVolumeLow className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
 			);
-		} else if (volume > 30 && volume <= 70) {
+		} else if (volumePercent > 30 && volumePercent <= 70) {
 			return (
 				<ImVolumeMedium className={`volume-icon ${isDarkMode ? "dark" : ""}`} />
 			);
@@ -154,13 +157,13 @@ function Volume() {
 							type="range"
 							min={0}
 							max={100}
-							value={isMuted ? 0 : volume}
+							value={isMuted ? 0 : volume * 100}
 							onChange={handleVolumeChange}
 							className="volume-slider"
 							style={{
 								background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${
-									isMuted ? 0 : volume
-								}%, #e5e7eb ${isMuted ? 0 : volume}%, #e5e7eb 100%)`,
+									isMuted ? 0 : volume * 100
+								}%, #e5e7eb ${isMuted ? 0 : volume * 100}%, #e5e7eb 100%)`,
 							}}
 						/>
 					</div>

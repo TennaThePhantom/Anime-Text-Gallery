@@ -1,6 +1,6 @@
 import "./App.css";
 import DarkLightMode from "./assets/components/DarkLightMode.jsx";
-import Volume from "./assets/components/volume.jsx";
+import Volume from "./assets/components/Volume.jsx";
 import NavigationWrapper from "./assets/components/NavigationWrapper.jsx";
 
 
