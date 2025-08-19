@@ -5,6 +5,7 @@ import BleachText from "./BleachText.jsx";
 import DragonBallText from "./DragonBallText.jsx";
 import BlackCloverText from "./BlackCloverText.jsx";
 import FateSeriesText from "./FateSeriesText.jsx";
+import SwordArtOnlineText from "./SwordArtOnlineText.jsx";
 import {
 	SoloLevelingTextData,
 	MainScreenTextData,
@@ -175,40 +176,21 @@ function NavigationWrapper() {
 			currentText.text === "Sword Art Online"
 		) {
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(SwordArtOnlineTextData).map((category, index) => (
-						<div key={index}>
-							<p
-								className="sub-text"
-								onClick={() => {
-									if (category === "Kirigaya Friends") {
-										navigate({ type: "saoFriends", category, level: 1 });
-									}
-								}}
-							>
-								{category}
-							</p>
-						</div>
-					))}
-				</div>
+				<SwordArtOnlineText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
 		if (currentText.type === "saoFriends") {
-			const categoryData = SwordArtOnlineTextData[currentText.category];
-
-			if (!categoryData) {
-				return <div className={fadeState}>No data found</div>;
-			}
-
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{categoryData.map((text, index) => (
-						<div key={text}>
-							<p className="sub-text">{text}</p>
-						</div>
-					))}
-				</div>
+				<SwordArtOnlineText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
