@@ -4,6 +4,7 @@ import KurokoBasketBallText from "./KurokoBasketballText.jsx";
 import BleachText from "./BleachText.jsx";
 import DragonBallText from "./DragonBallText.jsx";
 import BlackCloverText from "./BlackCloverText.jsx";
+import FateSeriesText from "./FateSeriesText.jsx";
 import {
 	SoloLevelingTextData,
 	MainScreenTextData,
@@ -213,79 +214,30 @@ function NavigationWrapper() {
 
 		if (currentText.type === "main" && currentText.text === "Fate Series") {
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(fateSeriesTextData).map((category, index) => (
-						<div key={index}>
-							<p
-								className="sub-text"
-								onClick={() =>
-									navigate({ type: "FateCategory", category, level: 1 })
-								}
-							>
-								{category}
-							</p>
-						</div>
-					))}
-				</div>
+				<FateSeriesText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
 		if (currentText.type === "FateCategory") {
-			const categoryData = fateSeriesTextData[currentText.category];
-
-			if (!categoryData) {
-				return <div className={fadeState}>No data found</div>;
-			}
-
-			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
-				return (
-					<div className={`${fadeState} sub-text-container`}>
-						{Object.keys(categoryData).map((subCategory, index) => (
-							<div key={index}>
-								<p
-									className="sub-text"
-									onClick={() =>
-										navigate({
-											type: "FateSubCategory",
-											category: currentText.category,
-											subCategory,
-											level: 2,
-										})
-									}
-								>
-									{subCategory}
-								</p>
-							</div>
-						))}
-					</div>
-				);
-			} else {
-				return (
-					<div className={`${fadeState} sub-text-container`}>
-						{categoryData.map((text, index) => (
-							<div key={index}>
-								<p className="sub-text">{text}</p>
-							</div>
-						))}
-					</div>
-				);
-			}
+			return (
+				<FateSeriesText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
+			);
 		}
 		if (currentText.type === "FateSubCategory") {
-			const subCategoryData =
-				fateSeriesTextData[currentText.category]?.[currentText.subCategory];
-
-			if (!subCategoryData) {
-				return <div className={fadeState}>No subcategory data found</div>;
-			}
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{subCategoryData.map((text, index) => (
-						<div key={index}>
-							<p className="sub-text">{text}</p>
-						</div>
-					))}
-				</div>
+				<FateSeriesText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
