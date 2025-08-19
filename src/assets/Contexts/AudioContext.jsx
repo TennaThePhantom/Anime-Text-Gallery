@@ -1,0 +1,68 @@
+import { createContext, useContext, useState, useEffect, useRef } from "react";
+
+const AudioContext = createContext();
+
+export function AudioProvider({ children }) {
+	const [volume, setVolume] = useState(1.0);
+	const [isMuted, setIsMuted] = useState(false);
+	const [currentTrackIndex, setCurrentTrackIndex] = useState(null);
+	const audioRef = useRef(null);
+
+	// Audio files in public/audio folder
+	const audioFiles = [
+		"/Music/DragonBallMusic1.mp3",
+		"/Music/BleachMusic2.mp3",
+		"/Music/BlackCloverMusic1.mp3",
+		"/Music/FateMusic1.mp3",
+		"/Music/KurokoMusic1.mp3",
+		"/Music/SwordArtOnlineMusic1.mp3",
+		"/Music/SoloLevelingMusic.mp3",
+	];
+
+	// Initialize audio
+	useEffect(() => {
+		audioRef.current = new Audio();
+		return () => {
+			audioRef.current?.pause();
+		};
+	}, []);
+
+	// Handle volume changes
+	useEffect(() => {
+		if (audioRef.current) {
+			audioRef.current.volume = isMuted ? 0 : volume;
+		}
+	}, [volume, isMuted]);
+
+	// Handle track changes
+	useEffect(() => {
+		if (currentTrackIndex !== null && audioRef.current) {
+			audioRef.current.src = audioFiles[currentTrackIndex];
+			audioRef.current.currentTime = 0;
+			audioRef.current.loop = true;
+			audioRef.current.play().catch((e) => console.log("Playback failed:", e));
+		}
+	}, [currentTrackIndex]);
+
+	const playTrack = (index) => {
+		setCurrentTrackIndex(index);
+	};
+
+	const value = {
+		volume,
+		setVolume,
+		isMuted,
+		setIsMuted,
+		currentTrackIndex,
+		playTrack,
+		tracks: audioFiles,
+	};
+
+	return (
+		<AudioContext.Provider value={value}>{children}</AudioContext.Provider>
+	);
+}
+
+export function useAudio() {
+	return useContext(AudioContext);
+}
