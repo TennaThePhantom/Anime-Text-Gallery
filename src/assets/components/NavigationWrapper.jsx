@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import MainScreenText from "./MainScreenText";
 import KurokoBasketBallText from "./KurokoBasketballText.jsx";
 import BleachText from "./BleachText.jsx";
+import DragonBallText from "./DragonBallText.jsx";
 import {
 	SoloLevelingTextData,
 	MainScreenTextData,
@@ -150,36 +151,20 @@ function NavigationWrapper() {
 
 		if (currentText.type === "main" && currentText.text === "Dragon Ball") {
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(DragonBallTextData).map((category, index) => (
-						<div key={category}>
-							<p
-								className="sub-text"
-								onClick={() =>
-									navigate({ type: "dragonBallCategory", category, level: 1 })
-								}
-							>
-								{category}
-							</p>
-						</div>
-					))}
-				</div>
+				<DragonBallText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 		if (currentText.type === "dragonBallCategory") {
-			const categoryData = DragonBallTextData[currentText.category];
-
-			if (!categoryData) {
-				return <div className={fadeState}>No data found</div>;
-			}
 			return (
-				<div className={`${fadeState} sub-text-container`}>
-					{categoryData.map((text, index) => (
-						<div key={text}>
-							<p className="sub-text">{text}</p>
-						</div>
-					))}
-				</div>
+				<DragonBallText
+					currentText={currentText}
+					navigate={navigate}
+					fadeState={fadeState}
+				/>
 			);
 		}
 
