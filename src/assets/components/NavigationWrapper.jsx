@@ -8,16 +8,7 @@ import FateSeriesText from "./FateSeriesText.jsx";
 import SwordArtOnlineText from "./SwordArtOnlineText.jsx";
 import SoloLevelingText from "./SoloLevelingText.jsx";
 
-import {
-	SoloLevelingTextData,
-	MainScreenTextData,
-	KurukoBasketballTextData,
-	DragonBallTextData,
-	SwordArtOnlineTextData,
-	fateSeriesTextData,
-	BleachTextData,
-	blackCloverTextData,
-} from "../data/textData";
+import { MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
