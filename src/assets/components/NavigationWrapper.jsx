@@ -6,6 +6,8 @@ import DragonBallText from "./DragonBallText.jsx";
 import BlackCloverText from "./BlackCloverText.jsx";
 import FateSeriesText from "./FateSeriesText.jsx";
 import SwordArtOnlineText from "./SwordArtOnlineText.jsx";
+import SoloLevelingText from "./SoloLevelingText.jsx";
+
 import {
 	SoloLevelingTextData,
 	MainScreenTextData,
@@ -95,31 +97,10 @@ function NavigationWrapper() {
 
 		if (currentText.type === "main" && currentText.text === "Solo Leveling") {
 			return (
-				<div
-					className={fadeState}
-					ref={textRef}
-					onMouseLeave={handleGifHoverLeaveOnText}
-				>
-					{SoloLevelingTextData.map((text, index) => (
-						<p
-							className="sub-text"
-							key={text}
-							onMouseEnter={() => HandleGifHoverOnText(index)}
-							onMouseMove={handleGifMouseMove}
-						>
-							{text}
-							<HoverGifs
-								text={text}
-								index={index}
-								isActive={isHovered === index}
-								textContainerRef={textRef}
-								mousePosition={mousePosition}
-							/>
-						</p>
-					))}
-				</div>
+				<SoloLevelingText currentText={currentText} fadeState={fadeState} />
 			);
 		}
+
 		if (
 			currentText.type === "main" &&
 			currentText.text === "Kuruko's Basketball"
