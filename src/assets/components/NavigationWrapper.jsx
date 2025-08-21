@@ -1,280 +1,104 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import MainScreenText from "./MainScreenText";
-import KurokoBasketBallText from "./KurokoBasketballText.jsx";
-import BleachText from "./BleachText.jsx";
-import DragonBallText from "./DragonBallText.jsx";
-import BlackCloverText from "./BlackCloverText.jsx";
-import FateSeriesText from "./FateSeriesText.jsx";
-import SwordArtOnlineText from "./SwordArtOnlineText.jsx";
-import SoloLevelingText from "./SoloLevelingText.jsx";
+import { COMPONENT_MAP, getTextComponent } from "../data/componentTextMap.js"; // Import from new file
 import { MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-
 function NavigationWrapper() {
-	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
-	const [navigationStack, setNavigationStack] = useState([]);
-	const [fadeState, setFadeState] = useState("");
-	const [selectedIndex, setSelectedIndex] = useState(null);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [navigationStack, setNavigationStack] = useState([]);
+  const [fadeState, setFadeState] = useState("");
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-	// dark mode effect
-	useEffect(() => {
-		const checkUserDarkMode = () => {
-			setIsDarkMode(document.documentElement.classList.contains("dark"));
-		};
-		checkUserDarkMode();
+  // Dark mode effect 
+  useEffect(() => {
+    const checkUserDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    };
+    
+    checkUserDarkMode();
+    const darkModeObserver = new MutationObserver(checkUserDarkMode);
+    darkModeObserver.observe(document.documentElement, { attributes: true });
 
-		const darkModeObserver = new MutationObserver(checkUserDarkMode);
-		darkModeObserver.observe(document.documentElement, { attributes: true });
+    return () => darkModeObserver.disconnect();
+  }, []);
 
-		return () => darkModeObserver.disconnect();
-	}, []);
+  const navigate = (newIndex) => {
+    setFadeState("fade-out");
+    setTimeout(() => {
+      setNavigationStack((prev) => [...prev, newIndex]);
+      setFadeState("fade-in");
+    }, 500);
+  };
 
-	const navigate = (newIndex) => {
-		setFadeState("fade-out");
-		setTimeout(() => {
-			setNavigationStack((prev) => [...prev, newIndex]);
-			setFadeState("fade-in");
-		}, 500);
-	};
+  const goBack = () => {
+    setFadeState("fade-out");
+    setTimeout(() => {
+      setNavigationStack((prev) => prev.slice(0, -1));
+      setSelectedIndex(null);
+      setFadeState("fade-in");
+    }, 500);
+  };
 
-	const goBack = () => {
-		setFadeState("fade-out");
-		setTimeout(() => {
-			setNavigationStack((prev) => prev.slice(0, -1));
-			setSelectedIndex(null);
-			setFadeState("fade-in");
-		}, 500);
-	};
+  const handleTextClick = (text, index) => {
+    setSelectedIndex(index);
+    navigate({ type: "main", text });
+  };
 
-	const handleTextClick = (text, index) => {
-		setSelectedIndex(index);
-		navigate({ type: "main", text });
-	};
+  const renderMainScreen = () => {
+    return MainScreenTextData.map((text, index) => (
+      <MainScreenText
+        key={index}
+        text={text}
+        index={index}
+        onClick={() => handleTextClick(text, index)}
+        isActive={selectedIndex === index}
+      />
+    ));
+  };
 
-	const mainScreenRendering = () => {
-		return MainScreenTextData.map((text, index) => (
-			<MainScreenText
-				key={index}
-				text={text}
-				index={index}
-				onClick={() => handleTextClick(text, index)}
-				isActive={selectedIndex === index}
-			/>
-		));
-	};
+  const renderContent = () => {
+    if (navigationStack.length === 0) {
+      return renderMainScreen();
+    }
 
-	const renderText = () => {
-		if (navigationStack.length === 0) {
-			return mainScreenRendering();
-		}
-		const currentText = navigationStack[navigationStack.length - 1];
+    const currentText = navigationStack[navigationStack.length - 1];
+    const textComponent = getTextComponent(currentText.type, currentText.text);
 
-		if (currentText.type === "main" && currentText.text === "Solo Leveling") {
-			return (
-				<SoloLevelingText currentText={currentText} fadeState={fadeState} />
-			);
-		}
+    // If no component is found, returns a fallback text instead of blank content
+    if (!textComponent) {
+      console.error(`No component found for type: ${currentText.type}, text: ${currentText.text}`);
+      return <div>Content not found</div>;
+    }
 
-		if (
-			currentText.type === "main" &&
-			currentText.text === "Kuruko's Basketball"
-		) {
-			return (
-				<KurokoBasketBallText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "kurokoCategory") {
-			return (
-				<KurokoBasketBallText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
+    return (
+      <textComponent
+        currentText={currentText}
+        navigate={navigate}
+        fadeState={fadeState}
+      />
+    );
+  };
 
-		if (currentText.type === "kurokoSubCategory") {
-			return (
-				<KurokoBasketBallText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "main" && currentText.text === "Dragon Ball") {
-			return (
-				<DragonBallText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "dragonBallCategory") {
-			return (
-				<DragonBallText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (
-			currentText.type === "main" &&
-			currentText.text === "Sword Art Online"
-		) {
-			return (
-				<SwordArtOnlineText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "saoFriends") {
-			return (
-				<SwordArtOnlineText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "main" && currentText.text === "Fate Series") {
-			return (
-				<FateSeriesText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "FateCategory") {
-			return (
-				<FateSeriesText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "FateSubCategory") {
-			return (
-				<FateSeriesText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "main" && currentText.text === "Bleach") {
-			return (
-				<BleachText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "bleachCategory") {
-			return (
-				<BleachText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "bleachSubCategory") {
-			return (
-				<BleachText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-		if (currentText.type === "thirdBleachCategory") {
-			return (
-				<BleachText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "main" && currentText.text === "Black Clover") {
-			return (
-				<BlackCloverText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "blackCloverCategory") {
-			return (
-				<BlackCloverText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "blackCloverSubCategory") {
-			return (
-				<BlackCloverText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-
-		if (currentText.type === "blackCloverGroup") {
-			return (
-				<BlackCloverText
-					currentText={currentText}
-					navigate={navigate}
-					fadeState={fadeState}
-				/>
-			);
-		}
-	};
-
-	return (
-		<div className="navigation-manger">
-			{navigationStack.length > 0 && (
-				<div
-					className={`backButton ${isDarkMode ? "dark" : ""} `}
-					onClick={goBack}
-				>
-					<FontAwesomeIcon
-						className={`left-arrow-icon ${isDarkMode ? "dark" : ""}`}
-						icon={faArrowLeft}
-					/>{" "}
-				</div>
-			)}
-			<div className={`content-container ${fadeState}`}>{renderText()}</div>
-		</div>
-	);
+  // arrow in the top left corner
+  return (
+    <div className="navigation-manger">
+      {navigationStack.length > 0 && (
+        <div
+          className={`backButton ${isDarkMode ? "dark" : ""} `}
+          onClick={goBack}
+        >
+          <FontAwesomeIcon
+            className={`left-arrow-icon ${isDarkMode ? "dark" : ""}`}
+            icon={faArrowLeft}
+          />{" "}
+        </div>
+      )}
+      <div className={`content-container ${fadeState}`}>{renderContent()}</div>
+    </div>
+  );
 }
 
 export default NavigationWrapper;
