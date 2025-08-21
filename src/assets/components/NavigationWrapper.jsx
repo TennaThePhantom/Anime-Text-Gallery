@@ -7,31 +7,17 @@ import BlackCloverText from "./BlackCloverText.jsx";
 import FateSeriesText from "./FateSeriesText.jsx";
 import SwordArtOnlineText from "./SwordArtOnlineText.jsx";
 import SoloLevelingText from "./SoloLevelingText.jsx";
-
 import { MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import useMousePosition from "../Hooks/useMousePosition.jsx";
-import HoverGifs from "./HoverGifs.jsx";
+
 
 function NavigationWrapper() {
 	const [isDarkMode, setIsDarkMode] = useState(false); // state to manage dark mode
 	const [navigationStack, setNavigationStack] = useState([]);
 	const [fadeState, setFadeState] = useState("");
 	const [selectedIndex, setSelectedIndex] = useState(null);
-	const [isHovered, setIsHovered] = useState(false);
-	const textRef = useRef(null);
-
-	const { mousePosition, handleGifMouseMove } = useMousePosition(textRef);
-
-	const HandleGifHoverOnText = (index) => {
-		setIsHovered(index); // Activates the GIFS Immediately
-	};
-
-	const handleGifHoverLeaveOnText = () => {
-		setIsHovered(null); // Deactivates the GIFS Immediately
-	};
 
 	// dark mode effect
 	useEffect(() => {
