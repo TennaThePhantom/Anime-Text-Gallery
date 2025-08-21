@@ -1,5 +1,5 @@
 import "../CSS/MainScreenText.css";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, use } from "react";
 import HoverGifs from "../components/HoverGifs.jsx";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
 import { useAudio } from "../Contexts/AudioContext.jsx";
@@ -11,6 +11,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	const [showTextAnimation, setShowTextAnimation] = useState(false);
 	const [hoverTimeOut, setIsHoverTimeOut] = useState(null);
 	const textRef = useRef(null);
+	const animationAppliedRef = useRef(false);
 
 	const { mousePosition, handleGifMouseMove } = useMousePosition(textRef);
 
@@ -25,30 +26,44 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	];
 
 	// kuroko basketball text animation
+	const applyKurokoTextAnimation = () => {
+		if (index % textAnimationsClasses.length !== 4) return;
+
+		const animatedTextElement = textRef.current?.querySelector("p");
+		if (!animatedTextElement || animationAppliedRef.current) return;
+
+		const originalText = animatedTextElement.textContent;
+		animatedTextElement.innerHTML = "";
+
+		originalText.split("").forEach((char, charIndex) => {
+			const spanText = document.createElement("span");
+			spanText.className = `char-${charIndex + 1}`;
+			spanText.textContent = char;
+
+			if (charIndex === 6 || charIndex === 8) {
+				spanText.style.color = "text-zinc-300";
+			} else {
+				spanText.classList.add("color-char");
+			}
+			animatedTextElement.appendChild(spanText);
+		});
+
+		animationAppliedRef.current = true;
+	};
+
 	useEffect(() => {
-		const kurokoAnimatedText = document.querySelector(
-			".kuroko-basketball-animated-text"
-		);
-		if (kurokoAnimatedText) {
-			const kurokoText = kurokoAnimatedText.textContent;
-			kurokoAnimatedText.innerHTML = "";
+		return () => {
+			if (hoverTimeOut) clearTimeout(hoverTimeOut);
+		};
+	}, [hoverTimeOut]);
 
-			kurokoText.split("").forEach((char, charIndex) => {
-				const spanText = document.createElement("span");
-				spanText.className = `char-${charIndex + 1}`;
-				spanText.textContent = char;
-
-				if (charIndex === 6 || charIndex === 8) {
-					// the ' and space
-					spanText.style.color = "text-zinc-300";
-				} else {
-					spanText.classList.add("color-char");
-				}
-
-				kurokoAnimatedText.appendChild(spanText);
-			});
+	useEffect(() => {
+		if (isHovered) {
+			applyKurokoTextAnimation();
+		} else {
+			animationAppliedRef.current = false;
 		}
-	}, []);
+	}, [isHovered]);
 
 	const handleHoverOnText = () => {
 		setIsHovered(true); // Activates the GIFS Immediately
@@ -72,7 +87,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 
 	const handleClick = (e) => {
 		e.stopPropagation();
-		playTrack(index)
+		playTrack(index);
 		if (onClick) {
 			onClick();
 		}
