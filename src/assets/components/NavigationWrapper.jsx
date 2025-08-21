@@ -65,16 +65,16 @@ function NavigationWrapper() {
     }
 
     const currentText = navigationStack[navigationStack.length - 1];
-    const textComponent = getTextComponent(currentText.type, currentText.text);
+    const TextComponent = getTextComponent(currentText.type, currentText.text);
 
     // If no component is found, returns a fallback text instead of blank content
-    if (!textComponent) {
+    if (!TextComponent) {
       console.error(`No component found for type: ${currentText.type}, text: ${currentText.text}`);
       return <div>Content not found</div>;
     }
 
     return (
-      <textComponent
+      <TextComponent
         currentText={currentText}
         navigate={navigate}
         fadeState={fadeState}
