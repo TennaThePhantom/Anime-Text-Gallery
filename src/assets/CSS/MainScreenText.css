@@ -12,6 +12,8 @@
 
 .main-screen-text {
 	@apply text-6xl font-normal tracking-wide m-[2px] cursor-pointer p-2 text-zinc-300 hover:text-zinc-600;
+	@apply max-[1440px]:text-5xl; /* 1440px and below */
+
 }
 
 .dragon-ball-text-animated:hover {
