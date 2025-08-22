@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
 	mainScreenTextGif,
@@ -6,8 +6,10 @@ import {
 	kurukoBasketballTextGif,
 } from "../config/textGifConfig";
 import "../CSS/HoverGifs.css";
+import useWindowSize from "../Hooks/useWindowSize.jsx";
 
 function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
+	const { width: screenWidth } = useWindowSize();
 	const gifConfig =
 		mainScreenTextGif[text] ||
 		mainScreenTextGif[index] ||
@@ -32,7 +34,10 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 		const absoluteLeft =
 			left >= 0
 				? textRect.left + textRect.width + left + mouseX * followStrength
-				: textRect.left + textRect.width / 2 + left + mouseX * followStrength;
+				: textRect.left +
+				  textRect.width / (screenWidth >= 1440 ? 2 : 1.65) +
+				  left +
+				  mouseX * followStrength;
 
 		return {
 			position: "absolute",

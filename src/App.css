@@ -1,5 +1,9 @@
 @reference "tailwindcss";
 
-.text-container{
-  @apply flex flex-col items-center justify-center text-center h-screen w-full;
+.text-container {
+	@apply flex flex-col items-center justify-center text-center w-auto h-auto;
+}
+
+.app-component {
+	@apply h-screen w-full flex justify-center items-center overflow-hidden;
 }
