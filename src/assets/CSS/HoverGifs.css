@@ -21,3 +21,8 @@
 	transform-origin: top center;
 	transform: translateX(-50%);
 }
+@media (width <= 1440px) {
+	.gif-top{
+		transform: translateX(-10%);
+	}
+}
