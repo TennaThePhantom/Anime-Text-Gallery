@@ -1,3 +1,4 @@
+import { a } from "motion/react-client";
 import { createContext, useContext, useState, useEffect, useRef } from "react";
 
 const AudioContext = createContext();
@@ -48,6 +49,16 @@ export function AudioProvider({ children }) {
 		setCurrentTrackIndex(index);
 	};
 
+	const stopTrack = () => {
+		if (audioRef.current) {
+			console.log("Stopping track:", audioRef.current.src);
+			audioRef.current.pause();
+			audioRef.current.currentTime = 0;
+			audioRef.current.src = ""; // This clears the audio source
+		}
+		setCurrentTrackIndex(null); // This updates the state
+	};
+
 	const value = {
 		volume,
 		setVolume,
@@ -55,6 +66,7 @@ export function AudioProvider({ children }) {
 		setIsMuted,
 		currentTrackIndex,
 		playTrack,
+		stopTrack,
 		tracks: audioFiles,
 	};
 
