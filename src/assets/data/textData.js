@@ -13,11 +13,10 @@ export const SoloLevelingTextData = ["Sung Jin-Woo"];
 export const KurukoBasketballTextData = {
 	"Seirin High": {
 		"Coach": ["Aido Riko"],
-		"First Year": ["Furihata Kouki", "Fukuda Hiroshi", "Kawahara Kouichi"],
+		"First Year": ["Furihata Kouki", "Kawahara Kouichi"],
 		"Second Year": [
 			"Mitobe Rinnosuke",
 			"Hyuga Junpei",
-			"Tsuchida Satoshi",
 			"Koganei Shinji",
 			"Izuki Shuun",
 		],
