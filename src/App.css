@@ -5,5 +5,9 @@
 }
 
 .app-component {
-	@apply h-screen w-full flex justify-center items-center overflow-hidden;
+	@apply h-screen w-full flex justify-center items-center overflow-hidden bg-white;
+}
+
+.dark .app-component {
+	@apply dark:bg-zinc-800;
 }
