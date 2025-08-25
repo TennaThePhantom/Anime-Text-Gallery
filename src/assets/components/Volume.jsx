@@ -51,13 +51,15 @@ function Volume() {
 
 	useEffect(() => {
 		// hides the volume slider after 3 seconds of inactivity on the slider
-		if (showVolumeSlider && !isHovered) {
+		if (isHovered) {
+			clearTimeout(timeoutRef.current);
+		} else if (showVolumeSlider && !isHovered) {
 			timeoutRef.current = setTimeout(() => {
 				setShowVolumeSlider(false);
 			}, 3000);
 		}
 		return () => {
-			// reset the timeout when user hovers over the slider
+			// reset the timeout 
 			if (timeoutRef.current) {
 				clearTimeout(timeoutRef.current);
 			}
@@ -135,6 +137,7 @@ function Volume() {
 					toggleVolumeSlider();
 					setIsHovered(true);
 				}}
+				onMouseLeave={() => setIsHovered(false)}
 				aria-label={isMuted ? "Unmute Volume" : "Mute Volume"}
 			>
 				{displayVolumeIcon()}
