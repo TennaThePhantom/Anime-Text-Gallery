@@ -27,7 +27,6 @@ function App() {
 		<AudioProvider>
 			<div className={`app-component ${isDarkMode ? "dark" : ""}`}>
 				<MobileAppWaring />
-
 				<DarkLightMode />
 				<Volume />
 				<div className="text-container">
