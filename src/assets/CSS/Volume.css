@@ -1,13 +1,16 @@
 @reference "tailwindcss";
 
-.volume-container {
-	@apply fixed top-1 right-14 p-2 rounded-full bg-gray-800 cursor-pointer;
+.volume-container{
+	@apply fixed top-1 right-14
+}
+.volume {
+	@apply relative p-2 rounded-full bg-gray-800 cursor-pointer;
 }
 .volume-icon {
 	@apply text-3xl text-gray-100 transition-colors duration-200 ease-in-out;
 }
 
-.dark .volume-container{
+.dark .volume{
     @apply dark:bg-white;
 }
 
@@ -16,7 +19,7 @@
 }
 
 .volume-slider-container {
-	@apply absolute right-20 top-14 max-w-0 max-h-0;
+	@apply absolute right-5 top-14 max-w-0 max-h-0;
 }
 
 .volume-slider {

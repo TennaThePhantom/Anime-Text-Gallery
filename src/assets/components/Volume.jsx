@@ -129,9 +129,9 @@ function Volume() {
 		}
 	};
 	return (
-		<div ref={sliderTimeoutRef}>
+		<div ref={sliderTimeoutRef} className="volume-container">
 			<button
-				className={`volume-container ${isDarkMode ? "dark" : ""}`}
+				className={`volume ${isDarkMode ? "dark" : ""}`}
 				onClick={toggleVolumeMuted}
 				onMouseEnter={() => {
 					toggleVolumeSlider();
