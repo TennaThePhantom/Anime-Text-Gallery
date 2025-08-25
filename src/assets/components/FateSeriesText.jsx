@@ -20,14 +20,27 @@ function FateSeriesText({ currentText, navigate, fadeState }) {
 		return (
 			<div className={`${fadeState} sub-text-container`}>
 				{Object.keys(fateSeriesTextData).map((category, index) => (
-					<div key={index}>
+					<div
+						ref={textRef}
+						key={category}
+						onMouseLeave={handleGifHoverLeaveOnText}
+					>
 						<p
 							className="sub-text"
+							onMouseEnter={() => HandleGifHoverOnText(index)}
+							onMouseMove={handleGifMouseMove}
 							onClick={() =>
 								navigate({ type: "FateCategory", category, level: 1 })
 							}
 						>
 							{category}
+							<HoverGifs
+								text={category}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
 						</p>
 					</div>
 				))}
@@ -46,9 +59,15 @@ function FateSeriesText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{Object.keys(categoryData).map((subCategory, index) => (
-						<div key={index}>
+						<div
+							ref={textRef}
+							key={subCategory}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
 							<p
 								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
 								onClick={() =>
 									navigate({
 										type: "FateSubCategory",
@@ -59,6 +78,13 @@ function FateSeriesText({ currentText, navigate, fadeState }) {
 								}
 							>
 								{subCategory}
+								<HoverGifs
+									text={subCategory}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -68,14 +94,32 @@ function FateSeriesText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{categoryData.map((text, index) => (
-						<div key={index}>
-							<p className="sub-text">{text}</p>
+						<div
+							ref={textRef}
+							key={text}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+							>
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
 						</div>
 					))}
 				</div>
 			);
 		}
 	}
+
 	if (currentText.type === "FateSubCategory" && currentText.level === 2) {
 		const subCategoryData =
 			fateSeriesTextData[currentText.category]?.[currentText.subCategory];
@@ -83,30 +127,28 @@ function FateSeriesText({ currentText, navigate, fadeState }) {
 		if (!subCategoryData) {
 			return <div className={fadeState}>No subcategory data found</div>;
 		}
+
 		return (
 			<div className={`${fadeState} sub-text-container`}>
 				{subCategoryData.map((text, index) => (
-					<div key={index}>
-						<p className="sub-text">{text}</p>
-					</div>
-				))}
-			</div>
-		);
-	} else {
-		return (
-			<div className={`${fadeState} sub-text-container`}>
-				{Object.keys(subCategoryData).map((item, index) => (
 					<div
 						ref={textRef}
+						key={text}
 						onMouseLeave={handleGifHoverLeaveOnText}
-						key={item}
 					>
 						<p
 							className="sub-text"
 							onMouseEnter={() => HandleGifHoverOnText(index)}
 							onMouseMove={handleGifMouseMove}
 						>
-							{item}
+							{text}
+							<HoverGifs
+								text={text}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
 						</p>
 					</div>
 				))}

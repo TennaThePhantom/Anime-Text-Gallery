@@ -1,4 +1,3 @@
-
 @reference "tailwindcss";
 
 .hover-gif {
@@ -17,12 +16,17 @@
 	transform-origin: top center;
 }
 
+.gif-right-space { /*text is short but has a space right side mainly*/
+	transform-origin: top center;
+	transform: translateX(-30%);
+}
+
 .gif-right-smaller-text {
 	transform-origin: top center;
 	transform: translateX(-50%);
 }
 @media (width <= 1440px) {
-	.gif-top{
+	.gif-top {
 		transform: translateX(-10%);
 	}
 }
