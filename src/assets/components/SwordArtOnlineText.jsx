@@ -21,16 +21,29 @@ function SwordArtOnlineText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{Object.keys(SwordArtOnlineTextData).map((category, index) => (
-						<div key={index}>
+						<div
+							ref={textRef}
+							key={category}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
 							<p
 								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
 								onClick={() => {
-									if (category === "Kirigaya Friends") {
+									if (category === "Kirito Friends") {
 										navigate({ type: "saoFriends", category, level: 1 });
 									}
 								}}
 							>
 								{category}
+								<HoverGifs
+									text={category}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -48,15 +61,32 @@ function SwordArtOnlineText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{categoryData.map((text, index) => (
-						<div key={text}>
-							<p className="sub-text">{text}</p>
+						<div
+							ref={textRef}
+							key={text}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+							>
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
 						</div>
 					))}
 				</div>
 			);
 		}
 	};
-    return renderContent();
+	return renderContent();
 }
 
 export default SwordArtOnlineText;

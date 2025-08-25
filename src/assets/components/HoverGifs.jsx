@@ -4,6 +4,7 @@ import {
 	mainScreenTextGif,
 	soloLevelingTextGif,
 	kurukoBasketballTextGif,
+	SwordArtOnlineTextGif,
 } from "../config/textGifConfig";
 import "../CSS/HoverGifs.css";
 import useWindowSize from "../Hooks/useWindowSize.jsx";
@@ -16,7 +17,9 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 		soloLevelingTextGif[text] ||
 		soloLevelingTextGif[index] ||
 		kurukoBasketballTextGif[text] ||
-		kurukoBasketballTextGif[index];
+		kurukoBasketballTextGif[index] ||
+		SwordArtOnlineTextGif[text] ||
+		SwordArtOnlineTextGif[index];
 
 	const getGiftPosition = (basePos) => {
 		if (!textContainerRef.current) return null;

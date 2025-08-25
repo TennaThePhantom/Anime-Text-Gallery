@@ -210,13 +210,12 @@ export const fateSeriesTextData = {
 };
 
 export const SwordArtOnlineTextData = {
-	"Kirigaya Kazuto": "Main Protagonist",
-	"Yuuki Asuna": "Kirigaya Partner",
-	"Kirigaya Friends": [
+	"Kirito": "Main Protagonist",
+	"Asuna": "Kirigaya Partner",
+	"Kirito Friends": [
 		"Yuuki",
 		"Silica",
 		"Lisbeth",
-		"Agil",
 		"Klein",
 		"Sinon",
 		"Alice",
