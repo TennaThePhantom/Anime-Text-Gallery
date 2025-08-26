@@ -16,15 +16,18 @@
 	transform-origin: top center;
 }
 
-.gif-right-space { /*text is short but has a space right side mainly*/
+.gif-right-space {
+	/*text is short but has a space right side mainly*/
 	transform-origin: top center;
 	transform: translateX(-30%);
 }
 
-.gif-right-smaller-text {
+.gif-right-z-fighters { /*A text is longer than others which cause size issues*/
 	transform-origin: top center;
-	transform: translateX(-50%);
+	transform: translateX(-65%);
 }
+
+
 @media (width <= 1440px) {
 	.gif-top {
 		transform: translateX(-10%);

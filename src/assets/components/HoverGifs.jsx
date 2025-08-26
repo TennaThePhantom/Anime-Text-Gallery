@@ -7,6 +7,8 @@ import {
 	SwordArtOnlineTextGif,
 	FateSeriesTextGif,
 } from "../config/textGifConfig";
+
+import { DragonBallTextGif } from "../config/DragonBallTextGifConfig.js";
 import "../CSS/HoverGifs.css";
 import useWindowSize from "../Hooks/useWindowSize.jsx";
 
@@ -21,7 +23,8 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 		kurukoBasketballTextGif[index] ||
 		SwordArtOnlineTextGif[text] ||
 		SwordArtOnlineTextGif[index] ||
-		FateSeriesTextGif[text];
+		FateSeriesTextGif[text] ||
+		DragonBallTextGif[text];
 
 	const getGiftPosition = (basePos) => {
 		if (!textContainerRef.current) return null;
