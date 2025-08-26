@@ -11,18 +11,36 @@ function DarkLightMode() {
 		if (typeof window !== "undefined") {
 			const checkUserPreference = window.matchMedia(
 				"(prefers-color-scheme: dark)"
-			).matches;
-			setIsDarkMode(checkUserPreference);
-			if (checkUserPreference) {
+			);
+			setIsDarkMode(checkUserPreference.matches);
+			if (checkUserPreference.matches) {
 				document.documentElement.classList.add("dark");
 			} else {
 				document.documentElement.classList.remove("dark");
 			}
+
+			const windowAppearanceChange = (e) => {
+				const prefersDark = e.matches;
+				setIsDarkMode(prefersDark);
+				if (prefersDark) {
+					document.documentElement.classList.add("dark");
+				} else {
+					document.documentElement.classList.remove("dark");
+				}
+			};
+
+			checkUserPreference.addEventListener("change", windowAppearanceChange);
+			return () => {
+				checkUserPreference.removeEventListener(
+					"change",
+					windowAppearanceChange
+				);
+			};
 		}
 	}, []);
 
 	const toggleDarkMode = () => {
-        const newMode = !isDarkMode
+		const newMode = !isDarkMode;
 		setIsDarkMode(newMode);
 
 		if (newMode) {

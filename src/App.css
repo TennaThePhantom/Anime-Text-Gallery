@@ -9,5 +9,5 @@
 }
 
 .dark .app-component {
-	@apply dark:bg-zinc-800;
+	@apply bg-zinc-800;
 }

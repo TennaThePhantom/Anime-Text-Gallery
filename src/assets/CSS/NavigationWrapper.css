@@ -14,11 +14,11 @@
 }
 
 .dark .backButton {
-	@apply dark:bg-white;
+	@apply bg-white;
 }
 
 .dark .left-arrow-icon {
-	@apply dark:text-black;
+	@apply text-black;
 }
 .navigation-manager {
 	@apply relative w-full h-full;

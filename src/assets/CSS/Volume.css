@@ -11,11 +11,11 @@
 }
 
 .dark .volume{
-    @apply dark:bg-white;
+    @apply bg-white;
 }
 
 .dark .volume-icon {
-    @apply dark:text-black;
+    @apply text-black;
 }
 
 .volume-slider-container {
