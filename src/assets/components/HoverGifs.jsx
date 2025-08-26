@@ -9,6 +9,8 @@ import {
 } from "../config/textGifConfig";
 
 import { DragonBallTextGif } from "../config/DragonBallTextGifConfig.js";
+import { BleachTextGif } from "../config/BleachTextGifConfig.js";
+
 import "../CSS/HoverGifs.css";
 import useWindowSize from "../Hooks/useWindowSize.jsx";
 
@@ -24,7 +26,8 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 		SwordArtOnlineTextGif[text] ||
 		SwordArtOnlineTextGif[index] ||
 		FateSeriesTextGif[text] ||
-		DragonBallTextGif[text];
+		DragonBallTextGif[text] ||
+		BleachTextGif[text];
 
 	const getGiftPosition = (basePos) => {
 		if (!textContainerRef.current) return null;

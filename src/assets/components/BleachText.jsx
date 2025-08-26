@@ -21,14 +21,27 @@ function BleachText({ currentText, navigate, fadeState }) {
 		return (
 			<div className={`${fadeState} sub-text-container`}>
 				{Object.keys(BleachTextData).map((category, index) => (
-					<div key={index}>
+					<div 
+						ref={textRef}
+						key={category}
+						onMouseLeave={handleGifHoverLeaveOnText}
+					>
 						<p
 							className="sub-text"
+							onMouseEnter={() => HandleGifHoverOnText(index)}
+							onMouseMove={handleGifMouseMove}
 							onClick={() =>
 								navigate({ type: "bleachCategory", category, level: 1 })
 							}
 						>
 							{category}
+							<HoverGifs
+								text={category}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
 						</p>
 					</div>
 				))}
@@ -46,8 +59,25 @@ function BleachText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{categoryData.map((text, index) => (
-						<div key={index}>
-							<p className="sub-text">{text}</p>
+						<div 
+							ref={textRef}
+							key={text}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+							>
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
 						</div>
 					))}
 				</div>
@@ -57,9 +87,15 @@ function BleachText({ currentText, navigate, fadeState }) {
 				// handles categories that has categories in them example gotei 13 > old gotei 13, current gotei 13
 				<div className={`${fadeState} sub-text-container`}>
 					{Object.keys(categoryData).map((subCategory, index) => (
-						<div key={index}>
+						<div 
+							ref={textRef}
+							key={subCategory}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
 							<p
 								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
 								onClick={() =>
 									navigate({
 										type: "bleachSubCategory",
@@ -70,6 +106,13 @@ function BleachText({ currentText, navigate, fadeState }) {
 								}
 							>
 								{subCategory}
+								<HoverGifs
+									text={subCategory}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -90,8 +133,25 @@ function BleachText({ currentText, navigate, fadeState }) {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
 					{subCategoryData.map((text, index) => (
-						<div key={index}>
-							<p className="sub-text">{text}</p>
+						<div 
+							ref={textRef}
+							key={text}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+							>
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
 						</div>
 					))}
 				</div>
@@ -101,9 +161,15 @@ function BleachText({ currentText, navigate, fadeState }) {
 				// handles the third category example: Espades > Members > Espades 1-5
 				<div className={`${fadeState} sub-text-container`}>
 					{Object.keys(subCategoryData).map((thirdCategory, index) => (
-						<div key={index}>
+						<div 
+							ref={textRef}
+							key={thirdCategory}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
 							<p
 								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
 								onClick={() =>
 									navigate({
 										type: "thirdBleachCategory",
@@ -115,6 +181,13 @@ function BleachText({ currentText, navigate, fadeState }) {
 								}
 							>
 								{thirdCategory}
+								<HoverGifs
+									text={thirdCategory}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -137,8 +210,25 @@ function BleachText({ currentText, navigate, fadeState }) {
 			// handles the very last array
 			<div className={`${fadeState} sub-text-container`}>
 				{thirdCategoryData.map((text, index) => (
-					<div key={index}>
-						<p className="sub-text">{text}</p>
+					<div 
+						ref={textRef}
+						key={text}
+						onMouseLeave={handleGifHoverLeaveOnText}
+					>
+						<p
+							className="sub-text"
+							onMouseEnter={() => HandleGifHoverOnText(index)}
+							onMouseMove={handleGifMouseMove}
+						>
+							{text}
+							<HoverGifs
+								text={text}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
+						</p>
 					</div>
 				))}
 			</div>
@@ -159,6 +249,13 @@ function BleachText({ currentText, navigate, fadeState }) {
 							onMouseMove={handleGifMouseMove}
 						>
 							{item}
+							<HoverGifs
+								text={item}
+								index={index}
+								isActive={isHovered === index}
+								textContainerRef={textRef}
+								mousePosition={mousePosition}
+							/>
 						</p>
 					</div>
 				))}

@@ -12,7 +12,7 @@ export const SoloLevelingTextData = ["Sung Jin-Woo"];
 
 export const KurukoBasketballTextData = {
 	"Seirin High": {
-		"Coach": ["Aido Riko"],
+		Coach: ["Aido Riko"],
 		"First Year": ["Furihata Kouki", "Kawahara Kouichi"],
 		"Second Year": [
 			"Mitobe Rinnosuke",
@@ -36,7 +36,7 @@ export const KurukoBasketballTextData = {
 		"Kotaro Hayama",
 		"Eikichi Nebuya",
 	],
-	"Americans": ["Taiga Kagami", "Tatsuya Himuro", "Alexandra Garcia"],
+	Americans: ["Taiga Kagami", "Tatsuya Himuro", "Alexandra Garcia"],
 };
 
 export const BleachTextData = {
@@ -47,7 +47,7 @@ export const BleachTextData = {
 				"Soi Fon",
 				"Gin Ichimaru",
 				"Retsu Unohana",
-				"Sousuke Aizen",
+				"Sosuke Aizen",
 				"Byakuya Kuchiki",
 			],
 			"Gotei 7-13": [
@@ -80,17 +80,17 @@ export const BleachTextData = {
 			],
 		},
 	},
-	"Espades": {
-		"Leaders": ["Sosuke Aizen", "gin Ichimaru", "Kaname Tosen"],
-		"Members": {
-			"Espades 1-5": [
+	Espadas: {
+		Leaders: ["Aizen", "Gin", "Tosen"],
+		Members: {
+			"Espadas 1-5": [
 				"Coyote Starrk",
 				"Baraggan Louisenbairn",
 				"Tier Harribel",
 				"Ulquiorra Cifer",
 				"Nnoitra Gilga",
 			],
-			"Espades 6-10": [
+			"Espadas 6-10": [
 				"Grimmjow Jaegerjaquez",
 				"Zommari Rureaux",
 				"Szayelaporro Granz",
@@ -100,16 +100,22 @@ export const BleachTextData = {
 		},
 	},
 	"The Visored": [
-		"Shinji Hirako",
-		"Love Aikawa",
-		"Rōjūrō Ōtoribashi",
-		"Kensei Muguruma",
-		"Mashiro Kuna",
-		"Hiyori Sarugaki",
-		"Hachigen Ushōda",
-		"Lisa Yadōmaru",
+		"Shinji",
+		"Love",
+		"Roujuuro",
+		"Kensei",
+		"Mashiro",
+		"Hiyori",
+		"Hachigen",
+		"Lisa",
 	],
-	"The Royal Guard": ["Ichibe Hyosube", "Tenjiro Kirinji", "Kirio Hikifune", "Oetsu Nimaiya", "Senjumaru Shutara"],
+	"The Royal Guard": [
+		"Ichibe Hyosube",
+		"Tenjiro Kirinji",
+		"Kirio Hikifune",
+		"Oetsu Nimaiya",
+		"Senjumaru Shutara",
+	],
 	"Main Characters": [
 		"Ichigo Kurosaki",
 		"Rukia Kuchiki",
@@ -123,8 +129,8 @@ export const BleachTextData = {
 
 export const blackCloverTextData = {
 	"Black Bulls": {
-		"Leaders": ["Yami Sukehiro", "Nachet Faust"],
-		"Members": {
+		Leaders: ["Yami Sukehiro", "Nachet Faust"],
+		Members: {
 			"1st class magic knights": [
 				"Asta",
 				"Charmy",
@@ -135,8 +141,8 @@ export const blackCloverTextData = {
 			],
 			"3rd class magic knights": ["Noelle Silva", "Vanessa", "Grey"],
 			"5th class magic knights": ["Magna", "Luck", "Henry"],
-			"Secre": "Demon",
-			"Liebe": "Demon",
+			Secre: "Demon",
+			Liebe: "Demon",
 		},
 	},
 	"Squad Captains": {
@@ -181,21 +187,14 @@ export const blackCloverTextData = {
 
 export const fateSeriesTextData = {
 	"Fate/Stay Night: Heaven's Feel": {
-		"Masters": [
+		Masters: [
 			"Emiya Shirou",
 			"Sakura Matou",
 			"Rin Tohsaka",
 			"Kirei Kotomine",
 			"Illyasviel Von Einzbern",
 		],
-		"Servants": [
-			"Saber",
-			"Archer",
-			"Lancer",
-			"Rider",
-			"Assassin",
-			"Berserker",
-		],
+		Servants: ["Saber", "Archer", "Lancer", "Rider", "Assassin", "Berserker"],
 	},
 	"Fate/Grand Order Babylonia": [
 		"Ritsuka",
@@ -209,8 +208,8 @@ export const fateSeriesTextData = {
 };
 
 export const SwordArtOnlineTextData = {
-	"Kirito": "Main Protagonist",
-	"Asuna": "Kirigaya Partner",
+	Kirito: "Main Protagonist",
+	Asuna: "Kirigaya Partner",
 	"Kirito Friends": [
 		"Yuuki",
 		"Silica",
@@ -233,7 +232,7 @@ export const DragonBallTextData = {
 		"Yamcha",
 		"Trunks",
 	],
-	"Villains": [
+	Villains: [
 		"Frieza",
 		"Cell",
 		"Majin Buu",
@@ -249,8 +248,8 @@ export const DragonBallTextData = {
 		"Bojack",
 		"Broly(Z)",
 	],
-	"Fusions": ["Gogeta", "Vegito", "Kefla", "Gotenks"],
-	"Saiyans": [
+	Fusions: ["Gogeta", "Vegito", "Kefla", "Gotenks"],
+	Saiyans: [
 		"Goten",
 		"Kid Trunks",
 		"Broly(Super)",
