@@ -20,15 +20,28 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 		if (!currentText.type || currentText.type === "main") {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(blackCloverTextData).map((category) => (
-						<div key={category}>
+					{Object.keys(blackCloverTextData).map((category, index) => (
+						<div
+							ref={textRef}
+							key={category}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
 							<p
 								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
 								onClick={() =>
 									navigate({ type: "blackCloverCategory", category, level: 1 })
 								}
 							>
 								{category}
+								<HoverGifs
+									text={category}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -47,9 +60,26 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 				// Handle simple arrays (Dark Triad, Eye of the Midnight Sun, Asta Comrades)
 				return (
 					<div className={`${fadeState} sub-text-container`}>
-						{categoryData.map((text) => (
-							<div key={text}>
-								<p className="sub-text">{text}</p>
+						{categoryData.map((text, index) => (
+							<div
+								ref={textRef}
+								key={text}
+								onMouseLeave={handleGifHoverLeaveOnText}
+							>
+								<p
+									className="sub-text"
+									onMouseEnter={() => HandleGifHoverOnText(index)}
+									onMouseMove={handleGifMouseMove}
+								>
+									{text}
+									<HoverGifs
+										text={text}
+										index={index}
+										isActive={isHovered === index}
+										textContainerRef={textRef}
+										mousePosition={mousePosition}
+									/>
+								</p>
 							</div>
 						))}
 					</div>
@@ -58,37 +88,67 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 				// Handle nested objects (Black Bulls, Squad Captains, Wizard Kings)
 				return (
 					<div className={`${fadeState} sub-text-container`}>
-						{Object.keys(categoryData).map((key) => {
+						{Object.keys(categoryData).map((text, index) => {
 							// Handle non-clickable items (Secre, Liebe, Julius)
 							if (
 								currentText.category === "Wizard Kings" &&
-								key === "Julius Novachrono"
+								text === "Julius Novachrono"
 							) {
 								return (
-									<div key={key}>
-										<p className="sub-text">{key}</p>
+									<div
+										ref={textRef}
+										key={text}
+										onMouseLeave={handleGifHoverLeaveOnText}
+									>
+										<p
+											className="sub-text"
+											onMouseEnter={() => HandleGifHoverOnText(index)}
+											onMouseMove={handleGifMouseMove}
+										>
+											{text}
+											<HoverGifs
+												text={text}
+												index={index}
+												isActive={isHovered === index}
+												textContainerRef={textRef}
+												mousePosition={mousePosition}
+											/>
+										</p>
 									</div>
 								);
 							}
 
 							// Default clickable behavior for other items
 							return (
-								<div key={key}>
+								<div
+									ref={textRef}
+									key={text}
+									onMouseLeave={handleGifHoverLeaveOnText}
+								>
 									<p
 										className="sub-text"
+										onMouseEnter={() => HandleGifHoverOnText(index)}
+										onMouseMove={handleGifMouseMove}
 										onClick={() => {
-											const value = categoryData[key];
+											const value = categoryData[text];
 											if (Array.isArray(value) || typeof value === "object") {
 												navigate({
 													type: "blackCloverSubCategory",
 													category: currentText.category,
-													subCategory: key,
+													subCategory: text,
 													level: 2,
 												});
 											}
 										}}
 									>
-										{key}
+										{text}
+										<HoverGifs
+											text={text}
+											index={index}
+											isActive={isHovered === index}
+											textContainerRef={textRef}
+											mousePosition={mousePosition}
+										/>
 									</p>
 								</div>
 							);
@@ -112,9 +172,26 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 			if (Array.isArray(subCategoryData)) {
 				return (
 					<div className={`${fadeState} sub-text-container`}>
-						{subCategoryData.map((text) => (
-							<div key={text}>
-								<p className="sub-text">{text}</p>
+						{subCategoryData.map((text, index) => (
+							<div
+								ref={textRef}
+								key={text}
+								onMouseLeave={handleGifHoverLeaveOnText}
+							>
+								<p
+									className="sub-text"
+									onMouseEnter={() => HandleGifHoverOnText(index)}
+									onMouseMove={handleGifMouseMove}
+								>
+									{text}
+									<HoverGifs
+										text={text}
+										index={index}
+										isActive={isHovered === index}
+										textContainerRef={textRef}
+										mousePosition={mousePosition}
+									/>
+								</p>
 							</div>
 						))}
 					</div>
@@ -122,21 +199,44 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 			} else {
 				return (
 					<div className={`${fadeState} sub-text-container`}>
-						{Object.keys(subCategoryData).map((group) => {
+						{Object.keys(subCategoryData).map((group, index) => {
 							if (
-								currentText.subCategory === "Members" &&
+								currentText.subCategory === "Black Bulls Members" &&
 								["Secre", "Liebe"].includes(group)
 							) {
 								return (
-									<div key={group}>
-										<p className="sub-text">{group}</p>
+									<div
+										ref={textRef}
+										key={group}
+										onMouseLeave={handleGifHoverLeaveOnText}
+									>
+										<p
+											className="sub-text"
+											onMouseEnter={() => HandleGifHoverOnText(index)}
+											onMouseMove={handleGifMouseMove}
+										>
+											{group}
+											<HoverGifs
+												text={group}
+												index={index}
+												isActive={isHovered === index}
+												textContainerRef={textRef}
+												mousePosition={mousePosition}
+											/>
+										</p>
 									</div>
 								);
 							}
 							return (
-								<div key={group}>
+								<div
+									ref={textRef}
+									key={group}
+									onMouseLeave={handleGifHoverLeaveOnText}
+								>
 									<p
 										className="sub-text"
+										onMouseEnter={() => HandleGifHoverOnText(index)}
+										onMouseMove={handleGifMouseMove}
 										onClick={() =>
 											navigate({
 												type: "blackCloverGroup",
@@ -148,6 +248,13 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 										}
 									>
 										{group}
+										<HoverGifs
+											text={group}
+											index={index}
+											isActive={isHovered === index}
+											textContainerRef={textRef}
+											mousePosition={mousePosition}
+										/>
 									</p>
 								</div>
 							);
@@ -169,9 +276,26 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 
 			return (
 				<div className={`${fadeState} sub-text-container`}>
-					{groupData.map((text) => (
-						<div key={text}>
-							<p className="sub-text">{text}</p>
+					{groupData.map((text, index) => (
+						<div
+							ref={textRef}
+							key={text}
+							onMouseLeave={handleGifHoverLeaveOnText}
+						>
+							<p
+								className="sub-text"
+								onMouseEnter={() => HandleGifHoverOnText(index)}
+								onMouseMove={handleGifMouseMove}
+							>
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
+							</p>
 						</div>
 					))}
 				</div>
@@ -179,18 +303,25 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 		} else {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(groupData).map((item, index) => (
+					{Object.keys(groupData).map((text, index) => (
 						<div
 							ref={textRef}
 							onMouseLeave={handleGifHoverLeaveOnText}
-							key={item}
+							key={text}
 						>
 							<p
 								className="sub-text"
 								onMouseEnter={() => HandleGifHoverOnText(index)}
 								onMouseMove={handleGifMouseMove}
 							>
-								{item}
+								{text}
+								<HoverGifs
+									text={text}
+									index={index}
+									isActive={isHovered === index}
+									textContainerRef={textRef}
+									mousePosition={mousePosition}
+								/>
 							</p>
 						</div>
 					))}
@@ -198,7 +329,7 @@ function BlackCloverText({ currentText, navigate, fadeState }) {
 			);
 		}
 	};
-    return renderContent();
+	return renderContent();
 }
 
 export default BlackCloverText;

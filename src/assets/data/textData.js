@@ -129,9 +129,9 @@ export const BleachTextData = {
 
 export const blackCloverTextData = {
 	"Black Bulls": {
-		Leaders: ["Yami Sukehiro", "Nachet Faust"],
-		Members: {
-			"1st class magic knights": [
+		Captains: ["Yami", "Nacht"],
+		"Black Bulls Members": {
+			"1st Class Magic Knights": [
 				"Asta",
 				"Charmy",
 				"Gauche",
@@ -139,8 +139,8 @@ export const blackCloverTextData = {
 				"Finral",
 				"Gordon",
 			],
-			"3rd class magic knights": ["Noelle Silva", "Vanessa", "Grey"],
-			"5th class magic knights": ["Magna", "Luck", "Henry"],
+			"3rd Class Magic Knights": ["Noelle Silva", "Vanessa", "Grey"],
+			"5th Class Magic Knights": ["Magna", "Luck", "Henry"],
 			Secre: "Demon",
 			Liebe: "Demon",
 		},
@@ -156,23 +156,16 @@ export const blackCloverTextData = {
 			"Fuegoleon Vermillion",
 			"Jack the Ripper",
 			"Dorothy Unsworth",
-			"Kaiser Granvorka",
 			"Rill Boismortier",
 		],
 		"Sub-Previous Squad Captains": [
-			"Yuno",
-			"Mereonleona Vermillion",
-			"Gueldre Poizot",
+			"Yuno Grinberryall",
+			"Mereoleona Vermillion",
 		],
 	},
 	"Dark Triad": ["Dante Zogratis", "Vanica Zogratis", "Zenon Zogratis"],
-	"Eye of the Midnight Sun": ["Patoil", "Rhya", "Vetto", "Fana"],
-	"Asta Comrades": [
-		"Yuno",
-		"Mimsosa Vermillion",
-		"Klaus Lunettes",
-		"Leopold Vermillion",
-	],
+	"Eye of the Midnight Sun": ["Patolli", "Rhya", "Vetto", "Fana"],
+	"Asta Comrades": ["Yuno", "Mimosa", "Klaus", "Leopold"],
 	"Wizard Kings": {
 		"Julius Novachrono": "Current Wizard King",
 		"Previous Wizard Kings": [
