@@ -11,11 +11,11 @@ const MobileAppWaring = () => {
 			if (screenWidth <= 768) {
 				toast.warning(" Demo won't work as expected on smaller screen sizes", {
 					position: "bottom-center",
-					autoClose: 2000,
+					autoClose: 1500,
 					hideProgressBar: true,
 					closeOnClick: true,
-					pauseOnHover: true,
-					draggable: true,
+					pauseOnHover: false,
+					draggable: false,
 					progress: undefined,
 					toastId: mobileWarning,
 				});

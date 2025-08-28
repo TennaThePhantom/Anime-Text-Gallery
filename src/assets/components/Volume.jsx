@@ -28,7 +28,7 @@ function Volume() {
 		const darkModeObserver = new MutationObserver(checkUserDarkMode);
 		darkModeObserver.observe(document.documentElement, { attributes: true });
 
-		return () => darkModeObserver.disconnect(); // cleanup observer on component(to make sure there's no memory leak)
+		return () => darkModeObserver.disconnect(); // cleanup observer
 	}, []);
 
 	// handles the user clicking effect to close the volume slider
@@ -50,7 +50,7 @@ function Volume() {
 	}, []);
 
 	useEffect(() => {
-		// hides the volume slider after 3 seconds of inactivity on the slider
+		// hides the volume slider after 3 seconds of inactivity
 		if (isHovered) {
 			clearTimeout(timeoutRef.current);
 		} else if (showVolumeSlider && !isHovered) {

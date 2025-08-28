@@ -1,5 +1,5 @@
 import "../CSS/MainScreenText.css";
-import React, { useEffect, useState, useRef, use } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/HoverGifs.jsx";
 import useMousePosition from "../Hooks/useMousePosition.jsx";
 import { useAudio } from "../Contexts/AudioContext.jsx";
@@ -68,11 +68,11 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	const handleHoverOnText = () => {
 		setIsHovered(true); // Activates the GIFS Immediately
 
-		// only for the css text animation (3-second delay might remove or reduce it)
+		// css text animation delay
 		if (hoverTimeOut) clearTimeout(hoverTimeOut);
 		const addAnimationText = setTimeout(() => {
 			setShowTextAnimation(true);
-		}, 3000);
+		}, 2000);
 
 		setIsHoverTimeOut(addAnimationText);
 	};
@@ -96,10 +96,10 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	const textAnimation =
 		textAnimationsClasses[index % textAnimationsClasses.length];
 	return (
-		// This component displays text on the main screen.
+		// displays the main screen text .
 		<div
 			ref={textRef}
-			className={`main-screen-text ${showTextAnimation ? textAnimation : ""}`}
+			className={`main-screen-text ${isActive ? textAnimation : ""}`}
 			onMouseEnter={handleHoverOnText}
 			onMouseLeave={handleHoverLeave}
 			onMouseMove={handleGifMouseMove}
@@ -111,7 +111,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 			<HoverGifs
 				text={text}
 				index={index}
-				isActive={isHovered}
+				isActive={isHovered || isActive}
 				textContainerRef={textRef}
 				mousePosition={mousePosition}
 			/>

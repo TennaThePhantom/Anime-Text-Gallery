@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
 	mainScreenTextGif,
@@ -56,11 +55,10 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 			position: "absolute",
 			top: absoluteTop,
 			left: absoluteLeft,
-			zIndex: 10, // place holder for now
+			zIndex: 10,
 			pointerEvents: "None",
 		};
 	};
-	// currently it's working but it's connected to a new div element which I don't want
 	return (
 		<AnimatePresence>
 			{isActive &&

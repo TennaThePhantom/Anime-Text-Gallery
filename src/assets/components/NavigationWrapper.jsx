@@ -15,7 +15,6 @@ function NavigationWrapper() {
 	const [fadeState, setFadeState] = useState("");
 	const [selectedIndex, setSelectedIndex] = useState(null);
 
-
 	// Dark mode effect
 	useEffect(() => {
 		const checkUserDarkMode = () => {

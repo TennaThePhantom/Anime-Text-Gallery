@@ -7,6 +7,7 @@ function DarkLightMode() {
 	// State to manage dark mode basically if darkMode is true then dark mode is enabled otherwise light mode is enabled
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
+	// user prefernce is first then user selects if he/she wants dark or light mode to be display
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			const checkUserPreference = window.matchMedia(

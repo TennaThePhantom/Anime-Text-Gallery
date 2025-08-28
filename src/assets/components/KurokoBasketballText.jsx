@@ -17,9 +17,6 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 	};
 
 	const renderContent = () => {
-		console.log("Current navigation state:", currentText); // Debugging log
-
-		// Initial categories view
 		if (!currentText.type || currentText.type === "main") {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
@@ -65,7 +62,6 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 			}
 
 			if (typeof categoryData === "object" && !Array.isArray(categoryData)) {
-				// Has subcategories
 				return (
 					<div className={`${fadeState} sub-text-container`}>
 						{Object.keys(categoryData).map((subCategory, index) => (
@@ -171,7 +167,7 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 					</div>
 				);
 			} else {
-				// If there are deeper levels (unlikely but handled)
+				// If there are deeper levels (unlikely)
 				return (
 					<div className={`${fadeState} sub-text-container`}>
 						{Object.keys(subCategoryData).map((item, index) => (
