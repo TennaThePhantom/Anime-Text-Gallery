@@ -99,7 +99,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 		// displays the main screen text .
 		<div
 			ref={textRef}
-			className={`main-screen-text ${isActive ? textAnimation : ""}`}
+			className={`main-screen-text ${(isActive || showTextAnimation) ? textAnimation : ""}`}
 			onMouseEnter={handleHoverOnText}
 			onMouseLeave={handleHoverLeave}
 			onMouseMove={handleGifMouseMove}

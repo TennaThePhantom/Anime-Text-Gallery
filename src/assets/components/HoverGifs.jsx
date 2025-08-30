@@ -1,16 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
-import {
-	mainScreenTextGif,
-	soloLevelingTextGif,
-	kurukoBasketballTextGif,
-	SwordArtOnlineTextGif,
-	FateSeriesTextGif,
-} from "../config/textGifConfig";
-
+import { mainScreenTextGif } from "../config/textGifConfig";
 import { DragonBallTextGif } from "../config/DragonBallTextGifConfig.js";
 import { BleachTextGif } from "../config/BleachTextGifConfig.js";
 import { BlackCloverTextGif } from "../config/BlackCloverTextGifConfig.js";
-
+import { SwordArtOnlineTextGif } from "../config/SwordArtOnlineTextGifConfig.js";
+import { FateSeriesTextGif } from "../config/FateSeriesTextGifConfig.js";
+import { KurokoBasketballTextGif } from "../config/KurokoBasketballTextGifConfig.js";
+import { soloLevelingTextGif } from "../config/SoloLevelingTextGifConfig.js";
 import "../CSS/HoverGifs.css";
 import useWindowSize from "../Hooks/useWindowSize.jsx";
 
@@ -20,15 +16,12 @@ function HoverGifs({ text, index, isActive, textContainerRef, mousePosition }) {
 		mainScreenTextGif[text] ||
 		mainScreenTextGif[index] ||
 		soloLevelingTextGif[text] ||
-		soloLevelingTextGif[index] ||
-		kurukoBasketballTextGif[text] ||
-		kurukoBasketballTextGif[index] ||
-		SwordArtOnlineTextGif[text] ||
-		SwordArtOnlineTextGif[index] ||
 		FateSeriesTextGif[text] ||
 		DragonBallTextGif[text] ||
 		BleachTextGif[text] ||
-		BlackCloverTextGif[text];
+		BlackCloverTextGif[text] ||
+		SwordArtOnlineTextGif[text] ||
+		KurokoBasketballTextGif[text];
 
 	const getGiftPosition = (basePos) => {
 		if (!textContainerRef.current) return null;
