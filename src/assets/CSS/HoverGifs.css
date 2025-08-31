@@ -41,9 +41,39 @@
 
 .gif-sao-top-middle {
 }
-.gif-sao-main-right{
+.gif-sao-main-right {
+}
+
+.gif-gom-right {
+}
+.gif-gom-left {
+}
+.gif-uncrown-kings-left {
+}
+.gif-seirin-high-top {
+}
+.gif-seirin-high-right {
+}
+
+.gif-kawahara-left {
+}
+
+.gif-mitobe-top{
+}
+
+.gif-kuro-top{
 
 }
+.gif-teppei-top{
+
+}
+
+.gif-teppei-right{
+
+}
+/*
+gifs placement adjustment for smaller screens
+*/
 
 @media (width < 1440px) {
 	.gif-top {
@@ -58,11 +88,42 @@
 	.gif-sao-top-middle {
 		transform: translateY(13%);
 	}
-	.gif-sao-main-right{
+	.gif-sao-main-right {
 		transform: translateX(10%);
 	}
 
-	.gif-sao-main-left{
+	.gif-sao-main-left {
 		transform: translateX(10%);
 	}
+	.gif-gom-right {
+		transform: translateX(-17%);
+	}
+	.gif-gom-left {
+		transform: translateX(17%);
+	}
+	.gif-uncrown-kings-left {
+		transform: translateX(17%);
+	}
+	.gif-serin-high-top {
+		transform: translateY(15%);
+	}
+	.gif-seirin-high-right {
+		transform: translateX(25%);
+	}
+	.gif-kawahara-left {
+		transform: translateX(20%);
+	}
+	.gif-mitobe-top{
+		transform: translateY(16%);
+	}
+	.gif-kuro-top{
+		transform: translateY(25%);
+	}
+	.gif-teppei-top{
+		transform: translateY(20%);
+	}
+	.gif-teppei-right{
+		transform: translateX(20%);
+	}
+
 }

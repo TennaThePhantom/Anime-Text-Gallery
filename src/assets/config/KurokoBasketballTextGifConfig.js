@@ -64,13 +64,12 @@ import AlexGif3 from "../Images/Kuruko's-Basketball/Alex3.gif";
 import AomineGif1 from "../Images/Kuruko's-Basketball/Aomine1.gif";
 import AomineGif2 from "../Images/Kuruko's-Basketball/Aomine2.gif";
 
-
 export const KurokoBasketballTextGif = {
 	"Seirin High": {
 		gifs: [
 			{
 				src: junpeiGif1,
-				className: "gif-top",
+				className: "gif-top gif-serin-high-top",
 				basePosition: {
 					top: -270,
 					left: -100,
@@ -88,7 +87,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: rikoGif1,
-				className: "gif-right",
+				className: "gif-right gif-seirin-high-right",
 				basePosition: {
 					top: -130,
 					left: 30,
@@ -110,7 +109,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: GOMGif2,
-				className: "gif-left",
+				className: "gif-left gif-gom-left",
 				basePosition: {
 					top: -100,
 					left: -480,
@@ -119,7 +118,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: GOMGif3,
-				className: "gif-right",
+				className: "gif-right gif-gom-right",
 				basePosition: {
 					top: -100,
 					left: 150,
@@ -141,7 +140,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: KotarouGif1,
-				className: "gif-left",
+				className: "gif-left gif-uncrown-kings-left",
 				basePosition: {
 					top: -50,
 					left: -430,
@@ -160,7 +159,6 @@ export const KurokoBasketballTextGif = {
 		],
 	},
 	Americans: {
-		//  temporary place holder gifs for now
 		gifs: [
 			{
 				src: TaigaGif1,
@@ -288,9 +286,9 @@ export const KurokoBasketballTextGif = {
 		gifs: [
 			{
 				src: KuroGif1,
-				className: "gif-top",
+				className: "gif-top gif-kuro-top",
 				basePosition: {
-					top: -325,
+					top: -335,
 					left: -100,
 					followStrength: 15,
 				},
@@ -300,7 +298,7 @@ export const KurokoBasketballTextGif = {
 				className: "gif-left",
 				basePosition: {
 					top: -195,
-					left: -390,
+					left: -410,
 					followStrength: 15,
 				},
 			},
@@ -308,7 +306,7 @@ export const KurokoBasketballTextGif = {
 				src: KurukoGif2,
 				className: "gif-right",
 				basePosition: {
-					top: -235,
+					top: -195,
 					left: 70,
 					followStrength: 15,
 				},
@@ -474,7 +472,7 @@ export const KurokoBasketballTextGif = {
 		gifs: [
 			{
 				src: teppeiGif1,
-				className: "gif-top",
+				className: "gif-top gif-teppei-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -492,7 +490,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: TeppeiGif3,
-				className: "gif-right",
+				className: "gif-right gif-teppei-right",
 				basePosition: {
 					top: -175,
 					left: 25,
@@ -793,7 +791,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: KoichiGif2,
-				className: "gif-left",
+				className: "gif-left gif-kawahara-left",
 				basePosition: {
 					top: -1,
 					left: -450,
@@ -802,7 +800,7 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: KoichiGif3,
-				className: "gif-right",
+				className: "gif-right ",
 				basePosition: {
 					top: -1,
 					left: 20,
@@ -815,7 +813,7 @@ export const KurokoBasketballTextGif = {
 		gifs: [
 			{
 				src: mitobeGif1,
-				className: "gif-top",
+				className: "gif-top gif-mitobe-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -936,4 +934,3 @@ export const KurokoBasketballTextGif = {
 		],
 	},
 };
-
