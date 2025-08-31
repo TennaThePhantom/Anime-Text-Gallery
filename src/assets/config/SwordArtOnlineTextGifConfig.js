@@ -50,7 +50,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: SwordArtOnlineGif1,
-				className: "gif-right",
+				className: "gif-right gif-sao-main-right",
 				basePosition: {
 					top: -90,
 					left: 0,
@@ -82,7 +82,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: SwordArtOnlineGif3,
-				className: "gif-right",
+				className: "gif-right gif-sao-main-right",
 				basePosition: {
 					top: -50,
 					left: 0,
@@ -104,7 +104,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: LisbethGif1,
-				className: "gif-left",
+				className: "gif-left gif-sao-main-left",
 				basePosition: {
 					top: -10,
 					left: -400,
@@ -126,7 +126,7 @@ export const SwordArtOnlineTextGif = {
 		gifs: [
 			{
 				src: YukkiGif1,
-				className: "gif-top",
+				className: "gif-top gif-sao-top",
 				basePosition: {
 					top: -375,
 					left: -100,
@@ -135,7 +135,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: YukkiGif2,
-				className: "gif-left",
+				className: "gif-left gif-sao-top",
 				basePosition: {
 					top: -275,
 					left: -360,
@@ -144,7 +144,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: YukkiGif3,
-				className: "gif-right",
+				className: "gif-right gif-sao-right-top",
 				basePosition: {
 					top: -275,
 					left: 70,
@@ -157,7 +157,7 @@ export const SwordArtOnlineTextGif = {
 		gifs: [
 			{
 				src: SilicaGif1,
-				className: "gif-top",
+				className: "gif-top gif-sao-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -166,7 +166,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: SilicaGif2,
-				className: "gif-left",
+				className: "gif-left gif-sao-top",
 				basePosition: {
 					top: -255,
 					left: -360,
@@ -175,7 +175,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: SilicaGif3,
-				className: "gif-right",
+				className: "gif-right gif-sao-right-top",
 				basePosition: {
 					top: -255,
 					left: 70,
@@ -188,7 +188,7 @@ export const SwordArtOnlineTextGif = {
 		gifs: [
 			{
 				src: LisbethGif1,
-				className: "gif-top",
+				className: "gif-top gif-sao-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -197,7 +197,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: LisbethGif2,
-				className: "gif-left",
+				className: "gif-left gif-sao-top",
 				basePosition: {
 					top: -195,
 					left: -355,
@@ -206,7 +206,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: LisbethGif3,
-				className: "gif-right",
+				className: "gif-right gif-sao-right-top",
 				basePosition: {
 					top: -195,
 					left: 75,
@@ -219,7 +219,7 @@ export const SwordArtOnlineTextGif = {
 		gifs: [
 			{
 				src: KleinGif1,
-				className: "gif-top",
+				className: "gif-top gif-sao-top-middle",
 				basePosition: {
 					top: -265,
 					left: -105,
@@ -228,7 +228,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: KleinGif2,
-				className: "gif-left",
+				className: "gif-left gif-sao-top",
 				basePosition: {
 					top: -155,
 					left: -365,
@@ -237,7 +237,7 @@ export const SwordArtOnlineTextGif = {
 			},
 			{
 				src: KleinGif3,
-				className: "gif-right",
+				className: "gif-right gif-sao-top",
 				basePosition: {
 					top: -155,
 					left: 75,
@@ -250,7 +250,7 @@ export const SwordArtOnlineTextGif = {
 		gifs: [
 			{
 				src: SinonGif1,
-				className: "gif-top",
+				className: "gif-top gif-sao-top-middle",
 				basePosition: {
 					top: -225,
 					left: -100,

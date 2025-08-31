@@ -22,19 +22,47 @@
 	transform: translateX(-30%);
 }
 
-.gif-right-z-fighters { /*A text is longer than others which cause size issues*/
+.gif-right-z-fighters {
+	/*A text is longer than others which cause size issues*/
 	transform-origin: top center;
 	transform: translateX(-65%);
 }
 
-.gif-right-left-zero{
+.gif-right-left-zero {
 	transform-origin: top center;
 	transform: translateX(-100%);
 }
 
+.gif-sao-top {
+}
 
-@media (width <= 1440px) {
+.gif-sao-right-top {
+}
+
+.gif-sao-top-middle {
+}
+.gif-sao-main-right{
+
+}
+
+@media (width < 1440px) {
 	.gif-top {
 		transform: translateX(-10%);
+	}
+	.gif-sao-top {
+		transform: translateY(30%);
+	}
+	.gif-sao-right-top {
+		transform: translate(20%, 25%);
+	}
+	.gif-sao-top-middle {
+		transform: translateY(13%);
+	}
+	.gif-sao-main-right{
+		transform: translateX(10%);
+	}
+
+	.gif-sao-main-left{
+		transform: translateX(10%);
 	}
 }
