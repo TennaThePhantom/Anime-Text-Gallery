@@ -88,10 +88,10 @@ export const KurokoBasketballTextGif = {
 			},
 			{
 				src: rikoGif1,
-				className: "gif-right-smaller-text",
+				className: "gif-right",
 				basePosition: {
 					top: -130,
-					left: 110,
+					left: 30,
 					followStrength: 15,
 				},
 			},
