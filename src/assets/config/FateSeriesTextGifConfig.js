@@ -68,7 +68,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RinGif2,
-				className: "gif-left",
+				className: "gif-left gif-fate-series-left",
 				basePosition: {
 					top: -80,
 					left: -570,
@@ -77,7 +77,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RiderGif1,
-				className: "gif-right",
+				className: "gif-right gif-fate-series-right",
 				basePosition: {
 					top: -80,
 					left: 50,
@@ -99,7 +99,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: QuetGif1,
-				className: "gif-left",
+				className: "gif-left gif-fate-series-left",
 				basePosition: {
 					top: -40,
 					left: -570,
@@ -108,7 +108,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: AnaGif1,
-				className: "gif-right",
+				className: "gif-right gif-fate-series-right",
 				basePosition: {
 					top: -40,
 					left: 50,
@@ -183,7 +183,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: RitsukaGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-grand-order-drop",
 				basePosition: {
 					top: -385,
 					left: -100,
@@ -192,7 +192,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RitsukaGif2,
-				className: "gif-left",
+				className: "gif-left gif-fate-grand-order-drop",
 				basePosition: {
 					top: -265,
 					left: -355,
@@ -201,7 +201,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RitsukaGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-grand-order-right",
 				basePosition: {
 					top: -265,
 					left: 0,
@@ -214,7 +214,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: MashuGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-grand-order-drop",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -223,7 +223,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: MashuGif2,
-				className: "gif-left",
+				className: "gif-left gif-fate-grand-order-drop",
 				basePosition: {
 					top: -215,
 					left: -355,
@@ -232,7 +232,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: MashuGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-grand-order-right",
 				basePosition: {
 					top: -215,
 					left: 5,
@@ -245,7 +245,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: IshtarGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-grand-order-drop",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -254,7 +254,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: IshtarGif2,
-				className: "gif-left",
+				className: "gif-left gif-fate-grand-order-drop",
 				basePosition: {
 					top: -185,
 					left: -365,
@@ -263,7 +263,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: IshtarGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-grand-order-right",
 				basePosition: {
 					top: -185,
 					left: 5,
@@ -276,7 +276,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: MerlinGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-grand-order-drop",
 				basePosition: {
 					top: -275,
 					left: -100,
@@ -285,7 +285,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: MerlinGif2,
-				className: "gif-left",
+				className: "gif-left gif-fate-grand-order-drop",
 				basePosition: {
 					top: -145,
 					left: -340,
@@ -294,7 +294,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: MerlinGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-grand-order-right",
 				basePosition: {
 					top: -145,
 					left: 5,
@@ -307,7 +307,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: AnaGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-grand-order-drop ",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -325,7 +325,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: AnaGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-grand-order-right-only",
 				basePosition: {
 					top: -105,
 					left: 5,
@@ -399,8 +399,8 @@ export const FateSeriesTextGif = {
 	"Emiya Shirou": {
 		gifs: [
 			{
-				src: FateGif3, // Assuming you have this import (not in your list)
-				className: "gif-top",
+				src: FateGif3,
+				className: "gif-top gif-fate-stay-night-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -418,7 +418,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: EmiyaGif3,
-				className: "gif-right-space",
+				className: "gif-right-space gif-fate-stay-night-right",
 				basePosition: {
 					top: -195,
 					left: 0,
@@ -431,7 +431,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: SakuraGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-top",
 				basePosition: {
 					top: -255,
 					left: -90,
@@ -449,7 +449,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: SakuraGif3,
-				className: "gif-right-space",
+				className: "gif-right-space gif-fate-stay-night-right",
 				basePosition: {
 					top: -155,
 					left: 0,
@@ -462,7 +462,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: FateGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-top",
 				basePosition: {
 					top: -230,
 					left: -95,
@@ -480,7 +480,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RinGif3,
-				className: "gif-right-space",
+				className: "gif-right-space gif-fate-stay-night-right",
 				basePosition: {
 					top: -105,
 					left: 0,
@@ -511,7 +511,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: KireiGif3,
-				className: "gif-right-space",
+				className: "gif-right-space gif-fate-stay-night-right",
 				basePosition: {
 					top: -80,
 					left: 0,
@@ -555,7 +555,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: SaberGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-servants-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -573,7 +573,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: SaberGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -195,
 					left: 5,
@@ -586,7 +586,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: ArcherGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-servants-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -604,7 +604,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: ArcherGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -165,
 					left: 5,
@@ -617,7 +617,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: LancerGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-servants-top",
 				basePosition: {
 					top: -255,
 					left: -100,
@@ -635,7 +635,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: LancerGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -155,
 					left: 5,
@@ -648,7 +648,7 @@ export const FateSeriesTextGif = {
 		gifs: [
 			{
 				src: RiderGif1,
-				className: "gif-top",
+				className: "gif-top gif-fate-stay-night-servants-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -666,7 +666,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: RiderGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -100,
 					left: 20,
@@ -697,7 +697,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: AssassinGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -55,
 					left: 5,
@@ -728,7 +728,7 @@ export const FateSeriesTextGif = {
 			},
 			{
 				src: BerserkerGif3,
-				className: "gif-right",
+				className: "gif-right gif-fate-stay-night-servants-right",
 				basePosition: {
 					top: -15,
 					left: 5,

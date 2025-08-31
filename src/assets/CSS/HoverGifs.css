@@ -58,19 +58,39 @@
 .gif-kawahara-left {
 }
 
-.gif-mitobe-top{
+.gif-mitobe-top {
 }
 
-.gif-kuro-top{
-
+.gif-kuro-top {
 }
-.gif-teppei-top{
-
+.gif-teppei-top {
 }
 
-.gif-teppei-right{
+.gif-teppei-right {
+}
+
+.gif-fate-series-right {
+}
+.gif-fate-series-left {
+}
+.gif-fate-grand-order-drop {
+}
+
+.gif-fate-grand-order-right {
+}
+
+.gif-fate-grand-order-right-only {
+}
+
+.gif-fate-stay-night-top {
+}
+
+.gif-fate-stay-night-right {
+}
+.gif-fate-stay-night-servants-top{
 
 }
+.gif-fate-stay-night-servants-right{}
 /*
 gifs placement adjustment for smaller screens
 */
@@ -113,17 +133,43 @@ gifs placement adjustment for smaller screens
 	.gif-kawahara-left {
 		transform: translateX(20%);
 	}
-	.gif-mitobe-top{
+	.gif-mitobe-top {
 		transform: translateY(16%);
 	}
-	.gif-kuro-top{
+	.gif-kuro-top {
 		transform: translateY(25%);
 	}
-	.gif-teppei-top{
+	.gif-teppei-top {
 		transform: translateY(20%);
 	}
-	.gif-teppei-right{
+	.gif-teppei-right {
 		transform: translateX(20%);
 	}
-
+	.gif-fate-series-right {
+		transform: translateX(-20%);
+	}
+	.gif-fate-series-left {
+		transform: translateX(20%);
+	}
+	.gif-fate-grand-order-drop {
+		transform: translateY(27%);
+	}
+	.gif-fate-grand-order-right {
+		transform: translate(22%, 27%);
+	}
+	.gif-fate-grand-order-right-only {
+		transform: translateX(20%);
+	}
+	.gif-fate-stay-night-top {
+		transform: translate(-15%, 20%);
+	}
+	.gif-fate-stay-night-right{
+		transform: translateX(-9%);
+	}
+	.gif-fate-stay-night-servants-top{
+		transform: translate(-5%, 18%);
+	}
+	.gif-fate-stay-night-servants-right{
+		transform: translateX(15%);
+	}
 }
