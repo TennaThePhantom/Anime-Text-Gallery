@@ -87,10 +87,129 @@
 
 .gif-fate-stay-night-right {
 }
-.gif-fate-stay-night-servants-top{
+.gif-fate-stay-night-servants-top {
+}
+.gif-fate-stay-night-servants-right {
+}
+
+.gif-black-bulls-top {
+}
+.gif-black-bulls-right {
+}
+
+.gif-squad-captains-top {
+}
+.gif-squad-captains-left {
+}
+.gif-squad-captains-right {
+}
+
+.gif-dark-triad-top {
+}
+
+.gif-dark-triad-right {
+}
+
+.gif-midnight-sun-top {
+}
+.gif-midnight-sun-right {
+}
+.gif-midnight-sun-left {
+}
+
+.gif-wizard-king-right {
+}
+
+.gif-black-bull-captains-right {
+}
+
+.gif-black-bulls-members-left {
+}
+.gif-yami-left {
+}
+
+.gif-nacht-top {
+}
+
+.gif-class-top {
+}
+.gif-class-right {
+}
+.gif-class-left {
+}
+
+.gif-first-class-members-top {
+}
+
+.gif-first-class-members-right {
+}
+.gif-top-3-top{
 
 }
-.gif-fate-stay-night-servants-right{}
+
+.gif-sub-captains-right{
+
+}
+.gif-sub-captains-left{
+
+}
+
+.gif-charlotte-top{
+
+}
+.gif-jack-right{
+
+}
+.gif-dorothy-top{
+
+}
+.gif-dorothy-left{
+
+}
+
+.gif-sub-yuno-top{
+
+}
+
+.gif-dante-top{
+
+}
+.gif-midnight-sun-members{
+
+}
+.gif-asta-comrades-top{
+
+}
+
+.gif-julius-top{
+
+}
+
+.gif-previous-wizard-kings{
+
+}
+
+.gif-lemiel-top{
+
+}
+.gif-lemiel-right{
+
+}
+.gif-lemiel-left{
+
+}
+
+.gif-funnybunny-top{
+
+}
+
+.gif-jester-top{
+
+}
+
+.gif-conrad-right{
+
+}
 /*
 gifs placement adjustment for smaller screens
 */
@@ -163,13 +282,130 @@ gifs placement adjustment for smaller screens
 	.gif-fate-stay-night-top {
 		transform: translate(-15%, 20%);
 	}
-	.gif-fate-stay-night-right{
+	.gif-fate-stay-night-right {
 		transform: translateX(-9%);
 	}
-	.gif-fate-stay-night-servants-top{
+	.gif-fate-stay-night-servants-top {
 		transform: translate(-5%, 18%);
 	}
-	.gif-fate-stay-night-servants-right{
+	.gif-fate-stay-night-servants-right {
 		transform: translateX(15%);
+	}
+	.gif-black-bulls-top {
+		transform: translate(-12%, 20%);
+	}
+	.gif-black-bulls-right {
+		transform: translate(5%, 0);
+	}
+	.gif-squad-captains-top {
+		transform: translate(-7%, 20%);
+	}
+	.gif-squad-captains-left {
+		transform: translate(15%, 10%);
+	}
+	.gif-squad-captains-right {
+		transform: translateY(10%);
+	}
+	.gif-dark-triad-top {
+		transform: translateY(15%);
+	}
+	.gif-dark-triad-right {
+		transform: translate(25%, 0);
+	}
+	.gif-midnight-sun-top {
+		transform: translate(-5%, 10%);
+	}
+	.gif-midnight-sun-right {
+		transform: translate(-10%, 0);
+	}
+	.gif-midnight-sun-left {
+		transform: translate(10%, 0);
+	}
+	.gif-wizard-king-right {
+		transform: translateX(20%);
+	}
+	.gif-black-bull-captains-right {
+		transform: translateX(-65%);
+	}
+	.gif-black-bulls-members-left {
+		transform: translateX(13%);
+	}
+	.gif-yami-left {
+		transform: translateX(-8%);
+	}
+	.gif-nacht-top {
+		transform: translateX(-5%);
+	}
+	.gif-class-top {
+		transform: translateY(15%);
+	}
+	.gif-class-right {
+		transform: translateX(-35%);
+	}
+	.gif-class-left {
+		transform: translateX(35%);
+	}
+	.gif-first-class-members-top {
+		transform: translate(2.5%, 18%);
+	}
+	.gif-first-class-members-right {
+		transform: translateX(20%);
+	}
+	.gif-top-3-top{
+		transform: translate(-20%, 10%);
+	}
+	.gif-sub-captains-right{
+		transform: translateX(-22%);
+	}
+	.gif-sub-captains-left{
+		transform: translateX(30%);
+	}
+	.gif-charlotte-top{
+		transform: translate(-15%, 10%);
+	}
+	.gif-jack-right{
+		transform: translateX(25%);
+	}
+	.gif-dorothy-top{
+		transform: translateX(-15%);
+	}
+	.gif-dorothy-left{
+		transform: translateX(15%);
+	}
+	.gif-sub-yuno-top{
+		transform: translateX(-30%);
+	}
+	.gif-dante-top{
+		transform: translate(-12%,10%);
+	}
+	.gif-midnight-sun-members-top{
+		transform: translate(-2%, 8%);
+	}
+	.gif-asta-comrades-top{
+		transform: translate(-5%, 5%);
+	}
+	.gif-julius-top{
+		transform: translate(-30%, 5%);
+	}
+	.gif-previous-wizard-kings{
+		transform: translateX(-25%);
+	}
+	.gif-lemiel-top{
+		transform: translate(-12%, 10%);
+	}
+	.gif-lemiel-right{
+		transform: translateX(-15%);
+	}
+	.gif-lemiel-left{
+		transform: translateX(25%);
+	}
+	.gif-funnybunny-top{
+		transform: translate(-15%, 16%);
+	}
+	.gif-jester-top{
+		transform: translate(-1%, 10%);
+	}
+	.gif-conrad-right{
+		transform: translateX(10%);
 	}
 }

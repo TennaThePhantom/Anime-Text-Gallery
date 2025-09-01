@@ -128,7 +128,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: YamiGif1,
-				className: "gif-top",
+				className: "gif-top gif-black-bulls-top",
 				basePosition: {
 					top: -335,
 					left: -90,
@@ -146,7 +146,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: NoelleGif1,
-				className: "gif-right",
+				className: "gif-right gif-black-bulls-right",
 				basePosition: {
 					top: -215,
 					left: 5,
@@ -159,7 +159,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: MereoleonaGif1,
-				className: "gif-top",
+				className: "gif-top gif-squad-captains-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -168,7 +168,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: NozelGif1,
-				className: "gif-left",
+				className: "gif-left gif-squad-captains-left",
 				basePosition: {
 					top: -190,
 					left: -410,
@@ -177,7 +177,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: JackGif1,
-				className: "gif-right",
+				className: "gif-right gif-squad-captains-right",
 				basePosition: {
 					top: -190,
 					left: 30,
@@ -190,7 +190,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: DanteGif1,
-				className: "gif-top",
+				className: "gif-top gif-dark-triad-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -208,7 +208,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: ZenonGif1,
-				className: "gif-right",
+				className: "gif-right gif-dark-triad-right",
 				basePosition: {
 					top: -150,
 					left: 5,
@@ -221,7 +221,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: PatolliGif1,
-				className: "gif-top",
+				className: "gif-top gif-midnight-sun-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -230,7 +230,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: VettoGif1,
-				className: "gif-left",
+				className: "gif-left gif-midnight-sun-left",
 				basePosition: {
 					top: -120,
 					left: -500,
@@ -239,7 +239,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: FanaGif1,
-				className: "gif-right",
+				className: "gif-right gif-midnight-sun-right",
 				basePosition: {
 					top: -120,
 					left: 140,
@@ -301,7 +301,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: ConradGif1,
-				className: "gif-right",
+				className: "gif-right gif-wizard-king-right",
 				basePosition: {
 					top: -35,
 					left: 5,
@@ -313,7 +313,7 @@ export const BlackCloverTextGif = {
 	Captains: {
 		gifs: [
 			{
-				src: JuliusGif1,
+				src: NachtGif2,
 				className: "gif-top",
 				basePosition: {
 					top: -185,
@@ -322,7 +322,7 @@ export const BlackCloverTextGif = {
 				},
 			},
 			{
-				src: LemielGif1,
+				src: NachtGif1,
 				className: "gif-left",
 				basePosition: {
 					top: -65,
@@ -331,8 +331,8 @@ export const BlackCloverTextGif = {
 				},
 			},
 			{
-				src: ConradGif1,
-				className: "gif-right-left-zero",
+				src: YamiGif1,
+				className: "gif-right-left-zero gif-black-bull-captains-right",
 				basePosition: {
 					top: -65,
 					left: 100,
@@ -354,7 +354,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: LuckGif1,
-				className: "gif-left",
+				className: "gif-left gif-black-bulls-members-left",
 				basePosition: {
 					top: -35,
 					left: -480,
@@ -385,7 +385,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: YamiGif2,
-				className: "gif-left",
+				className: "gif-left gif-yami-left",
 				basePosition: {
 					top: -55,
 					left: -340,
@@ -407,7 +407,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: NachtGif1,
-				className: "gif-top",
+				className: "gif-top gif-nacht-top",
 				basePosition: {
 					top: -155,
 					left: -100,
@@ -438,7 +438,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: FinralGif1,
-				className: "gif-top",
+				className: "gif-top gif-class-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -447,7 +447,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: CharmyGif1,
-				className: "gif-left",
+				className: "gif-left gif-class-left",
 				basePosition: {
 					top: -195,
 					left: -490,
@@ -456,7 +456,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: ZoraGif1,
-				className: "gif-right",
+				className: "gif-right gif-class-right",
 				basePosition: {
 					top: -195,
 					left: 210,
@@ -478,7 +478,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: VanessaGif1,
-				className: "gif-left",
+				className: "gif-left gif-class-left",
 				basePosition: {
 					top: -145,
 					left: -490,
@@ -487,7 +487,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: GreyGif1,
-				className: "gif-right",
+				className: "gif-right gif-class-right",
 				basePosition: {
 					top: -145,
 					left: 210,
@@ -500,7 +500,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: HenryGif1,
-				className: "gif-top",
+				className: "gif-top gif-class-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -509,7 +509,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: LuckGif1,
-				className: "gif-left",
+				className: "gif-left gif-class-left",
 				basePosition: {
 					top: -105,
 					left: -490,
@@ -518,7 +518,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: MagnaGif1,
-				className: "gif-right",
+				className: "gif-right gif-class-right",
 				basePosition: {
 					top: -105,
 					left: 220,
@@ -593,7 +593,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: blackCloverGif3,
-				className: "gif-top",
+				className: "gif-top gif-first-class-members-top",
 				basePosition: {
 					top: -350,
 					left: -100,
@@ -611,7 +611,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: AstaGif3,
-				className: "gif-right",
+				className: "gif-right gif-first-class-members-right",
 				basePosition: {
 					top: -195,
 					left: 60,
@@ -624,7 +624,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: CharmyGif1,
-				className: "gif-top",
+				className: "gif-top gif-first-class-members-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -642,7 +642,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: CharmyGif3,
-				className: "gif-right",
+				className: "gif-right gif-first-class-members-right",
 				basePosition: {
 					top: -155,
 					left: 40,
@@ -655,7 +655,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: GaucheGif1,
-				className: "gif-top",
+				className: "gif-top gif-first-class-members-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -673,7 +673,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: GaucheGif3,
-				className: "gif-right",
+				className: "gif-right gif-first-class-members-right",
 				basePosition: {
 					top: -135,
 					left: 40,
@@ -686,7 +686,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: ZoraGif1,
-				className: "gif-top",
+				className: "gif-top gif-first-class-members-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -704,7 +704,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: ZoraGif3,
-				className: "gif-right",
+				className: "gif-right gif-first-class-members-right",
 				basePosition: {
 					top: -105,
 					left: 40,
@@ -965,7 +965,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: YamiGif2,
-				className: "gif-top",
+				className: "gif-top gif-top-3-top",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -1036,7 +1036,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: MereoleonaGif1,
-				className: "gif-left",
+				className: "gif-left gif-sub-captains-left",
 				basePosition: {
 					top: -45,
 					left: -580,
@@ -1045,7 +1045,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: MereoleonaGif2,
-				className: "gif-right",
+				className: "gif-right gif-sub-captains-right",
 				basePosition: {
 					top: -45,
 					left: 35,
@@ -1151,7 +1151,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: CharlotteGif1,
-				className: "gif-top",
+				className: "gif-top gif-charlotte-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -1231,7 +1231,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: JackGif3,
-				className: "gif-right",
+				className: "gif-right gif-jack-right",
 				basePosition: {
 					top: -115,
 					left: 5,
@@ -1244,7 +1244,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: DorothyGif1,
-				className: "gif-top",
+				className: "gif-top gif-dorothy-top",
 				basePosition: {
 					top: -185,
 					left: -80,
@@ -1253,7 +1253,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: DorothyGif2,
-				className: "gif-left",
+				className: "gif-left gif-dorothy-left",
 				basePosition: {
 					top: -85,
 					left: -450,
@@ -1306,7 +1306,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: YunoGif1,
-				className: "gif-top",
+				className: "gif-top gif-sub-yuno-top",
 				basePosition: {
 					top: -175,
 					left: -80,
@@ -1368,7 +1368,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: DanteGif1,
-				className: "gif-top",
+				className: "gif-top gif-dante-top",
 				basePosition: {
 					top: -230,
 					left: -100,
@@ -1461,7 +1461,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: PatolliGif1,
-				className: "gif-top",
+				className: "gif-top gif-midnight-sun-members-top",
 				basePosition: {
 					top: -275,
 					left: -100,
@@ -1492,7 +1492,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: RhyaGif1,
-				className: "gif-top",
+				className: "gif-top gif-midnight-sun-members-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -1523,7 +1523,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: VettoGif1,
-				className: "gif-top",
+				className: "gif-top gif-midnight-sun-members-top",
 				basePosition: {
 					top: -185,
 					left: -100,
@@ -1554,7 +1554,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: FanaGif1,
-				className: "gif-top",
+				className: "gif-top gif-midnight-sun-members-top",
 				basePosition: {
 					top: -145,
 					left: -100,
@@ -1585,7 +1585,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: YunoGif1,
-				className: "gif-top",
+				className: "gif-top gif-asta-comrades-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1616,7 +1616,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: MimosaGif1,
-				className: "gif-top",
+				className: "gif-top gif-asta-comrades-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -1647,7 +1647,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: KlausGif1,
-				className: "gif-top",
+				className: "gif-top gif-asta-comrades-top",
 				basePosition: {
 					top: -185,
 					left: -100,
@@ -1678,7 +1678,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: LeopoldGif1,
-				className: "gif-top",
+				className: "gif-top gif-asta-comrades-top",
 				basePosition: {
 					top: -155,
 					left: -100,
@@ -1709,7 +1709,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: JuliusGif1,
-				className: "gif-top",
+				className: "gif-top gif-julius-top",
 				basePosition: {
 					top: -185,
 					left: -80,
@@ -1740,7 +1740,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: LemielGif1,
-				className: "gif-top",
+				className: "gif-top gif-previous-wizard-kings",
 				basePosition: {
 					top: -145,
 					left: -90,
@@ -1771,7 +1771,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: LemielGif1,
-				className: "gif-top",
+				className: "gif-top gif-lemiel-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -1780,7 +1780,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: LemielGif2,
-				className: "gif-left",
+				className: "gif-left gif-lemiel-left",
 				basePosition: {
 					top: -180,
 					left: -510,
@@ -1789,7 +1789,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: LemielGif3,
-				className: "gif-right",
+				className: "gif-right gif-lemiel-right",
 				basePosition: {
 					top: -180,
 					left: 160,
@@ -1802,7 +1802,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: FunnyGif1,
-				className: "gif-top",
+				className: "gif-top gif-funnybunny-top",
 				basePosition: {
 					top: -265,
 					left: -80,
@@ -1833,7 +1833,7 @@ export const BlackCloverTextGif = {
 		gifs: [
 			{
 				src: JesterGif1,
-				className: "gif-top",
+				className: "gif-top gif-jester-top",
 				basePosition: {
 					top: -230,
 					left: -100,
@@ -1913,7 +1913,7 @@ export const BlackCloverTextGif = {
 			},
 			{
 				src: ConradGif3,
-				className: "gif-right",
+				className: "gif-right gif-conrad-right",
 				basePosition: {
 					top: -20,
 					left: 15,
