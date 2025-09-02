@@ -33,209 +33,6 @@
 	transform: translateX(-100%);
 }
 
-.gif-sao-top {
-}
-
-.gif-sao-right-top {
-}
-
-.gif-sao-top-middle {
-}
-.gif-sao-main-right {
-}
-
-.gif-gom-right {
-}
-.gif-gom-left {
-}
-.gif-uncrown-kings-left {
-}
-.gif-seirin-high-top {
-}
-.gif-seirin-high-right {
-}
-
-.gif-kawahara-left {
-}
-
-.gif-mitobe-top {
-}
-
-.gif-kuro-top {
-}
-.gif-teppei-top {
-}
-
-.gif-teppei-right {
-}
-
-.gif-fate-series-right {
-}
-.gif-fate-series-left {
-}
-.gif-fate-grand-order-drop {
-}
-
-.gif-fate-grand-order-right {
-}
-
-.gif-fate-grand-order-right-only {
-}
-
-.gif-fate-stay-night-top {
-}
-
-.gif-fate-stay-night-right {
-}
-.gif-fate-stay-night-servants-top {
-}
-.gif-fate-stay-night-servants-right {
-}
-
-.gif-black-bulls-top {
-}
-.gif-black-bulls-right {
-}
-
-.gif-squad-captains-top {
-}
-.gif-squad-captains-left {
-}
-.gif-squad-captains-right {
-}
-
-.gif-dark-triad-top {
-}
-
-.gif-dark-triad-right {
-}
-
-.gif-midnight-sun-top {
-}
-.gif-midnight-sun-right {
-}
-.gif-midnight-sun-left {
-}
-
-.gif-wizard-king-right {
-}
-
-.gif-black-bull-captains-right {
-}
-
-.gif-black-bulls-members-left {
-}
-.gif-yami-left {
-}
-
-.gif-nacht-top {
-}
-
-.gif-class-top {
-}
-.gif-class-right {
-}
-.gif-class-left {
-}
-
-.gif-first-class-members-top {
-}
-
-.gif-first-class-members-right {
-}
-.gif-top-3-top {
-}
-
-.gif-sub-captains-right {
-}
-.gif-sub-captains-left {
-}
-
-.gif-charlotte-top {
-}
-.gif-jack-right {
-}
-.gif-dorothy-top {
-}
-.gif-dorothy-left {
-}
-
-.gif-sub-yuno-top {
-}
-
-.gif-dante-top {
-}
-.gif-midnight-sun-members {
-}
-.gif-asta-comrades-top {
-}
-
-.gif-julius-top {
-}
-
-.gif-previous-wizard-kings {
-}
-
-.gif-lemiel-top {
-}
-.gif-lemiel-right {
-}
-.gif-lemiel-left {
-}
-
-.gif-funnybunny-top {
-}
-
-.gif-jester-top {
-}
-
-.gif-conrad-right {
-}
-
-.gif-z-top {
-}
-
-.gif-villains-top {
-}
-
-.gif-movie-villains-top {
-}
-
-.gif-fusions-top {
-}
-.gif-fusions-right {
-}
-.gif-fusions-left {
-}
-.gif-saiyans-top {
-}
-.gif-saiyans-right {
-}
-.gif-saiyans-left {
-}
-
-.gif-z-fighters-members-top {
-}
-.gif-z-fighters-members-top-middle {
-}
-.gif-z-fighters-members-right {
-}
-
-.gif-z-fighters-members-left {
-}
-
-.gif-villains-members-top {
-}
-.gif-villains-members-right,
-.gif-villains-members-left {
-}
-
-.gif-movie-villains-members-top {
-}
-.gif-movie-villains-members-right,
-.gif-movie-villains-members-left {
-}
-
 /*
 gifs placement adjustment for smaller screens
 */
@@ -655,26 +452,26 @@ gifs placement adjustment for smaller screens
 	.gif-royal-guards-members-left {
 		transform: translateY(10%);
 	}
-	.gif-ichigo-top{
+	.gif-ichigo-top {
 		transform: translate(-25%, 28%);
 	}
-	.gif-ichigo-right-left{
+	.gif-ichigo-right-left {
 		transform: translateY(30%);
 	}
-	.gif-main-characters-top{
+	.gif-main-characters-top {
 		transform: translate(-10%, 20%);
 	}
-	.gif-main-characters-top-middle{
+	.gif-main-characters-top-middle {
 		transform: translate(-10%, 10%);
 	}
-	.gif-main-characters-right-left{
-		transform: translateY(20%)
+	.gif-main-characters-right-left {
+		transform: translateY(20%);
 	}
 
-	.gif-chad-right{
+	.gif-chad-right {
 		transform: translate(10%, 20%);
 	}
-	.gif-kisuke-right{
+	.gif-kisuke-right {
 		transform: translateX(10%);
 	}
 }
