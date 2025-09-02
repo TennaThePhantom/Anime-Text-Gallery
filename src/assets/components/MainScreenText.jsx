@@ -96,7 +96,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	const textAnimation =
 		textAnimationsClasses[index % textAnimationsClasses.length];
 	return (
-		// displays the main screen text .
+		// displays the main screen text.
 		<div
 			ref={textRef}
 			className={`main-screen-text ${(isActive || showTextAnimation) ? textAnimation : ""}`}

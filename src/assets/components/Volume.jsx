@@ -5,7 +5,6 @@ import { ImVolumeMute } from "react-icons/im"; // volume is basically at 1-3 not
 import { ImVolumeMute2 } from "react-icons/im";
 import { useState, useEffect, useRef } from "react";
 import { useAudio } from "../contexts/AudioContext.jsx";
-
 import "../css/Volume.css";
 function Volume() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
@@ -83,7 +82,7 @@ function Volume() {
 			setShowVolumeSlider(true);
 			return;
 		}
-		// Toggle slider visibility only if clicking the icon (not the slider)
+		// Toggle slider visibility if clicking/hover the icon (not the slider)
 		if (
 			!sliderTimeoutRef.current
 				.querySelector(".volume-slider-container")
