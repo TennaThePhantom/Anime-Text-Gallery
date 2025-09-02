@@ -133,7 +133,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ByakuyaGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-13-top",
 				basePosition: {
 					top: -300,
 					left: -100,
@@ -142,7 +142,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KenpachiGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-13-left",
 				basePosition: {
 					top: -160,
 					left: -360,
@@ -151,7 +151,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ToshGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-13-right",
 				basePosition: {
 					top: -160,
 					left: 150,
@@ -164,7 +164,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: UlquGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-13-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -173,7 +173,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GrimGif1,
-				className: "gif-left",
+				className: "gif-left gif-gotei-13-left",
 				basePosition: {
 					top: -125,
 					left: -340,
@@ -182,7 +182,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: NnoitraGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-13-right",
 				basePosition: {
 					top: -125,
 					left: 145,
@@ -195,7 +195,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ShinjiGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-13-top",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -204,7 +204,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: HiyoriGif1,
-				className: "gif-left",
+				className: "gif-left gif-gotei-13-left",
 				basePosition: {
 					top: -105,
 					left: -370,
@@ -213,7 +213,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: LisaGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-13-right",
 				basePosition: {
 					top: -105,
 					left: 185,
@@ -226,7 +226,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: IchibeGif1,
-				className: "gif-top",
+				className: "gif-top gif-goetei-13-top-middle",
 				basePosition: {
 					top: -195,
 					left: -90,
@@ -288,7 +288,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: YamaGif1,
-				className: "gif-top",
+				className: "gif-top gif-old-13-top",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -400,7 +400,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: JushiroGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-7-13-right",
 				basePosition: {
 					top: -15,
 					left: 215,
@@ -413,7 +413,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: YamaGif1,
-				className: "gif-top",
+				className: "gif-top gif-yamamoto-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -422,7 +422,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: YamaGif2,
-				className: "gif-left",
+				className: "gif-left gif-yamamoto-left",
 				basePosition: {
 					top: -215,
 					left: -610,
@@ -431,7 +431,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: YamaGif3,
-				className: "gif-right",
+				className: "gif-right gif-yamamoto-right",
 				basePosition: {
 					top: -215,
 					left: 215,
@@ -444,7 +444,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: SoiGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-1-7-members-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -453,7 +453,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: SoiGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-1-7-members-left",
 				basePosition: {
 					top: -195,
 					left: -340,
@@ -462,7 +462,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: SoiGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-1-7-members-right",
 				basePosition: {
 					top: -195,
 					left: 150,
@@ -475,7 +475,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: GinGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-1-7-members-top",
 				basePosition: {
 					top: -275,
 					left: -100,
@@ -484,7 +484,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GinGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-1-7-members-left",
 				basePosition: {
 					top: -150,
 					left: -370,
@@ -493,7 +493,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GinGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-1-7-members-right",
 				basePosition: {
 					top: -150,
 					left: 180,
@@ -506,7 +506,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: UnoGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-1-7-members-top",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -515,7 +515,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: UnoGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-1-7-members-left",
 				basePosition: {
 					top: -95,
 					left: -400,
@@ -524,7 +524,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: UnoGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-1-7-members-right",
 				basePosition: {
 					top: -95,
 					left: 200,
@@ -537,7 +537,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: bleachGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-1-7-members-top-middle",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -546,7 +546,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: AizenGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-1-7-members-left",
 				basePosition: {
 					top: -75,
 					left: -400,
@@ -555,7 +555,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: AizenGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-1-7-members-right",
 				basePosition: {
 					top: -75,
 					left: 200,
@@ -586,7 +586,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ByakuyaGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-byakuya-right",
 				basePosition: {
 					top: -15,
 					left: 215,
@@ -599,7 +599,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: SajinGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top",
 				basePosition: {
 					top: -375,
 					left: -100,
@@ -608,7 +608,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: SajinGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-7-13-members-left",
 				basePosition: {
 					top: -265,
 					left: -430,
@@ -617,7 +617,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: SajinGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-7-13-members-right",
 				basePosition: {
 					top: -265,
 					left: 200,
@@ -630,7 +630,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ShunGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top",
 				basePosition: {
 					top: -345,
 					left: -100,
@@ -639,7 +639,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ShunGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-7-13-members-left",
 				basePosition: {
 					top: -225,
 					left: -415,
@@ -648,7 +648,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ShunGif3,
-				className: "gif-right",
+				className: "gif-right gif-shunsui-right",
 				basePosition: {
 					top: -225,
 					left: 25,
@@ -661,7 +661,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: TosenGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top-middle",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -692,7 +692,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ToshGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top-middle",
 				basePosition: {
 					top: -260,
 					left: -100,
@@ -723,7 +723,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: bleachGif3,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top-middle",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -754,7 +754,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: MayuriGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top-bottom",
 				basePosition: {
 					top: -185,
 					left: -90,
@@ -785,7 +785,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: JushiroGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-7-13-members-top-bottom",
 				basePosition: {
 					top: -155,
 					left: -100,
@@ -817,7 +817,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: RojuroGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-roujuuro-top",
 				basePosition: {
 					top: -275,
 					left: -100,
@@ -837,8 +837,8 @@ export const BleachTextGif = {
 				src: RojuroGif3,
 				className: "gif-right-left-zero",
 				basePosition: {
-					top: -45,
-					left: 215,
+					top: -145,
+					left: 265,
 					followStrength: 15,
 				},
 			},
@@ -848,7 +848,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ShinjiGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-shinji-top",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -866,7 +866,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ShinjiGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero ",
 				basePosition: {
 					top: -65,
 					left: 195,
@@ -879,7 +879,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: LisaGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-lisa-ken-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -888,7 +888,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: LisaGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-lisa-ken-left",
 				basePosition: {
 					top: -235,
 					left: -435,
@@ -897,7 +897,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: LisaGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-lisa-ken-right",
 				basePosition: {
 					top: -235,
 					left: 215,
@@ -910,7 +910,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: KenGif1,
-				className: "gif-top",
+				className: "gif-top gif-gotei-lisa-ken-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -919,7 +919,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KenGif2,
-				className: "gif-left",
+				className: "gif-left gif-gotei-lisa-ken-left",
 				basePosition: {
 					top: -195,
 					left: -455,
@@ -928,7 +928,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KenGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-gotei-lisa-ken-right",
 				basePosition: {
 					top: -195,
 					left: 235,
@@ -959,7 +959,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GinGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-espades-right",
 				basePosition: {
 					top: -55,
 					left: 215,
@@ -990,7 +990,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: StarrkGif1,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-espades-right",
 				basePosition: {
 					top: -35,
 					left: 235,
@@ -1065,7 +1065,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: TosenGif1,
-				className: "gif-top",
+				className: "gif-top gif-tosen-top",
 				basePosition: {
 					top: -155,
 					left: -100,
@@ -1158,7 +1158,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: StarrkGif1,
-				className: "gif-top",
+				className: "gif-top gif-starrk-top",
 				basePosition: {
 					top: -305,
 					left: -95,
@@ -1167,7 +1167,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: StarrkGif2,
-				className: "gif-left",
+				className: "gif-left gif-starrk-right-left",
 				basePosition: {
 					top: -185,
 					left: -390,
@@ -1176,7 +1176,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: StarrkGif3,
-				className: "gif-right",
+				className: "gif-right gif-starrk-right-left",
 				basePosition: {
 					top: -185,
 					left: 30,
@@ -1189,7 +1189,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: BaragganGif1,
-				className: "gif-top",
+				className: "gif-top gif-espada-1-5-members-top",
 				basePosition: {
 					top: -260,
 					left: -100,
@@ -1198,7 +1198,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: BaragganGif2,
-				className: "gif-left",
+				className: "gif-left gif-baraggan-left",
 				basePosition: {
 					top: -165,
 					left: -530,
@@ -1207,7 +1207,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: BaragganGif3,
-				className: "gif-right",
+				className: "gif-right gif-baraggan-right",
 				basePosition: {
 					top: -165,
 					left: 160,
@@ -1313,7 +1313,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: GrimGif1,
-				className: "gif-top",
+				className: "gif-top gif-grimjow-top",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -1322,7 +1322,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GrimGif2,
-				className: "gif-left",
+				className: "gif-left gif-grimjow-left",
 				basePosition: {
 					top: -195,
 					left: -540,
@@ -1331,7 +1331,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: GrimGif3,
-				className: "gif-right",
+				className: "gif-right gif-grimjow-right",
 				basePosition: {
 					top: -195,
 					left: 150,
@@ -1344,7 +1344,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ZommGif1,
-				className: "gif-top",
+				className: "gif-top gif-zommari-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1353,7 +1353,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ZommGif2,
-				className: "gif-left",
+				className: "gif-left gif-zommari-right-left",
 				basePosition: {
 					top: -150,
 					left: -440,
@@ -1362,7 +1362,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ZommGif3,
-				className: "gif-right",
+				className: "gif-right gif-zommari-right-left",
 				basePosition: {
 					top: -150,
 					left: 80,
@@ -1468,7 +1468,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ShinjiGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top",
 				basePosition: {
 					top: -405,
 					left: -100,
@@ -1477,7 +1477,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ShinjiGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -295,
 					left: -340,
@@ -1486,7 +1486,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ShinjiGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -295,
 					left: 85,
@@ -1499,7 +1499,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: loveGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top",
 				basePosition: {
 					top: -385,
 					left: -100,
@@ -1508,7 +1508,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: LoveGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -235,
 					left: -340,
@@ -1517,7 +1517,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: LoveGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -235,
 					left: 85,
@@ -1530,7 +1530,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: RojuroGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top",
 				basePosition: {
 					top: -345,
 					left: -100,
@@ -1539,7 +1539,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: RojuroGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -195,
 					left: -340,
@@ -1548,7 +1548,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: RojuroGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -195,
 					left: 85,
@@ -1561,7 +1561,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: KenGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top-middle",
 				basePosition: {
 					top: -300,
 					left: -100,
@@ -1570,7 +1570,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KenGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -185,
 					left: -340,
@@ -1579,7 +1579,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KenGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -185,
 					left: 85,
@@ -1592,7 +1592,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: MashGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top-middle",
 				basePosition: {
 					top: -275,
 					left: -100,
@@ -1601,7 +1601,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: MashGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -135,
 					left: -340,
@@ -1610,7 +1610,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: MashGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -135,
 					left: 85,
@@ -1623,7 +1623,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: HiyoriGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top-middle",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -1632,7 +1632,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: HiyoriGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-right-left",
 				basePosition: {
 					top: -105,
 					left: -340,
@@ -1641,7 +1641,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: HiyoriGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-right-left",
 				basePosition: {
 					top: -105,
 					left: 85,
@@ -1654,7 +1654,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: HachGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-members-top-low",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -1663,7 +1663,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: HachGif2,
-				className: "gif-left",
+				className: "gif-left gif-visored-members-low-right-left ",
 				basePosition: {
 					top: -55,
 					left: -340,
@@ -1672,7 +1672,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: HachGif3,
-				className: "gif-right",
+				className: "gif-right gif-visored-members-low-right-left",
 				basePosition: {
 					top: -55,
 					left: 85,
@@ -1685,7 +1685,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: LisaGif1,
-				className: "gif-top",
+				className: "gif-top gif-visored-lisa-top",
 				basePosition: {
 					top: -155,
 					left: -100,
@@ -1716,7 +1716,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: IchibeGif1,
-				className: "gif-top",
+				className: "gif-top gif-royal-guards-members-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -1725,7 +1725,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: IchibeGif2,
-				className: "gif-left",
+				className: "gif-left gif-royal-guards-members-left",
 				basePosition: {
 					top: -195,
 					left: -410,
@@ -1734,7 +1734,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: IchibeGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-royal-guards-members-right",
 				basePosition: {
 					top: -195,
 					left: 180,
@@ -1747,7 +1747,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: TenjiroGif1,
-				className: "gif-top",
+				className: "gif-top gif-royal-guards-members-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1778,7 +1778,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: KirioGif1,
-				className: "gif-top",
+				className: "gif-top gif-royal-guards-members-top",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -1809,7 +1809,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: OetsuGif1,
-				className: "gif-top",
+				className: "gif-top gif-royal-guards-members-top",
 				basePosition: {
 					top: -185,
 					left: -100,
@@ -1827,7 +1827,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: OetsuGif3,
-				className: "gif-right-left-zero",
+				className: "gif-right-left-zero gif-royal-guards-members-right",
 				basePosition: {
 					top: -75,
 					left: 160,
@@ -1871,7 +1871,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: bleachGif2,
-				className: "gif-top",
+				className: "gif-top gif-ichigo-top",
 				basePosition: {
 					top: -375,
 					left: -80,
@@ -1880,7 +1880,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: IchigoGif2,
-				className: "gif-left",
+				className: "gif-left gif-ichigo-right-left",
 				basePosition: {
 					top: -265,
 					left: -420,
@@ -1889,7 +1889,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: IchigoGif3,
-				className: "gif-right",
+				className: "gif-right gif-ichigo-right-left",
 				basePosition: {
 					top: -265,
 					left: 25,
@@ -1902,7 +1902,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: RukiaGif1,
-				className: "gif-top",
+				className: "gif-top gif-main-characters-top",
 				basePosition: {
 					top: -345,
 					left: -100,
@@ -1911,7 +1911,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: RukiaGif2,
-				className: "gif-left",
+				className: "gif-left gif-main-characters-right-left",
 				basePosition: {
 					top: -235,
 					left: -390,
@@ -1920,7 +1920,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: RukiaGif3,
-				className: "gif-right",
+				className: "gif-right gif-main-characters-right-left",
 				basePosition: {
 					top: -235,
 					left: 5,
@@ -1933,7 +1933,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: InoueGif1,
-				className: "gif-top",
+				className: "gif-top gif-main-characters-top",
 				basePosition: {
 					top: -300,
 					left: -100,
@@ -1942,7 +1942,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: InoueGif2,
-				className: "gif-left",
+				className: "gif-left gif-main-characters-right-left",
 				basePosition: {
 					top: -195,
 					left: -390,
@@ -1951,7 +1951,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: InoueGif3,
-				className: "gif-right",
+				className: "gif-right gif-main-characters-right-left",
 				basePosition: {
 					top: -195,
 					left: 5,
@@ -1964,7 +1964,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: UryuGif1,
-				className: "gif-top",
+				className: "gif-top gif-main-characters-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1973,7 +1973,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: UryuGif2,
-				className: "gif-left",
+				className: "gif-left gif-main-characters-right-left",
 				basePosition: {
 					top: -145,
 					left: -370,
@@ -1982,7 +1982,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: UryuGif3,
-				className: "gif-right",
+				className: "gif-right gif-main-characters-right-left",
 				basePosition: {
 					top: -145,
 					left: 0,
@@ -1995,7 +1995,7 @@ export const BleachTextGif = {
 		gifs: [
 			{
 				src: ChadGif1,
-				className: "gif-top",
+				className: "gif-top gif-main-characters-top-middle",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -2004,7 +2004,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ChadGif2,
-				className: "gif-left",
+				className: "gif-left gif-main-characters-right-left",
 				basePosition: {
 					top: -105,
 					left: -390,
@@ -2013,7 +2013,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: ChadGif3,
-				className: "gif-right",
+				className: "gif-right gif-chad-right",
 				basePosition: {
 					top: -105,
 					left: 5,
@@ -2075,7 +2075,7 @@ export const BleachTextGif = {
 			},
 			{
 				src: KisukeGif3,
-				className: "gif-right",
+				className: "gif-right gif-kisuke-right",
 				basePosition: {
 					top: -35,
 					left: 15,

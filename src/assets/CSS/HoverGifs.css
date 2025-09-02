@@ -236,7 +236,6 @@
 .gif-movie-villains-members-left {
 }
 
-
 /*
 gifs placement adjustment for smaller screens
 */
@@ -497,27 +496,185 @@ gifs placement adjustment for smaller screens
 	.gif-fusion-member-top {
 		transform: translate(-5%, 16%);
 	}
-	.gif-fusion-member-left-right{
+	.gif-fusion-member-left-right {
 		transform: translateY(15%);
 	}
-	.gif-saiyans-members-top{
+	.gif-saiyans-members-top {
 		transform: translate(-5%, 30%);
 	}
 
-	.gif-saiyans-top-middle-low{
+	.gif-saiyans-top-middle-low {
 		transform: translate(-10%, 15%);
 	}
-	.gif-saiyans-members-left-right{
+	.gif-saiyans-members-left-right {
 		transform: translateY(25%);
 	}
-	.gif-secondary-characters-top{
+	.gif-secondary-characters-top {
 		transform: translate(-12.5%, 30%);
 	}
-	.gif-secondary-characters-top-middle{
-		transform: translate(-12.5%, 15%)
+	.gif-secondary-characters-top-middle {
+		transform: translate(-12.5%, 15%);
 	}
-	.gif-secondary-characters-right-left{
+	.gif-secondary-characters-right-left {
 		transform: translateY(25%);
 	}
-	
+	.gif-gotei-13-top {
+		transform: translate(-15%, 20%);
+	}
+	.gif-gotei-13-left {
+		transform: translate(-7%, 15%);
+	}
+	.gif-gotei-13-right {
+		transform: translate(-83%, 15%);
+	}
+
+	.gif-goetei-13-top-middle {
+		transform: translate(-20%, 15%);
+	}
+
+	.gif-old-13-top {
+		transform: translateX(-20%);
+	}
+	.gif-gotei-7-13-right {
+		transform: translateX(-89%);
+	}
+	.gif-yamamoto-top {
+		transform: translate(-25%, 25%);
+	}
+	.gif-yamamoto-right {
+		transform: translate(-50%, 15%);
+	}
+	.gif-yamamoto-left {
+		transform: translate(45%, 15%);
+	}
+	.gif-gotei-1-7-members-top {
+		transform: translate(-12%, 20%);
+	}
+	.gif-gotei-1-7-members-top-middle {
+		transform: translate(-12%, 10%);
+	}
+	.gif-gotei-1-7-members-right {
+		transform: translate(-85%, 25%);
+	}
+	.gif-gotei-1-7-members-left {
+		transform: translateY(25%);
+	}
+	.gif-byakuya-right {
+		transform: translateX(-85%);
+	}
+	.gif-gotei-7-13-members-top {
+		transform: translate(-10%, 30%);
+	}
+	.gif-gotei-7-13-members-top-middle {
+		transform: translate(-10%, 20%);
+	}
+	.gif-gotei-7-13-members-top-bottom {
+		transform: translate(-15%, 5%);
+	}
+	.gif-gotei-7-13-members-left {
+		transform: translateY(30%);
+	}
+	.gif-shunsui-right {
+		transform: translate(5%, 30%);
+	}
+	.gif-gotei-7-13-members-right {
+		transform: translate(-75%, 30%);
+	}
+	.gif-gotei-roujuuro-top {
+		transform: translate(-15%, 20%);
+	}
+	.gif-gotei-shinji-top {
+		transform: translate(-15%, 15%);
+	}
+	.gif-gotei-lisa-ken-top {
+		transform: translate(-12.5%, 20%);
+	}
+	.gif-gotei-lisa-ken-left {
+		transform: translateY(20%);
+	}
+	.gif-gotei-lisa-ken-right {
+		transform: translate(-85%, 20%);
+	}
+	.gif-espades-right {
+		transform: translateX(-95%);
+	}
+	.gif-tosen-top {
+		transform: translateX(-5%);
+	}
+	.gif-starrk-top {
+		transform: translate(-15%, 23%);
+	}
+	.gif-starrk-right-left {
+		transform: translateY(20%);
+	}
+	.gif-baraggan-right {
+		transform: translate(-30%, 40%);
+	}
+	.gif-baraggan-left {
+		transform: translate(30%, 40%);
+	}
+	.gif-grimjow-top {
+		transform: translateY(20%);
+	}
+	.gif-grimjow-right {
+		transform: translate(-20%, 20%);
+	}
+	.gif-grimjow-left {
+		transform: translate(30%, 20%);
+	}
+	.gif-zommari-top {
+		transform: translate(-12%, 18%);
+	}
+	.gif-zommari-right-left {
+		transform: translateY(15%);
+	}
+	.gif-visored-members-top {
+		transform: translate(-5%, 30%);
+	}
+	.gif-visored-members-top-middle {
+		transform: translate(-5%, 20%);
+	}
+	.gif-visored-members-top-low {
+		transform: translate(-5%, 10%);
+	}
+	.gif-visored-members-right-left {
+		transform: translateY(30%);
+	}
+	.gif-visored-members-low-right-left {
+		transform: translateY(5%);
+	}
+	.gif-visored-lisa-top {
+		transform: translateX(-5%);
+	}
+	.gif-royal-guards-members-top {
+		transform: translate(-20%, 15%);
+	}
+	.gif-royal-guards-members-right {
+		transform: translate(-85%, 10%);
+	}
+	.gif-royal-guards-members-left {
+		transform: translateY(10%);
+	}
+	.gif-ichigo-top{
+		transform: translate(-25%, 28%);
+	}
+	.gif-ichigo-right-left{
+		transform: translateY(30%);
+	}
+	.gif-main-characters-top{
+		transform: translate(-10%, 20%);
+	}
+	.gif-main-characters-top-middle{
+		transform: translate(-10%, 10%);
+	}
+	.gif-main-characters-right-left{
+		transform: translateY(20%)
+	}
+
+	.gif-chad-right{
+		transform: translate(10%, 20%);
+	}
+	.gif-kisuke-right{
+		transform: translateX(10%);
+	}
 }
