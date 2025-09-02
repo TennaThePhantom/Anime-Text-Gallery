@@ -2,11 +2,10 @@ import "./App.css";
 import DarkLightMode from "./assets/components/DarkLightMode.jsx";
 import Volume from "./assets/components/Volume.jsx";
 import NavigationWrapper from "./assets/components/NavigationWrapper.jsx";
-import { AudioProvider } from "./assets/Contexts/AudioContext";
+import { AudioProvider } from "./assets/contexts/AudioContext";
 import MobileAppWaring from "./assets/components/MobileAppWaring.jsx";
 import { useState, useEffect } from "react";
 
-// work on volume component tomorrow
 function App() {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	useEffect(() => {

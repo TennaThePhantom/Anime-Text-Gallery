@@ -1,8 +1,8 @@
-import "../CSS/MainScreenText.css";
+import "../css/MainScreenText.css";
 import React, { useEffect, useState, useRef } from "react";
 import HoverGifs from "../components/HoverGifs.jsx";
-import useMousePosition from "../Hooks/useMousePosition.jsx";
-import { useAudio } from "../Contexts/AudioContext.jsx";
+import useMousePosition from "../hooks/useMousePosition.jsx";
+import { useAudio } from "../contexts/AudioContext.jsx";
 
 function MainScreenText({ text, index, onClick, isActive }) {
 	const { playTrack } = useAudio();

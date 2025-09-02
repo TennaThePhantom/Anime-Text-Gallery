@@ -5,11 +5,10 @@ import { MainScreenTextData } from "../data/textData";
 import "../CSS/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import { useAudio } from "../Contexts/AudioContext.jsx";
+import { useAudio } from "../contexts/AudioContext.jsx";
 
 function NavigationWrapper() {
 	const { stopTrack } = useAudio();
-
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	const [navigationStack, setNavigationStack] = useState([]);
 	const [fadeState, setFadeState] = useState("");

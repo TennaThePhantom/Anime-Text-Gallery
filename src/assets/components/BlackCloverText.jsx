@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import useMousePosition from "../Hooks/useMousePosition.jsx";
+import useMousePosition from "../hooks/useMousePosition.jsx";
 import HoverGifs from "./HoverGifs.jsx";
 import { blackCloverTextData } from "../data/textData.js";
 

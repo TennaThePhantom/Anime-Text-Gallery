@@ -1,6 +1,6 @@
 import { MdDarkMode } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
-import "../CSS/DarkLightMode.css";
+import "../css/DarkLightMode.css";
 import { useState, useEffect } from "react";
 
 function DarkLightMode() {
