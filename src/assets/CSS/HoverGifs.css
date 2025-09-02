@@ -22,7 +22,7 @@
 	transform: translateX(-30%);
 }
 
-.gif-right-z-fighters {
+.gif-z-right {
 	/*A text is longer than others which cause size issues*/
 	transform-origin: top center;
 	transform: translateX(-65%);
@@ -143,73 +143,100 @@
 
 .gif-first-class-members-right {
 }
-.gif-top-3-top{
-
+.gif-top-3-top {
 }
 
-.gif-sub-captains-right{
-
+.gif-sub-captains-right {
 }
-.gif-sub-captains-left{
-
+.gif-sub-captains-left {
 }
 
-.gif-charlotte-top{
-
+.gif-charlotte-top {
 }
-.gif-jack-right{
-
+.gif-jack-right {
 }
-.gif-dorothy-top{
-
+.gif-dorothy-top {
 }
-.gif-dorothy-left{
-
+.gif-dorothy-left {
 }
 
-.gif-sub-yuno-top{
-
+.gif-sub-yuno-top {
 }
 
-.gif-dante-top{
-
+.gif-dante-top {
 }
-.gif-midnight-sun-members{
-
+.gif-midnight-sun-members {
 }
-.gif-asta-comrades-top{
-
+.gif-asta-comrades-top {
 }
 
-.gif-julius-top{
-
+.gif-julius-top {
 }
 
-.gif-previous-wizard-kings{
-
+.gif-previous-wizard-kings {
 }
 
-.gif-lemiel-top{
-
+.gif-lemiel-top {
 }
-.gif-lemiel-right{
-
+.gif-lemiel-right {
 }
-.gif-lemiel-left{
-
+.gif-lemiel-left {
 }
 
-.gif-funnybunny-top{
-
+.gif-funnybunny-top {
 }
 
-.gif-jester-top{
-
+.gif-jester-top {
 }
 
-.gif-conrad-right{
-
+.gif-conrad-right {
 }
+
+.gif-z-top {
+}
+
+.gif-villains-top {
+}
+
+.gif-movie-villains-top {
+}
+
+.gif-fusions-top {
+}
+.gif-fusions-right {
+}
+.gif-fusions-left {
+}
+.gif-saiyans-top {
+}
+.gif-saiyans-right {
+}
+.gif-saiyans-left {
+}
+
+.gif-z-fighters-members-top {
+}
+.gif-z-fighters-members-top-middle {
+}
+.gif-z-fighters-members-right {
+}
+
+.gif-z-fighters-members-left {
+}
+
+.gif-villains-members-top {
+}
+.gif-villains-members-right,
+.gif-villains-members-left {
+}
+
+.gif-movie-villains-members-top {
+}
+.gif-movie-villains-members-right,
+.gif-movie-villains-members-left {
+}
+
+
 /*
 gifs placement adjustment for smaller screens
 */
@@ -351,61 +378,146 @@ gifs placement adjustment for smaller screens
 	.gif-first-class-members-right {
 		transform: translateX(20%);
 	}
-	.gif-top-3-top{
+	.gif-top-3-top {
 		transform: translate(-20%, 10%);
 	}
-	.gif-sub-captains-right{
+	.gif-sub-captains-right {
 		transform: translateX(-22%);
 	}
-	.gif-sub-captains-left{
+	.gif-sub-captains-left {
 		transform: translateX(30%);
 	}
-	.gif-charlotte-top{
+	.gif-charlotte-top {
 		transform: translate(-15%, 10%);
 	}
-	.gif-jack-right{
+	.gif-jack-right {
 		transform: translateX(25%);
 	}
-	.gif-dorothy-top{
+	.gif-dorothy-top {
 		transform: translateX(-15%);
 	}
-	.gif-dorothy-left{
+	.gif-dorothy-left {
 		transform: translateX(15%);
 	}
-	.gif-sub-yuno-top{
+	.gif-sub-yuno-top {
 		transform: translateX(-30%);
 	}
-	.gif-dante-top{
-		transform: translate(-12%,10%);
-	}
-	.gif-midnight-sun-members-top{
-		transform: translate(-2%, 8%);
-	}
-	.gif-asta-comrades-top{
-		transform: translate(-5%, 5%);
-	}
-	.gif-julius-top{
-		transform: translate(-30%, 5%);
-	}
-	.gif-previous-wizard-kings{
-		transform: translateX(-25%);
-	}
-	.gif-lemiel-top{
+	.gif-dante-top {
 		transform: translate(-12%, 10%);
 	}
-	.gif-lemiel-right{
+	.gif-midnight-sun-members-top {
+		transform: translate(-2%, 8%);
+	}
+	.gif-asta-comrades-top {
+		transform: translate(-5%, 5%);
+	}
+	.gif-julius-top {
+		transform: translate(-30%, 5%);
+	}
+	.gif-previous-wizard-kings {
+		transform: translateX(-25%);
+	}
+	.gif-lemiel-top {
+		transform: translate(-12%, 10%);
+	}
+	.gif-lemiel-right {
 		transform: translateX(-15%);
 	}
-	.gif-lemiel-left{
+	.gif-lemiel-left {
 		transform: translateX(25%);
 	}
-	.gif-funnybunny-top{
+	.gif-funnybunny-top {
 		transform: translate(-15%, 16%);
 	}
-	.gif-jester-top{
+	.gif-jester-top {
 		transform: translate(-1%, 10%);
 	}
-	.gif-conrad-right{
+	.gif-conrad-right {
 		transform: translateX(10%);
 	}
+	.gif-z-right {
+		transform: translateX(-30%);
+	}
+	.gif-z-top {
+		transform: translate(-15%, 32%);
+	}
+	.gif-villains-top {
+		transform: translate(-10%, 27%);
+	}
+	.gif-movie-villains-top {
+		transform: translate(-15%, 25%);
+	}
+	.gif-fusions-top {
+		transform: translate(-25%, 20%);
+	}
+	.gif-fusions-right {
+		transform: translateX(-10%);
+	}
+	.gif-fusions-left {
+		transform: translateX(-30%);
+	}
+	.gif-saiyans-top {
+		transform: translate(-20%, 10%);
+	}
+	.gif-saiyans-right {
+		transform: translate(-40%, 10%);
+	}
+	.gif-saiyans-left {
+		transform: translate(-13%, 10%);
+	}
+	.gif-z-fighters-members-top {
+		transform: translate(-5%, 30%);
+	}
+	.gif-z-fighters-members-top-middle {
+		transform: translate(-5%, 20%);
+	}
+	.gif-z-fighters-members-right {
+		transform: translateY(25%);
+	}
+	.gif-z-fighters-members-left {
+		transform: translateY(25%);
+	}
+	.gif-villains-members-top {
+		transform: translate(-10%, 20%);
+	}
+	.gif-villains-members-right,
+	.gif-villains-members-left {
+		transform: translateY(20%);
+	}
+	.gif-movie-villains-members-top {
+		transform: translate(-5%, 20%);
+	}
+	.gif-movie-villains-members-left {
+		transform: translateY(15%);
+	}
+	.gif-movie-villains-members-right {
+		transform: translate(5%, 15%);
+	}
+
+	.gif-fusion-member-top {
+		transform: translate(-5%, 16%);
+	}
+	.gif-fusion-member-left-right{
+		transform: translateY(15%);
+	}
+	.gif-saiyans-members-top{
+		transform: translate(-5%, 30%);
+	}
+
+	.gif-saiyans-top-middle-low{
+		transform: translate(-10%, 15%);
+	}
+	.gif-saiyans-members-left-right{
+		transform: translateY(25%);
+	}
+	.gif-secondary-characters-top{
+		transform: translate(-12.5%, 30%);
+	}
+	.gif-secondary-characters-top-middle{
+		transform: translate(-12.5%, 15%)
+	}
+	.gif-secondary-characters-right-left{
+		transform: translateY(25%);
+	}
+	
 }

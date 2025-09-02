@@ -118,7 +118,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GokuGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-top",
 				basePosition: {
 					top: -350,
 					left: -100,
@@ -136,7 +136,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: TrunksGif1,
-				className: "gif-right-z-fighters",
+				className: "gif-z-right",
 				basePosition: {
 					top: -210,
 					left: 0,
@@ -149,7 +149,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: FriezaGif1,
-				className: "gif-top",
+				className: "gif-top gif-villains-top",
 				basePosition: {
 					top: -315,
 					left: -100,
@@ -167,7 +167,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GokuBlackGif1,
-				className: "gif-right-z-fighters",
+				className: "gif-z-right",
 				basePosition: {
 					top: -170,
 					left: 0,
@@ -180,7 +180,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BojackGif1,
-				className: "gif-top",
+				className: "gif-top gif-movie-villains-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -198,7 +198,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: Android13Gif1,
-				className: "gif-right-z-fighters",
+				className: "gif-z-right",
 				basePosition: {
 					top: -130,
 					left: 50,
@@ -211,7 +211,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GogetaGif1,
-				className: "gif-top",
+				className: "gif-top gif-fusions-top",
 				basePosition: {
 					top: -235,
 					left: -100,
@@ -220,7 +220,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KeflaGif1,
-				className: "gif-left",
+				className: "gif-left gif-fusions-left",
 				basePosition: {
 					top: -130,
 					left: -340,
@@ -229,7 +229,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: VegitoGif1,
-				className: "gif-right-z-fighters",
+				className: "gif-z-right gif-fusions-left",
 				basePosition: {
 					top: -130,
 					left: 10,
@@ -242,7 +242,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BrolyGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-top",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -251,7 +251,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BardockGif1,
-				className: "gif-left",
+				className: "gif-left gif-saiyans-left",
 				basePosition: {
 					top: -50,
 					left: -340,
@@ -260,7 +260,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KaleGif1,
-				className: "gif-right-z-fighters",
+				className: "gif-z-right gif-saiyans-right",
 				basePosition: {
 					top: -50,
 					left: 10,
@@ -304,7 +304,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GokuGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top",
 				basePosition: {
 					top: -405,
 					left: -100,
@@ -313,7 +313,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GokuGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -305,
 					left: -355,
@@ -322,7 +322,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GokuGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -305,
 					left: 65,
@@ -335,7 +335,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: VegetaGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top",
 				basePosition: {
 					top: -375,
 					left: -100,
@@ -344,7 +344,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: VegetaGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -255,
 					left: -340,
@@ -353,7 +353,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: VegetaGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -255,
 					left: 55,
@@ -366,7 +366,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: PiccoloGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -375,7 +375,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: PiccoloGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -235,
 					left: -340,
@@ -384,7 +384,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: PiccoloGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -235,
 					left: 55,
@@ -397,7 +397,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GohanGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top-middle",
 				basePosition: {
 					top: -295,
 					left: -100,
@@ -406,7 +406,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GohanGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -185,
 					left: -340,
@@ -415,7 +415,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GohanGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -185,
 					left: 55,
@@ -428,7 +428,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: KrillinGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top-middle",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -437,7 +437,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KrillinGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -135,
 					left: -340,
@@ -446,7 +446,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KrillinGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -135,
 					left: 55,
@@ -459,7 +459,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: TienGif1,
-				className: "gif-top",
+				className: "gif-top gif-z-fighters-members-top-middle",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -468,7 +468,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: TienGif2,
-				className: "gif-left",
+				className: "gif-left gif-z-fighters-members-left",
 				basePosition: {
 					top: -85,
 					left: -340,
@@ -477,7 +477,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: TienGif3,
-				className: "gif-right",
+				className: "gif-right gif-z-fighters-members-right",
 				basePosition: {
 					top: -85,
 					left: 55,
@@ -552,7 +552,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: FriezaGif1,
-				className: "gif-top",
+				className: "gif-top gif-villains-members-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -561,7 +561,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: FriezaGif2,
-				className: "gif-left",
+				className: "gif-left gif-villains-members-left",
 				basePosition: {
 					top: -215,
 					left: -340,
@@ -570,7 +570,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: FriezaGif3,
-				className: "gif-right",
+				className: "gif-right gif-villains-members-right",
 				basePosition: {
 					top: -215,
 					left: 55,
@@ -583,7 +583,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: CellGif1,
-				className: "gif-top",
+				className: "gif-top gif-villains-members-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -592,7 +592,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: CellGif2,
-				className: "gif-left",
+				className: "gif-left gif-villains-members-left",
 				basePosition: {
 					top: -155,
 					left: -330,
@@ -601,7 +601,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: CellGif3,
-				className: "gif-right",
+				className: "gif-right gif-villains-members-right",
 				basePosition: {
 					top: -155,
 					left: 55,
@@ -614,7 +614,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BuuGif1,
-				className: "gif-top",
+				className: "gif-top gif-villains-members-top",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -623,7 +623,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BuuGif2,
-				className: "gif-left",
+				className: "gif-left gif-villains-members-left",
 				basePosition: {
 					top: -135,
 					left: -340,
@@ -632,7 +632,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BuuGif3,
-				className: "gif-right",
+				className: "gif-right gif-villains-members-right",
 				basePosition: {
 					top: -135,
 					left: 55,
@@ -645,7 +645,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GokuBlackGif1,
-				className: "gif-top",
+				className: "gif-top ",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -738,7 +738,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: TurlesGif1,
-				className: "gif-top",
+				className: "gif-top gif-movie-villains-members-top",
 				basePosition: {
 					top: -340,
 					left: -100,
@@ -747,7 +747,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: TurlesGif2,
-				className: "gif-left",
+				className: "gif-left gif-movie-villains-members-left",
 				basePosition: {
 					top: -235,
 					left: -360,
@@ -756,7 +756,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: TurlesGif3,
-				className: "gif-right",
+				className: "gif-right gif-movie-villains-members-right",
 				basePosition: {
 					top: -235,
 					left: 60,
@@ -769,7 +769,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: CoolerGif1,
-				className: "gif-top",
+				className: "gif-top gif-movie-villains-members-top",
 				basePosition: {
 					top: -305,
 					left: -100,
@@ -778,7 +778,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: CoolerGif2,
-				className: "gif-left",
+				className: "gif-left gif-movie-villains-members-left",
 				basePosition: {
 					top: -185,
 					left: -340,
@@ -787,7 +787,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: CoolerGif3,
-				className: "gif-right",
+				className: "gif-right gif-movie-villains-members-right",
 				basePosition: {
 					top: -185,
 					left: 55,
@@ -800,7 +800,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: JanembaGif1,
-				className: "gif-top",
+				className: "gif-top gif-movie-villains-members-top",
 				basePosition: {
 					top: -260,
 					left: -100,
@@ -809,7 +809,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: JanembaGif2,
-				className: "gif-left",
+				className: "gif-left gif-movie-villains-members-left",
 				basePosition: {
 					top: -155,
 					left: -340,
@@ -818,7 +818,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: JanembaGif3,
-				className: "gif-right",
+				className: "gif-right gif-movie-villains-members-right",
 				basePosition: {
 					top: -155,
 					left: 55,
@@ -924,7 +924,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GogetaGif1,
-				className: "gif-top",
+				className: "gif-top gif-fusion-member-top",
 				basePosition: {
 					top: -270,
 					left: -100,
@@ -933,7 +933,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GogetaGif2,
-				className: "gif-left",
+				className: "gif-left gif-fusion-member-left-right",
 				basePosition: {
 					top: -145,
 					left: -340,
@@ -942,7 +942,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GogetaGif3,
-				className: "gif-right",
+				className: "gif-right gif-fusion-member-left-right",
 				basePosition: {
 					top: -145,
 					left: 55,
@@ -955,7 +955,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: VegitoGif1,
-				className: "gif-top",
+				className: "gif-top gif-fusion-member-top",
 				basePosition: {
 					top: -225,
 					left: -100,
@@ -964,7 +964,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: VegitoGif2,
-				className: "gif-left",
+				className: "gif-left gif-fusion-member-left-right",
 				basePosition: {
 					top: -105,
 					left: -340,
@@ -973,7 +973,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: VegitoGif3,
-				className: "gif-right",
+				className: "gif-right gif-fusion-member-left-right",
 				basePosition: {
 					top: -105,
 					left: 55,
@@ -1048,7 +1048,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: GotenGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-members-top",
 				basePosition: {
 					top: -375,
 					left: -100,
@@ -1057,7 +1057,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GotenGif2,
-				className: "gif-left",
+				className: "gif-left gif-saiyans-members-left-right",
 				basePosition: {
 					top: -275,
 					left: -340,
@@ -1066,7 +1066,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: GotenGif3,
-				className: "gif-right",
+				className: "gif-right gif-saiyans-members-left-right",
 				basePosition: {
 					top: -275,
 					left: 55,
@@ -1079,7 +1079,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: KidTrunksGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-members-top",
 				basePosition: {
 					top: -345,
 					left: -100,
@@ -1088,7 +1088,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KidTrunksGif2,
-				className: "gif-left",
+				className: "gif-left gif-saiyans-members-left-right",
 				basePosition: {
 					top: -205,
 					left: -360,
@@ -1097,7 +1097,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KidTrunksGif3,
-				className: "gif-right",
+				className: "gif-right gif-saiyans-members-left-right",
 				basePosition: {
 					top: -205,
 					left: 75,
@@ -1110,7 +1110,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BrolyGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-members-top ",
 				basePosition: {
 					top: -300,
 					left: -100,
@@ -1119,7 +1119,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BrolyGif2,
-				className: "gif-left",
+				className: "gif-left gif-saiyans-members-left-right",
 				basePosition: {
 					top: -195,
 					left: -385,
@@ -1128,7 +1128,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BrolyGif3,
-				className: "gif-right",
+				className: "gif-right gif-saiyans-members-left-right",
 				basePosition: {
 					top: -195,
 					left: 105,
@@ -1141,7 +1141,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BardockGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-top-middle-low",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1150,7 +1150,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BardockGif2,
-				className: "gif-left",
+				className: "gif-left gif-saiyans-members-left-right",
 				basePosition: {
 					top: -145,
 					left: -365,
@@ -1159,7 +1159,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BardockGif3,
-				className: "gif-right",
+				className: "gif-right gif-saiyans-members-left-right",
 				basePosition: {
 					top: -145,
 					left: 75,
@@ -1172,7 +1172,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: KaleGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-top-middle-low",
 				basePosition: {
 					top: -220,
 					left: -100,
@@ -1203,7 +1203,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: CauliflaGif1,
-				className: "gif-top",
+				className: "gif-top gif-saiyans-top-middle-low",
 				basePosition: {
 					top: -195,
 					left: -100,
@@ -1212,7 +1212,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: CauliflaGif2,
-				className: "gif-left",
+				className: "gif-left ",
 				basePosition: {
 					top: -45,
 					left: -340,
@@ -1265,7 +1265,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: KaiGif1,
-				className: "gif-top",
+				className: "gif-top gif-secondary-characters-top",
 				basePosition: {
 					top: -375,
 					left: -100,
@@ -1274,7 +1274,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KaiGif2,
-				className: "gif-left",
+				className: "gif-left gif-secondary-characters-right-left",
 				basePosition: {
 					top: -265,
 					left: -340,
@@ -1283,7 +1283,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: KaiGif3,
-				className: "gif-right",
+				className: "gif-right gif-secondary-characters-right-left",
 				basePosition: {
 					top: -265,
 					left: 15,
@@ -1296,7 +1296,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: RoshiGif1,
-				className: "gif-top",
+				className: "gif-top gif-secondary-characters-top",
 				basePosition: {
 					top: -335,
 					left: -100,
@@ -1305,7 +1305,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: RoshiGif2,
-				className: "gif-left",
+				className: "gif-left gif-secondary-characters-right-left",
 				basePosition: {
 					top: -215,
 					left: -380,
@@ -1314,7 +1314,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: RoshiGif3,
-				className: "gif-right",
+				className: "gif-right gif-secondary-characters-right-left",
 				basePosition: {
 					top: -215,
 					left: 55,
@@ -1327,7 +1327,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: BulmaGif1,
-				className: "gif-top",
+				className: "gif-top gif-secondary-characters-top",
 				basePosition: {
 					top: -300,
 					left: -100,
@@ -1336,7 +1336,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BulmaGif2,
-				className: "gif-left",
+				className: "gif-left gif-secondary-characters-right-left",
 				basePosition: {
 					top: -165,
 					left: -350,
@@ -1345,7 +1345,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: BulmaGif3,
-				className: "gif-right",
+				className: "gif-right gif-secondary-characters-right-left",
 				basePosition: {
 					top: -165,
 					left: 25,
@@ -1358,7 +1358,7 @@ export const DragonBallTextGif = {
 		gifs: [
 			{
 				src: ChiGif1,
-				className: "gif-top",
+				className: "gif-top gif-secondary-characters-top-middle",
 				basePosition: {
 					top: -265,
 					left: -100,
@@ -1367,7 +1367,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: ChiGif2,
-				className: "gif-left",
+				className: "gif-left gif-secondary-characters-right-left",
 				basePosition: {
 					top: -130,
 					left: -340,
@@ -1376,7 +1376,7 @@ export const DragonBallTextGif = {
 			},
 			{
 				src: ChiGif3,
-				className: "gif-right",
+				className: "gif-right gif-secondary-characters-right-left",
 				basePosition: {
 					top: -130,
 					left: 10,
@@ -1388,7 +1388,7 @@ export const DragonBallTextGif = {
 	"Beerus&Whis": {
 		gifs: [
 			{
-				src: GodGif1, 
+				src: GodGif1,
 				className: "gif-top",
 				basePosition: {
 					top: -225,
