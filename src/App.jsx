@@ -5,8 +5,10 @@ import NavigationWrapper from "./assets/components/NavigationWrapper.jsx";
 import { AudioProvider } from "./assets/contexts/AudioContext.jsx";
 import MobileAppWarning from "./assets/components/MobileAppWarning.jsx";
 import { useState, useEffect } from "react";
+import usePreloadImages from "./assets/hooks/usePreloadImages";
 
 function App() {
+	usePreloadImages();
 	const [isDarkMode, setIsDarkMode] = useState(false);
 	useEffect(() => {
 		const checkUserDarkMode = () => {
