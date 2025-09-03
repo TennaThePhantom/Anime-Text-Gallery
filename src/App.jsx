@@ -2,7 +2,7 @@ import "./App.css";
 import DarkLightMode from "./assets/components/DarkLightMode.jsx";
 import Volume from "./assets/components/Volume.jsx";
 import NavigationWrapper from "./assets/components/NavigationWrapper.jsx";
-import { AudioProvider } from "./assets/contexts/AudioContext";
+import { AudioProvider } from "./assets/contexts/AudioContext.jsx";
 import MobileAppWarning from "./assets/components/MobileAppWarning.jsx";
 import { useState, useEffect } from "react";
 
