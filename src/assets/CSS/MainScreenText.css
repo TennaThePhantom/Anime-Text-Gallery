@@ -16,7 +16,7 @@
 
 }
 
-.dragon-ball-text-animated:hover {
+.dragon-ball-text-animated-text:hover {
 	background: radial-gradient(
 		circle at 100%,
 		#fed7aa,
@@ -31,7 +31,7 @@
 }
 
 /*bleach text animation*/
-.bleach-text-animated:hover {
+.bleach-text-animated-text:hover {
 	background: radial-gradient(
 		circle at 100%,
 		#2d3748,
@@ -341,14 +341,14 @@ fate series text animation
 }
 
 /*sword art online text animations*/
-.sword-art-online-animated p {
+.sword-art-online-animated-text p {
 	position: relative;
 	padding: 0;
 	margin: 0;
 	display: inline-block;
 }
 
-.sword-art-online-animated:hover p::before {
+.sword-art-online-animated-text:hover p::before {
 	content: attr(data-text);
 	position: absolute;
 	top: 0;
@@ -381,7 +381,7 @@ fate series text animation
 /*
 solo leveling animation theme
 */
-.solo-leveling-animated:hover {
+.solo-leveling-animated-text:hover {
 	background-image: url(https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3dzMyNjQ5YWcyZGo5eWtja2g4dXNyNmI5cjM4Y2k2NDZtd2o0eDF4cCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/3bc8pP1rVdfgN1uoMV/giphy.gif);
 	background-size: cover;
 	color: transparent;

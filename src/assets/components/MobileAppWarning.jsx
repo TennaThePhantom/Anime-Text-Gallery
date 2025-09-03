@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import useWindowSize from "../hooks/useWindowSize.jsx";
 
-const MobileAppWaring = () => {
+const MobileAppWarning = () => {
 	const { width: screenWidth } = useWindowSize();
 	const mobileWarning = "Mobile";
 	useEffect(() => {
@@ -32,4 +32,4 @@ const MobileAppWaring = () => {
 	return <ToastContainer />;
 };
 
-export default MobileAppWaring;
+export default MobileAppWarning;

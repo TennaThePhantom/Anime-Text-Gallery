@@ -16,13 +16,13 @@ function MainScreenText({ text, index, onClick, isActive }) {
 	const { mousePosition, handleGifMouseMove } = useMousePosition(textRef);
 
 	const textAnimationsClasses = [
-		"dragon-ball-text-animated",
-		"bleach-text-animated",
+		"dragon-ball-text-animated-text",
+		"bleach-text-animated-text",
 		"black-clover-animated-text",
 		"fate-series-animated-text",
 		"kuroko-basketball-animated-text",
-		"sword-art-online-animated",
-		"solo-leveling-animated",
+		"sword-art-online-animated-text",
+		"solo-leveling-animated-text",
 	];
 
 	// kuroko basketball text animation
