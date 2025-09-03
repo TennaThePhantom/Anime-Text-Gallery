@@ -1,7 +1,7 @@
 import soloLevelingGif2 from "../Images/Solo-Leveling/Solo2.gif";
 import soloLevelingGif3 from "../Images/Solo-Leveling/Solo3.gif";
-import sungJinWooGif1 from "../Images/Solo-Leveling/sung-jin-woo1.webp";
-import sungJinWooGif2 from "../Images/Solo-Leveling/Sung-jin-woo2.gif";
+import sungJinWooGif1 from "../Images/Solo-Leveling/Sung-jin-woo1.webp";
+import sungJinWooGif2 from "../Images/Solo-Leveling/sung-jin-woo2.gif";
 import sungJinWooGif3 from "../Images/Solo-Leveling/sung-jin-woo-3.gif";
 
 export const soloLevelingTextGif = {
