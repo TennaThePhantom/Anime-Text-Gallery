@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MainScreenText from "./MainScreenText";
-import { COMPONENT_MAP, getTextComponent } from "../data/componentTextMap.js"; // Import from new file
+import { COMPONENT_MAP, getTextComponent } from "../data/componentTextMap.js";
 import { MainScreenTextData } from "../data/textData";
-import "../CSS/NavigationWrapper.css";
+import "../css/NavigationWrapper.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useAudio } from "../contexts/AudioContext.jsx";
