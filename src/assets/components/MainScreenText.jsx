@@ -39,12 +39,7 @@ function MainScreenText({ text, index, onClick, isActive }) {
 			const spanText = document.createElement("span");
 			spanText.className = `char-${charIndex + 1}`;
 			spanText.textContent = char;
-
-			if (charIndex === 6 || charIndex === 8) {
-				spanText.style.color = "text-zinc-300";
-			} else {
-				spanText.classList.add("color-char");
-			}
+			spanText.classList.add("color-char");
 			animatedTextElement.appendChild(spanText);
 		});
 
@@ -99,7 +94,9 @@ function MainScreenText({ text, index, onClick, isActive }) {
 		// displays the main screen text.
 		<div
 			ref={textRef}
-			className={`main-screen-text ${(isActive || showTextAnimation) ? textAnimation : ""}`}
+			className={`main-screen-text ${
+				isActive || showTextAnimation ? textAnimation : ""
+			}`}
 			onMouseEnter={handleHoverOnText}
 			onMouseLeave={handleHoverLeave}
 			onMouseMove={handleGifMouseMove}
