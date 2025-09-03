@@ -16,9 +16,9 @@ import SwordArtOnlineGif3 from "../Images/Sword-Art-Online/swordArtOnline3.gif";
 import soloLevelingGif1 from "../Images/Solo-Leveling/solo1.gif";
 import soloLevelingGif2 from "../Images/Solo-Leveling/solo2.gif";
 import soloLevelingGif3 from "../Images/Solo-Leveling/solo3.gif";
-import KurokoGif1 from "../Images/Kuruko's-Basketball/Kuruko1.gif";
-import KurokoGif2 from "../Images/Kuruko's-Basketball/Kuruko2.gif";
-import KurokoGif3 from "../Images/Kuruko's-Basketball/Kuruko3.gif";
+import KurokoGif1 from "../Images/Kuroko's-Basketball/Kuruko1.gif";
+import KurokoGif2 from "../Images/Kuroko's-Basketball/Kuruko2.gif";
+import KurokoGif3 from "../Images/Kuroko's-Basketball/Kuruko3.gif";
 
 export const mainScreenTextGif = {
 	"Dragon Ball": {

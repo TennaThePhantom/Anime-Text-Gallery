@@ -11,7 +11,7 @@ import SoloLevelingText from "../components/SoloLevelingText.jsx";
 export const COMPONENT_MAP = {
 	main: {
 		"Solo Leveling": SoloLevelingText,
-		"Kuruko's Basketball": KurokoBasketBallText,
+		"Kuroko's Basketball": KurokoBasketBallText,
 		"Dragon Ball": DragonBallText,
 		"Sword Art Online": SwordArtOnlineText,
 		"Fate Series": FateSeriesText,
