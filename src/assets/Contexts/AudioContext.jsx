@@ -1,4 +1,3 @@
-import { a } from "motion/react-client";
 import { createContext, useContext, useState, useEffect, useRef } from "react";
 
 const AudioContext = createContext();
@@ -11,12 +10,12 @@ export function AudioProvider({ children }) {
 
 	// Audio files in public/audio folder
 	const audioFiles = [
-		"/Music/DragonBallMusic1.mp3",
-		"/Music/BleachMusic2.mp3",
-		"/Music/BlackCloverMusic1.mp3",
-		"/Music/FateMusic1.mp3",
-		"/Music/KurokoMusic1.mp3",
-		"/Music/SwordArtOnlineMusic1.mp3",
+		"/Music/DragonBallMusic.mp3",
+		"/Music/BleachMusic.mp3",
+		"/Music/BlackCloverMusic.mp3",
+		"/Music/FateMusic.mp3",
+		"/Music/KurokoMusic.mp3",
+		"/Music/SwordArtOnlineMusic.mp3",
 		"/Music/SoloLevelingMusic.mp3",
 	];
 
