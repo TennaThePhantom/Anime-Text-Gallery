@@ -16,9 +16,9 @@ import SwordArtOnlineGif3 from "../Images/Sword-Art-Online/swordArtOnline3.gif";
 import soloLevelingGif1 from "../Images/Solo-Leveling/solo1.gif";
 import soloLevelingGif2 from "../Images/Solo-Leveling/solo2.gif";
 import soloLevelingGif3 from "../Images/Solo-Leveling/solo3.gif";
-import KurukoGif1 from "../Images/Kuruko's-Basketball/Kuruko1.gif";
-import KurukoGif2 from "../Images/Kuruko's-Basketball/Kuruko2.gif";
-import KurukoGif3 from "../Images/Kuruko's-Basketball/Kuruko3.gif";
+import KurokoGif1 from "../Images/Kuruko's-Basketball/Kuruko1.gif";
+import KurokoGif2 from "../Images/Kuruko's-Basketball/Kuruko2.gif";
+import KurokoGif3 from "../Images/Kuruko's-Basketball/Kuruko3.gif";
 
 export const mainScreenTextGif = {
 	"Dragon Ball": {
@@ -148,10 +148,10 @@ export const mainScreenTextGif = {
 			},
 		],
 	},
-	"Kuruko's Basketball": {
+	"Kuroko's Basketball": {
 		gifs: [
 			{
-				src: KurukoGif3,
+				src: KurokoGif3,
 				className: "gif-top",
 				basePosition: {
 					top: -155,
@@ -160,7 +160,7 @@ export const mainScreenTextGif = {
 				},
 			},
 			{
-				src: KurukoGif2,
+				src: KurokoGif2,
 				className: "gif-left",
 				basePosition: {
 					top: -10,
@@ -169,7 +169,7 @@ export const mainScreenTextGif = {
 				},
 			},
 			{
-				src: KurukoGif1,
+				src: KurokoGif1,
 				className: "gif-right",
 				basePosition: {
 					top: -1,

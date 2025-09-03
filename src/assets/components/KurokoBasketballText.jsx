@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import useMousePosition from "../hooks/useMousePosition.jsx";
 import HoverGifs from "./HoverGifs.jsx";
-import { KurukoBasketballTextData } from "../data/textData.js";
+import { KurokoBasketballTextData } from "../data/textData.js";
 
 function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 	const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +20,7 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 		if (!currentText.type || currentText.type === "main") {
 			return (
 				<div className={`${fadeState} sub-text-container`}>
-					{Object.keys(KurukoBasketballTextData).map((category, index) => (
+					{Object.keys(KurokoBasketballTextData).map((category, index) => (
 						<div
 							ref={textRef}
 							onMouseLeave={handleGifHoverLeaveOnText}
@@ -55,7 +55,7 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 
 		// Level 1 categories
 		if (currentText.type === "kurokoCategory" && currentText.level === 1) {
-			const categoryData = KurukoBasketballTextData[currentText.category];
+			const categoryData = KurokoBasketballTextData[currentText.category];
 
 			if (!categoryData) {
 				return <div className={fadeState}>No category data found</div>;
@@ -130,7 +130,7 @@ function KurokoBasketBallText({ currentText, navigate, fadeState }) {
 		// Level 2 subcategories
 		if (currentText.type === "kurokoSubCategory" && currentText.level === 2) {
 			const subCategoryData =
-				KurukoBasketballTextData[currentText.category]?.[
+				KurokoBasketballTextData[currentText.category]?.[
 					currentText.subCategory
 				];
 

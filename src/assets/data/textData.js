@@ -3,14 +3,14 @@ export const MainScreenTextData = [
 	"Bleach",
 	"Black Clover",
 	"Fate Series",
-	"Kuruko's Basketball",
+	"Kuroko's Basketball",
 	"Sword Art Online",
 	"Solo Leveling",
 ];
 
 export const SoloLevelingTextData = ["Sung Jin-Woo"];
 
-export const KurukoBasketballTextData = {
+export const KurokoBasketballTextData = {
 	"Seirin High": {
 		Coach: ["Aido Riko"],
 		"First Year": ["Furihata Kouki", "Kawahara Kouichi"],
