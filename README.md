@@ -37,3 +37,6 @@ After finishing this, I felt like I should have focus on one anime instead of se
 
 
 ## 🎞️ Preview
+
+https://github.com/user-attachments/assets/d8207479-ba48-4776-9f88-92639b7cc826
+
